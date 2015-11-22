@@ -3,17 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>murder 代码阅读 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="murder 简介murder 是 twitter 开源的一款针对大规模的文件分发软件，使用 BitTorrent 协议。
+github: https://github.com/lg/murder
+BitTorrent 简介BitTorrent协议（简称BT）是用在对等网络中文件分享的网络协议程序。和点对点（point-to-point）的协议程序不同，它是用户群对用户群（peer-to-peer">
+<meta property="og:type" content="article">
+<meta property="og:title" content="murder 代码阅读">
+<meta property="og:url" content="http://yoursite.com/2015/11/22/murder代码阅读/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description">
+<meta property="og:description" content="murder 简介murder 是 twitter 开源的一款针对大规模的文件分发软件，使用 BitTorrent 协议。
+github: https://github.com/lg/murder
+BitTorrent 简介BitTorrent协议（简称BT）是用在对等网络中文件分享的网络协议程序。和点对点（point-to-point）的协议程序不同，它是用户群对用户群（peer-to-peer">
+<meta property="og:updated_time" content="2015-11-22T16:24:52.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description">
+<meta name="twitter:title" content="murder 代码阅读">
+<meta name="twitter:description" content="murder 简介murder 是 twitter 开源的一款针对大规模的文件分发软件，使用 BitTorrent 协议。
+github: https://github.com/lg/murder
+BitTorrent 简介BitTorrent协议（简称BT）是用在对等网络中文件分享的网络协议程序。和点对点（point-to-point）的协议程序不同，它是用户群对用户群（peer-to-peer">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,9 +66,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-murder代码阅读" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-murder代码阅读" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/11/22/murder代码阅读/" class="article-date">
   <time datetime="2015-11-22T23:52:43.000Z" itemprop="datePublished">2015-11-22</time>
@@ -74,8 +79,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/22/murder代码阅读/">murder 代码阅读</a>
+    <h1 class="article-title" itemprop="name">
+      murder 代码阅读
     </h1>
   
 
@@ -124,85 +129,20 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hexo历程" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/11/21/hexo历程/" class="article-date">
-  <time datetime="2015-11-21T19:58:43.000Z" itemprop="datePublished">2015-11-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/21/hexo历程/">hexo历程</a>
-    </h1>
+    <a href="/2015/11/21/hexo历程/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">hexo历程</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="2015-11-22_安装配置">2015.11.22 安装配置</h1><h3 id="安装_node-js">安装 node.js</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 直接下载二进制</span></span><br><span class="line">wget https://nodejs.org/dist/v4.<span class="number">2.2</span>/node-v4.<span class="number">2.2</span>-linux-x64.tar.gz</span><br><span class="line"></span><br><span class="line"><span class="comment"># 解压安装</span></span><br><span class="line">sudo tar --strip-components <span class="number">1</span> -xzf node-v* -C /usr/<span class="built_in">local</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查</span></span><br><span class="line">node --version</span><br></pre></td></tr></table></figure>
-<h3 id="安装_hexo">安装 hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装</span></span><br><span class="line">npm install hexo-cli -g</span><br><span class="line"></span><br><span class="line"><span class="comment"># 初始化工程</span></span><br><span class="line">hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动测试服务器，打开http://yourIp:4000可以查看效果</span></span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/21/hexo历程/" data-id="cihaqmyot0000zzz3s73k1y7u" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
 
-
-  
-    <article id="post-初次使用" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/11/21/初次使用/" class="article-date">
-  <time datetime="2015-11-21T19:24:32.000Z" itemprop="datePublished">2015-11-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/21/初次使用/">初次使用</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>2015-11-21<br>刚刚开始hexo，所以，卵都没有。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/21/初次使用/" data-id="cihaqmypi0001zzz3vktbbxg5" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-  
 </section>
         
           <aside id="sidebar">
