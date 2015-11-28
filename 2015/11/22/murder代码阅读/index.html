@@ -15,7 +15,7 @@ BitTorrent 简介BitTorrent协议（简称BT）是用在对等网络中文件分
 <meta property="og:description" content="murder 简介murder 是 twitter 开源的一款针对大规模的文件分发软件，使用 BitTorrent 协议。
 github: https://github.com/lg/murder
 BitTorrent 简介BitTorrent协议（简称BT）是用在对等网络中文件分享的网络协议程序。和点对点（point-to-point）的协议程序不同，它是用户群对用户群（peer-to-peer">
-<meta property="og:updated_time" content="2015-11-22T16:24:52.000Z">
+<meta property="og:updated_time" content="2015-11-23T02:29:38.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="murder 代码阅读">
 <meta name="twitter:description" content="murder 简介murder 是 twitter 开源的一款针对大规模的文件分发软件，使用 BitTorrent 协议。
@@ -69,7 +69,7 @@ BitTorrent 简介BitTorrent协议（简称BT）是用在对等网络中文件分
         <section id="main"><article id="post-murder代码阅读" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/11/22/murder代码阅读/" class="article-date">
-  <time datetime="2015-11-22T23:52:43.000Z" itemprop="datePublished">2015-11-22</time>
+  <time datetime="2015-11-22T15:52:43.000Z" itemprop="datePublished">2015-11-22</time>
 </a>
     
   </div>
@@ -117,13 +117,27 @@ BitTorrent 简介BitTorrent协议（简称BT）是用在对等网络中文件分
 </ol>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 删除过期的种子、文件、分片</span></span><br><span class="line">configdir.deleteOldCacheData(config[<span class="string">'expire_cache_data'</span>])</span><br></pre></td></tr></table></figure>
 <ol>
-<li>todo</li>
+<li><p>创建随机数</p>
+</li>
+<li><p>创建一个 RawServer 对象</p>
+</li>
 </ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建server对象</span></span><br><span class="line">rawserver = RawServer(</span><br><span class="line">    doneFlag,  <span class="comment"># 线程事件对象，用作结束标记</span></span><br><span class="line">    config[<span class="string">'timeout_check_interval'</span>],  <span class="comment"># 超时检查间隔</span></span><br><span class="line">    config[<span class="string">'timeout'</span>],  <span class="comment"># 超时设置</span></span><br><span class="line">    ipv6_enable=config[<span class="string">'ipv6_enabled'</span>],  <span class="comment"># 使用ipv6</span></span><br><span class="line">    failfunc=h.failed,  <span class="comment"># 失败回调</span></span><br><span class="line">    errorfunc=disp_exception  <span class="comment"># 出错回调</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<ol>
+<li>测试UPnP类型</li>
+</ol>
+<ol>
+<li>对端口尝试绑定</li>
+</ol>
+<ol>
+<li>获取种子文件，创建任务</li>
+</ol>
+<p>从本地文件或url中读取种子文件内容，对文件进行解码、正确性检测、哈希值计算，创建新的下载/上传对象<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 读取种子文件</span></span><br><span class="line">response = get_response(config[<span class="string">'responsefile'</span>], config[<span class="string">'url'</span>], h.error)</span><br><span class="line"><span class="keyword">if</span> <span class="keyword">not</span> response:</span><br><span class="line">    <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 计算哈希值</span></span><br><span class="line">infohash = sha(bencode(response[<span class="string">'info'</span>])).digest()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建下载/上传服务器对象</span></span><br><span class="line">dow = BT1Download(</span><br><span class="line">    h.display,  <span class="comment"># 展示回调</span></span><br><span class="line">    h.finished,  <span class="comment"># 完成回调</span></span><br><span class="line">    h.error,  <span class="comment"># 错误回调</span></span><br><span class="line">    disp_exception,  <span class="comment"># 展示异常</span></span><br><span class="line">    doneFlag,  <span class="comment"># 事件</span></span><br><span class="line">    config,  <span class="comment"># 配置</span></span><br><span class="line">    response,  <span class="comment"># 种子</span></span><br><span class="line">    infohash,  <span class="comment"># 哈希</span></span><br><span class="line">    myid,  <span class="comment"># 标志</span></span><br><span class="line">    rawserver,  <span class="comment"># socket服务器</span></span><br><span class="line">    listen_port,  <span class="comment"># 监听端口</span></span><br><span class="line">    configdir  <span class="comment"># 配置文件夹</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/22/murder代码阅读/" data-id="cihaqmypm0002zzz3nqx9mnvb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/11/22/murder代码阅读/" data-id="cihj5yi0l0004zfz38qdpphhv" class="article-share-link">Share</a>
       
       
     </footer>
@@ -131,6 +145,15 @@ BitTorrent 简介BitTorrent协议（简称BT）是用在对等网络中文件分
   
     
 <nav id="article-nav">
+  
+    <a href="/2015/11/23/UPnP协议/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          UPnP协议
+        
+      </div>
+    </a>
   
   
     <a href="/2015/11/21/hexo历程/" id="article-nav-older" class="article-nav-link-wrap">
@@ -150,14 +173,28 @@ BitTorrent 简介BitTorrent协议（简称BT）是用在对等网络中文件分
     
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/">web</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/协议/">协议</a><span class="tag-list-count">2</span></li></ul>
+    </div>
+  </div>
+
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/web/" style="font-size: 10px;">web</a> <a href="/tags/协议/" style="font-size: 20px;">协议</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">6</span></li></ul>
     </div>
   </div>
 
@@ -169,15 +206,23 @@ BitTorrent 简介BitTorrent协议（简称BT）是用在对等网络中文件分
       <ul>
         
           <li>
+            <a href="/2015/11/27/ajax上传文件/">ajax上传文件</a>
+          </li>
+        
+          <li>
+            <a href="/2015/11/24/PAM/">PAM</a>
+          </li>
+        
+          <li>
+            <a href="/2015/11/23/UPnP协议/">UPnP协议</a>
+          </li>
+        
+          <li>
             <a href="/2015/11/22/murder代码阅读/">murder 代码阅读</a>
           </li>
         
           <li>
             <a href="/2015/11/21/hexo历程/">hexo历程</a>
-          </li>
-        
-          <li>
-            <a href="/2015/11/21/初次使用/">初次使用</a>
           </li>
         
       </ul>
