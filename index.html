@@ -272,6 +272,141 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/16/gdb-的初次使用/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="武鑫">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/7314785">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="sin5">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/04/16/gdb-的初次使用/" itemprop="url">
+                  gdb 的初次使用
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-16T21:57:05+08:00">
+                2017-04-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>阅读 apue, 默写<1.1-简单ls实现>, 运行报段错误, 错误代码如下：<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"apue.h"</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;dirent.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span></span></div><div class="line"><span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> *argv[])</span></div><div class="line">&#123;</div><div class="line">  DIR *dp;</div><div class="line">  <span class="keyword">struct</span> dirent *dir;</div><div class="line"></div><div class="line">  <span class="keyword">if</span> (argc != <span class="number">2</span>) &#123;</div><div class="line">    err_quit(<span class="string">"usage: ls directory_name"</span>);</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  <span class="keyword">if</span> ((dp = opendir(argv[<span class="number">1</span>]) == <span class="literal">NULL</span>)) &#123;</div><div class="line">    err_quit(<span class="string">"can't open directory %s"</span>, argv[<span class="number">1</span>]);</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  <span class="keyword">while</span> ((dir = readdir(dp) != <span class="literal">NULL</span>)) &#123;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"%s\n"</span>, dir-&gt;d_name);</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></1.1-简单ls实现></p>
+<h2 id="经过"><a href="#经过" class="headerlink" title="经过"></a>经过</h2><p>一时兴起, 想用 gdb 分析一下尸体.</p>
+<ol>
+<li><code>ulimit -c unlimited</code> 允许当前shell(bash)启动的进程输出core文件;</li>
+<li><code>1.1-ls /tmp</code> 制造一个尸体.</li>
+<li><code>gdb 1.1-ls core.16835</code> 开始观察.</li>
+</ol>
+<blockquote>
+<p>gdb 可能会提示某些依赖缺失, 安装即可.</p>
+</blockquote>
+<p>观察到报错内容如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Program terminated with signal 11, Segmentation fault.</div><div class="line">#0  0x00000034e58a8936 in __readdir (dirp=0x0) at ../sysdeps/unix/readdir.c:45</div><div class="line">45	  __libc_lock_lock (dirp-&gt;lock);</div></pre></td></tr></table></figure></p>
+<p>明显看出是 readdir 时传入了空指针.<br>回顾代码发现, 因为 <code>dp = opendir(argv[1]) == NULL</code> 这句代码先将 opendir 的结果和 NULL 进行了比较, 之后将值付给了 dp.<br>由于 /tmp 文件存在, opendir 返回值不为 NULL, dp 被赋值 false, 隐式转换为指向 0x0 的指针.</p>
+<p>另外 <code>dir = readdir(dp) != NULL</code> 存在同样问题.</p>
+<h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><p>正确代码如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">#include &quot;apue.h&quot;</div><div class="line">#include &lt;string.h&gt;</div><div class="line">#include &lt;dirent.h&gt;</div><div class="line"></div><div class="line">int</div><div class="line">main(int argc, char *argv[])</div><div class="line">&#123;</div><div class="line">  DIR *dp;</div><div class="line">  struct dirent *dir;</div><div class="line"></div><div class="line">  if (argc != 2) &#123;</div><div class="line">    err_quit(&quot;usage: ls directory_name&quot;);</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  if ((dp = opendir(argv[1])) == NULL) &#123;</div><div class="line">    err_quit(&quot;can&apos;t open directory %s&quot;, argv[1]);</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  while ((dir = readdir(dp)) != NULL) &#123;</div><div class="line">    printf(&quot;%s\n&quot;, dir-&gt;d_name);</div><div class="line">  &#125;</div><div class="line">  return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>gdb 是个强大的调试工具, 这里只是简单地看了下引发崩溃的调用, 更多的用法将在以后的学习过程中记述.</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/15/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -437,7 +572,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -445,6 +580,15 @@
 
           
 
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
           
 
         </nav>
@@ -645,7 +789,6 @@
   
 
   
-
 
 </body>
 </html>
