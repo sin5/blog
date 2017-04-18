@@ -4,21 +4,56 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2017-04-17T16:37:23.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://blog.sin5th.com/"/>
+  <updated>2017-04-18T09:26:16.000Z</updated>
+  <id>http://blog.sin5th.com/</id>
   
   <author>
-    <name>武鑫</name>
+    <name>sin5</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>2017-04-18</title>
+    <link href="http://blog.sin5th.com/2017/04/18/2017-04-18/"/>
+    <id>http://blog.sin5th.com/2017/04/18/2017-04-18/</id>
+    <published>2017-04-18T06:53:13.000Z</published>
+    <updated>2017-04-18T09:26:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="阅读-apue"><a href="#阅读-apue" class="headerlink" title="阅读 apue"></a>阅读 apue</h1><h2 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h2><p>一般用整型常量代表错误原因，如 EACCES 为权限不足。<br>strerror(int) 将整型常量转化为错误字符串。<br>perror(const char *) 打印 <code>自定义字串: 错误字符串</code>。</p>
+<h2 id="用户-组"><a href="#用户-组" class="headerlink" title="用户/组"></a>用户/组</h2><p>unix 中用户和组都是用32位整型表示的。<br>相比字符串，整型节省空间、检索高效。<br>getuid，getpid 分别返回<code>用户id</code>和<code>组id</code>。</p>
+<h2 id="信号"><a href="#信号" class="headerlink" title="信号"></a>信号</h2><p>三种处理方式：忽略、系统默认、自定义。<br>signal 函数可以为信号注册处理函数。</p>
+<h2 id="时间"><a href="#时间" class="headerlink" title="时间"></a>时间</h2><p>unix 使用<code>日历时间</code>和<code>进程时间</code>两种时间值。</p>
+<ul>
+<li>日历时间：UTC</li>
+<li>进程时间：CPU<ul>
+<li>时钟时间</li>
+<li>用户cpu时间</li>
+<li>系统cpu时间</li>
+</ul>
+</li>
+</ul>
+<h2 id="系统调用和库函数"><a href="#系统调用和库函数" class="headerlink" title="系统调用和库函数"></a>系统调用和库函数</h2><p>对实现者而言，系统调用与库函数区别很大。<br>对使用者而言，没有太多差别。</p>
+<h1 id="调整博客"><a href="#调整博客" class="headerlink" title="调整博客"></a>调整博客</h1><h2 id="给博客加个favicon"><a href="#给博客加个favicon" class="headerlink" title="给博客加个favicon"></a>给博客加个favicon</h2><p>用在线工具制作一个图标。<br>放到 source/favicon.png。<br>修改 themes/next/_config.yml，设置 <code>favicon: /favicon.png</code>。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;阅读-apue&quot;&gt;&lt;a href=&quot;#阅读-apue&quot; class=&quot;headerlink&quot; title=&quot;阅读 apue&quot;&gt;&lt;/a&gt;阅读 apue&lt;/h1&gt;&lt;h2 id=&quot;错误处理&quot;&gt;&lt;a href=&quot;#错误处理&quot; class=&quot;headerlink&quot; titl
+    
+    </summary>
+    
+    
+      <category term="daily" scheme="http://blog.sin5th.com/tags/daily/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2017-04-17</title>
-    <link href="http://yoursite.com/2017/04/17/2017-04-17/"/>
-    <id>http://yoursite.com/2017/04/17/2017-04-17/</id>
+    <link href="http://blog.sin5th.com/2017/04/17/2017-04-17/"/>
+    <id>http://blog.sin5th.com/2017/04/17/2017-04-17/</id>
     <published>2017-04-17T09:27:21.000Z</published>
     <updated>2017-04-17T16:37:23.000Z</updated>
     
@@ -79,14 +114,14 @@
     </summary>
     
     
-      <category term="daily" scheme="http://yoursite.com/tags/daily/"/>
+      <category term="daily" scheme="http://blog.sin5th.com/tags/daily/"/>
     
   </entry>
   
   <entry>
     <title>gdb 的初次使用</title>
-    <link href="http://yoursite.com/2017/04/16/gdb-%E7%9A%84%E5%88%9D%E6%AC%A1%E4%BD%BF%E7%94%A8/"/>
-    <id>http://yoursite.com/2017/04/16/gdb-的初次使用/</id>
+    <link href="http://blog.sin5th.com/2017/04/16/gdb-%E7%9A%84%E5%88%9D%E6%AC%A1%E4%BD%BF%E7%94%A8/"/>
+    <id>http://blog.sin5th.com/2017/04/16/gdb-的初次使用/</id>
     <published>2017-04-16T13:57:05.000Z</published>
     <updated>2017-04-16T15:08:42.000Z</updated>
     
@@ -114,18 +149,18 @@
     </summary>
     
     
-      <category term="clang" scheme="http://yoursite.com/tags/clang/"/>
+      <category term="clang" scheme="http://blog.sin5th.com/tags/clang/"/>
     
-      <category term="gdb" scheme="http://yoursite.com/tags/gdb/"/>
+      <category term="gdb" scheme="http://blog.sin5th.com/tags/gdb/"/>
     
-      <category term="apue" scheme="http://yoursite.com/tags/apue/"/>
+      <category term="apue" scheme="http://blog.sin5th.com/tags/apue/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2017/04/15/hello-world/"/>
-    <id>http://yoursite.com/2017/04/15/hello-world/</id>
+    <link href="http://blog.sin5th.com/2017/04/15/hello-world/"/>
+    <id>http://blog.sin5th.com/2017/04/15/hello-world/</id>
     <published>2017-04-15T15:27:46.000Z</published>
     <updated>2017-04-15T15:27:46.000Z</updated>
     
