@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="daily," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -90,13 +90,13 @@
 
 
 <meta name="description" content="一些异地灾备的文章: http://tencentresearch.com/Article/lists/id/4115.html http://coolnull.com/4381.html  一些关于 raft 的文章: https://github.com/maemual/raft-zh_cn/blob/master/raft-zh_cn.md  一些关于 mysql 的文章: http://w">
-<meta name="keywords" content="daily">
+<meta name="keywords">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2017-04-17">
 <meta property="og:url" content="http://blog.sin5th.com/2017/04/17/2017-04-17/index.html">
 <meta property="og:site_name" content="Sin5's Blog">
 <meta property="og:description" content="一些异地灾备的文章: http://tencentresearch.com/Article/lists/id/4115.html http://coolnull.com/4381.html  一些关于 raft 的文章: https://github.com/maemual/raft-zh_cn/blob/master/raft-zh_cn.md  一些关于 mysql 的文章: http://w">
-<meta property="og:updated_time" content="2017-04-17T16:37:23.000Z">
+<meta property="og:updated_time" content="2017-04-18T14:04:49.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2017-04-17">
 <meta name="twitter:description" content="一些异地灾备的文章: http://tencentresearch.com/Article/lists/id/4115.html http://coolnull.com/4381.html  一些关于 raft 的文章: https://github.com/maemual/raft-zh_cn/blob/master/raft-zh_cn.md  一些关于 mysql 的文章: http://w">
@@ -112,7 +112,7 @@
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: '0',
+      userId: 'undefined',
       author: '博主'
     },
     algolia: {
@@ -214,6 +214,26 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
@@ -230,16 +250,6 @@
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
           </a>
         </li>
       
@@ -324,12 +334,34 @@
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-04-18T00:37:23+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2017-04-18T22:04:49+08:00">
                 2017-04-18
               </time>
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/日志/" itemprop="url" rel="index">
+                    <span itemprop="name">日志</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -408,6 +440,7 @@
 <li><a href="http://www.jianshu.com/p/d877cbe9f0f0" target="_blank" rel="external">http://www.jianshu.com/p/d877cbe9f0f0</a></li>
 <li><a href="http://www.cnblogs.com/ivictor/p/5735580.html" target="_blank" rel="external">http://www.cnblogs.com/ivictor/p/5735580.html</a></li>
 </ul>
+<a id="more"></a>
 <h2 id="记一次修复-vagrant-与虚拟机的关联"><a href="#记一次修复-vagrant-与虚拟机的关联" class="headerlink" title="记一次修复 vagrant 与虚拟机的关联"></a>记一次修复 vagrant 与虚拟机的关联</h2><p>vagrant 不知为何失去了一个虚拟机的运行状态，执行 <code>vagrant up</code> 生成了新的虚拟机。</p>
 <p>打开 virtual box 发现原来的虚拟机还在运行着，使用以下步骤恢复：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"># 查看虚拟机列表，获取 ID</div><div class="line">$ VBoxManage list vms</div><div class="line">&quot;vm-sin5_test_xxxxxxx_xxxxxxx&quot; &#123;xxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&#125;</div><div class="line"></div><div class="line"># 将 ID 粘贴到文件</div><div class="line">echo -n &quot;xxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&quot; &gt; .vagrant/machines/test/virtualbox/id</div><div class="line">echo -n &quot;15:xxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&quot; &gt; .vagrant/machines/test/virtualbox/action_provision</div><div class="line"></div><div class="line"># 使用用户名/密码（vagrant/vagrant）登陆到虚拟机，修改 .ssh/authorized_keys</div><div class="line">让公钥与私钥（.vagrant/machines/test/virtualbox/private_key 对应</div><div class="line"></div><div class="line"># 恢复使用</div></pre></td></tr></table></figure>
@@ -485,12 +518,6 @@
     </div>
 
     <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/daily/" rel="tag"># daily</a>
-          
-        </div>
       
 
       
@@ -619,12 +646,21 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
           
 
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
           
 
           
@@ -632,7 +668,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

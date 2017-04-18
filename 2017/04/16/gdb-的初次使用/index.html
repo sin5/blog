@@ -96,7 +96,7 @@
 <meta property="og:url" content="http://blog.sin5th.com/2017/04/16/gdb-的初次使用/index.html">
 <meta property="og:site_name" content="Sin5's Blog">
 <meta property="og:description" content="起因阅读 apue, 默写, 运行报段错误, 错误代码如下：1234567891011121314151617181920212223#include &quot;apue.h&quot;#include &amp;lt;string.h&amp;gt;#include &amp;lt;dirent.h&amp;gt;intmain(int argc, char *argv[])&amp;#123;  DIR *dp;  struct dirent *di">
-<meta property="og:updated_time" content="2017-04-16T15:08:42.000Z">
+<meta property="og:updated_time" content="2017-04-18T14:05:01.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="gdb 的初次使用">
 <meta name="twitter:description" content="起因阅读 apue, 默写, 运行报段错误, 错误代码如下：1234567891011121314151617181920212223#include &quot;apue.h&quot;#include &amp;lt;string.h&amp;gt;#include &amp;lt;dirent.h&amp;gt;intmain(int argc, char *argv[])&amp;#123;  DIR *dp;  struct dirent *di">
@@ -112,7 +112,7 @@
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: '0',
+      userId: 'undefined',
       author: '博主'
     },
     algolia: {
@@ -214,6 +214,26 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
@@ -230,16 +250,6 @@
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
           </a>
         </li>
       
@@ -324,8 +334,8 @@
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-04-16T23:08:42+08:00">
-                2017-04-16
+              <time title="更新于" itemprop="dateModified" datetime="2017-04-18T22:05:01+08:00">
+                2017-04-18
               </time>
             
           </span>
@@ -398,6 +408,7 @@
 
       
         <h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>阅读 apue, 默写<1.1-简单ls实现>, 运行报段错误, 错误代码如下：<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"apue.h"</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;dirent.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span></span></div><div class="line"><span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> *argv[])</span></div><div class="line">&#123;</div><div class="line">  DIR *dp;</div><div class="line">  <span class="keyword">struct</span> dirent *dir;</div><div class="line"></div><div class="line">  <span class="keyword">if</span> (argc != <span class="number">2</span>) &#123;</div><div class="line">    err_quit(<span class="string">"usage: ls directory_name"</span>);</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  <span class="keyword">if</span> ((dp = opendir(argv[<span class="number">1</span>]) == <span class="literal">NULL</span>)) &#123;</div><div class="line">    err_quit(<span class="string">"can't open directory %s"</span>, argv[<span class="number">1</span>]);</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  <span class="keyword">while</span> ((dir = readdir(dp) != <span class="literal">NULL</span>)) &#123;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"%s\n"</span>, dir-&gt;d_name);</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></1.1-简单ls实现></p>
+<a id="more"></a>
 <h2 id="经过"><a href="#经过" class="headerlink" title="经过"></a>经过</h2><p>一时兴起, 想用 gdb 分析一下尸体.</p>
 <ol>
 <li><code>ulimit -c unlimited</code> 允许当前shell(bash)启动的进程输出core文件;</li>
@@ -482,10 +493,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/04/15/hello-world/" rel="prev" title="Hello World">
-                Hello World <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -591,12 +598,21 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
           
 
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
           
 
           
@@ -604,7 +620,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
