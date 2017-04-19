@@ -96,7 +96,7 @@
 <meta property="og:url" content="http://blog.sin5th.com/2017/04/19/2017-04-19/index.html">
 <meta property="og:site_name" content="Sin5's Blog">
 <meta property="og:description" content="阅读 APUEPOSIX可移植的操作系统接口定义的接口而非实现，因此不区分 系统调用 和 库函数 文件 I/O进程访问文件时的层次结构   进程表（描述符+文件指针） 文件表（状态标记+当前偏移量+v节点指针） v节点表（v节点信息+i节点信息+文件长度）">
-<meta property="og:updated_time" content="2017-04-19T15:56:03.000Z">
+<meta property="og:updated_time" content="2017-04-19T16:21:05.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2017-04-19">
 <meta name="twitter:description" content="阅读 APUEPOSIX可移植的操作系统接口定义的接口而非实现，因此不区分 系统调用 和 库函数 文件 I/O进程访问文件时的层次结构   进程表（描述符+文件指针） 文件表（状态标记+当前偏移量+v节点指针） v节点表（v节点信息+i节点信息+文件长度）">
@@ -334,8 +334,8 @@
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-04-19T23:56:03+08:00">
-                2017-04-19
+              <time title="更新于" itemprop="dateModified" datetime="2017-04-20T00:21:05+08:00">
+                2017-04-20
               </time>
             
           </span>
@@ -394,7 +394,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  784
+                  846
                 </span>
               
 
@@ -483,10 +483,7 @@
 </ul>
 </li>
 <li>保存的设置用户ID和组ID<ul>
-<li>执行程序时，对<strong>有效用户ID和组ID</strong>保存的副本<blockquote>
-<p>设置用户ID位，或组ID位。一般用来对执行二进制的进程进行提权，比如 passwd</p>
-</blockquote>
-</li>
+<li>执行程序时，对<strong>有效用户ID和组ID</strong>保存的副本</li>
 </ul>
 </li>
 </ul>
@@ -544,6 +541,13 @@
 <li>应用其他用户的规则</li>
 </ol>
 <p><code>access</code> 按实际用户ID和zuID进行访问权限检测</p>
+<p>设置用户ID位，或组ID位。一般用来对执行二进制的进程进行提权，比如 passwd</p>
+<p>设置粘住位的目录，对该目录有写权限的用户在满足下列条件之一的情况下，才能删除或更名该目录下的文件：</p>
+<ul>
+<li>拥有此文件</li>
+<li>拥有此目录</li>
+<li>是超级用户</li>
+</ul>
 
       
     </div>
