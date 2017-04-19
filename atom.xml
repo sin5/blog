@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-04-18T15:38:15.000Z</updated>
+  <updated>2017-04-19T15:56:03.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -14,6 +14,149 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2017-04-19</title>
+    <link href="http://blog.sin5th.com/2017/04/19/2017-04-19/"/>
+    <id>http://blog.sin5th.com/2017/04/19/2017-04-19/</id>
+    <published>2017-04-19T03:37:25.000Z</published>
+    <updated>2017-04-19T15:56:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="阅读-APUE"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="POSIX"><a href="#POSIX" class="headerlink" title="POSIX"></a>POSIX</h2><p>可移植的操作系统接口<br>定义的接口而非实现，因此不区分 <em>系统调用</em> 和 <em>库函数</em></p>
+<h2 id="文件-I-O"><a href="#文件-I-O" class="headerlink" title="文件 I/O"></a>文件 I/O</h2><p>进程访问文件时的层次结构</p>
+<blockquote>
+<ul>
+<li>进程表（描述符+文件指针）</li>
+<li>文件表（状态标记+当前偏移量+v节点指针）</li>
+<li>v节点表（v节点信息+i节点信息+文件长度）</li>
+</ul>
+</blockquote>
+<a id="more"></a>
+<p>fcntl</p>
+<blockquote>
+<p>改变已打开文件的性质<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fcntl.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fcntl</span><span class="params">(<span class="keyword">int</span> filedes, <span class="keyword">int</span> cmd, ... <span class="comment">/* int arg */</span> )</span></span>;</div></pre></td></tr></table></figure></p>
+<p>它有5种功能：</p>
+<ol>
+<li>复制一个现有的描述符（cmd = F_DUPFD）</li>
+<li>获得/设置文件描述符标记（cmd = F_GETFD/F_SETFD）</li>
+<li>获得/设置文件状态标记（cmd = F_GETFL/F_SETFL）</li>
+<li>获得/设置异步I/O所有权（cmd = F_GETOWN/F_SETOWN）</li>
+<li>获得/设置记录锁（cmd = F_GETLK/F_SETLK/F_SETLKW）</li>
+</ol>
+</blockquote>
+<p>ioctl</p>
+<blockquote>
+<p>I/O 操作的杂物箱<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;unistd.h&gt;    /* System V */</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/ioctl.h&gt; /* BSD and Linux */</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stropts.h&gt;   /* XSI STREAMS */</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">ioctl</span><span class="params">(<span class="keyword">int</span> filedes, <span class="keyword">int</span> request, ...)</span></span>;</div></pre></td></tr></table></figure></p>
+</blockquote>
+<p>上述是 ioctl 函数本身所要求的头文件。通常，还要求另外的设备专用头文件，这些头文件中可能会定义一组专用的命令。</p>
+<h2 id="文件和目录"><a href="#文件和目录" class="headerlink" title="文件和目录"></a>文件和目录</h2><h3 id="stat、fstat、lstat"><a href="#stat、fstat、lstat" class="headerlink" title="stat、fstat、lstat"></a>stat、fstat、lstat</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/stat.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">stat</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> pathname, <span class="keyword">struct</span> stat *<span class="keyword">restrict</span> buf)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fstat</span><span class="params">(<span class="keyword">int</span> filedes, <span class="keyword">struct</span> stat *buf)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">lstat</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> pathname, <span class="keyword">struct</span> stat *<span class="keyword">restrict</span> buf)</span></span>;</div></pre></td></tr></table></figure>
+<p>stat 函数返回与明明文件有关的信息结构。<br>fstat 函数获取已在描述符 filedes 上打开文件的有关信息。<br>lstat 函数类似于 stat，但是当命名的文件是一个符号链接时，lstat 返回符号链接的有关信息。</p>
+<h3 id="文件类型"><a href="#文件类型" class="headerlink" title="文件类型"></a>文件类型</h3><p>包含在 stat 结构的 st_mode 成员中，使用以下宏确定文件类型</p>
+<ol>
+<li>普通文件 S_ISREG</li>
+<li>目录文件 S_ISDIR</li>
+<li>块特殊文件 S_ISCHR</li>
+<li>字符特殊文件 S_ISBLK</li>
+<li>FIFO S_ISFIFO</li>
+<li>套接字 S_ISSOCK</li>
+<li>符号链接 S_ISLNK</li>
+</ol>
+<h3 id="确定-IPC-对象的类型的宏"><a href="#确定-IPC-对象的类型的宏" class="headerlink" title="确定 IPC 对象的类型的宏"></a>确定 IPC 对象的类型的宏</h3><ol>
+<li>消息队列 S_TYPEISMQ</li>
+<li>信号量 S_TYPEISSEM</li>
+<li>共享存储对象 S_TYPEISSHM</li>
+</ol>
+<h3 id="用户ID和组ID"><a href="#用户ID和组ID" class="headerlink" title="用户ID和组ID"></a>用户ID和组ID</h3><ul>
+<li>实际用户ID和组ID<ul>
+<li>标识我们究竟是谁</li>
+</ul>
+</li>
+<li>有效用户ID和组ID以及附加组ID<ul>
+<li>决定我们的访问权限</li>
+</ul>
+</li>
+<li>保存的设置用户ID和组ID<ul>
+<li>执行程序时，对<strong>有效用户ID和组ID</strong>保存的副本<blockquote>
+<p>设置用户ID位，或组ID位。一般用来对执行二进制的进程进行提权，比如 passwd</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="文件访问权限"><a href="#文件访问权限" class="headerlink" title="文件访问权限"></a>文件访问权限</h3><table>
+<thead>
+<tr>
+<th>st_mode 屏蔽</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S_IRUSR</td>
+<td>用户-读</td>
+</tr>
+<tr>
+<td>S_IWUSR</td>
+<td>用户-写</td>
+</tr>
+<tr>
+<td>S_IXUSR</td>
+<td>用户-执行</td>
+</tr>
+<tr>
+<td>S_IRGRP</td>
+<td>组-读</td>
+</tr>
+<tr>
+<td>S_IWGRP</td>
+<td>组-写</td>
+</tr>
+<tr>
+<td>S_IXGRP</td>
+<td>组-执行</td>
+</tr>
+<tr>
+<td>S_IROTH</td>
+<td>其他-读</td>
+</tr>
+<tr>
+<td>S_IWOTH</td>
+<td>其他-写</td>
+</tr>
+<tr>
+<td>S_IXOTH</td>
+<td>其他-执行</td>
+</tr>
+</tbody>
+</table>
+<p>进程每次打开、创建或删除一个文件时，内核就进行文件访问权限测试。所有者ID是文件的性质，有效ID和附加组ID是进程的性质。内核的测试是：</p>
+<ol>
+<li>若进程的有效用户ID是0，则允许访问</li>
+<li>若进程的有效用户ID等于文件的所有者ID，则应用相应规则</li>
+<li>若进程的有效小组ID或附加组ID之一等于文件的组ID，则应用相应规则</li>
+<li>应用其他用户的规则</li>
+</ol>
+<p><code>access</code> 按实际用户ID和zuID进行访问权限检测</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;阅读-APUE&quot;&gt;&lt;a href=&quot;#阅读-APUE&quot; class=&quot;headerlink&quot; title=&quot;阅读 APUE&quot;&gt;&lt;/a&gt;阅读 APUE&lt;/h1&gt;&lt;h2 id=&quot;POSIX&quot;&gt;&lt;a href=&quot;#POSIX&quot; class=&quot;headerlink&quot; title=&quot;POSIX&quot;&gt;&lt;/a&gt;POSIX&lt;/h2&gt;&lt;p&gt;可移植的操作系统接口&lt;br&gt;定义的接口而非实现，因此不区分 &lt;em&gt;系统调用&lt;/em&gt; 和 &lt;em&gt;库函数&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;文件-I-O&quot;&gt;&lt;a href=&quot;#文件-I-O&quot; class=&quot;headerlink&quot; title=&quot;文件 I/O&quot;&gt;&lt;/a&gt;文件 I/O&lt;/h2&gt;&lt;p&gt;进程访问文件时的层次结构&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;进程表（描述符+文件指针）&lt;/li&gt;
+&lt;li&gt;文件表（状态标记+当前偏移量+v节点指针）&lt;/li&gt;
+&lt;li&gt;v节点表（v节点信息+i节点信息+文件长度）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>2017-04-18</title>
