@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-04-19T16:21:05.000Z</updated>
+  <updated>2017-04-21T05:59:38.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -16,25 +16,220 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>2017-04-20</title>
+    <link href="http://blog.sin5th.com/2017/04/20/2017-04-20/"/>
+    <id>http://blog.sin5th.com/2017/04/20/2017-04-20/</id>
+    <published>2017-04-20T01:56:25.000Z</published>
+    <updated>2017-04-21T05:59:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="阅读-APUE"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="标准I-O库"><a href="#标准I-O库" class="headerlink" title="标准I/O库"></a>标准I/O库</h2><h3 id="流和FILE对象"><a href="#流和FILE对象" class="headerlink" title="流和FILE对象"></a>流和FILE对象</h3><h4 id="流的定向"><a href="#流的定向" class="headerlink" title="流的定向"></a>流的定向</h4><p>流可用于单字节或多字节字符集<br>未定项的流，一旦使用多字节就定向为多字节流，一旦使用单字节就定向为单字节流<br><code>freopen</code>和<code>fwide</code>可以改变留的定向<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;wchar.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fwide</span><span class="params">(FILE *fp, <span class="keyword">int</span> mode)</span></span>;</div></pre></td></tr></table></figure></p>
+<p>mode &lt; 0，设置为单字节——字节定向<br>mode &gt; 0，设置为多字节——宽定向<br>mode = 0，查询当前定向  </p>
+<blockquote>
+<p>注： fwide 只能用来设置未定向的流  </p>
+</blockquote>
+<a id="more"></a>
+<h3 id="标准输入、标准输出和标准出错"><a href="#标准输入、标准输出和标准出错" class="headerlink" title="标准输入、标准输出和标准出错"></a>标准输入、标准输出和标准出错</h3><p>stdin，stdout，stderr 定义在 <stdio.h></stdio.h></p>
+<h3 id="缓冲"><a href="#缓冲" class="headerlink" title="缓冲"></a>缓冲</h3><p>标准I/O库提供缓冲的目的是尽可能减少使用read和write调用的次数。</p>
+<h4 id="三种类型"><a href="#三种类型" class="headerlink" title="三种类型"></a>三种类型</h4><ol>
+<li>全缓冲</li>
+<li>行缓冲</li>
+<li>不带缓冲<br>ISO C 要求下列缓冲特征：</li>
+</ol>
+<ul>
+<li>当且仅当标准输入和标准输出不涉及交互式设备时，才是全缓冲的</li>
+<li>标准出错绝不会是全缓冲的</li>
+</ul>
+<h4 id="改变缓冲类型"><a href="#改变缓冲类型" class="headerlink" title="改变缓冲类型"></a>改变缓冲类型</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">setbuf</span><span class="params">(FILE *<span class="keyword">restrict</span> fp, <span class="keyword">char</span> *<span class="keyword">restrict</span> buf)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">setvbuf</span><span class="params">(FILE *<span class="keyword">restrict</span> fp, <span class="keyword">char</span> *<span class="keyword">restrict</span> buf, <span class="keyword">int</span> mode, <span class="keyword">size_t</span> size)</span></span>;</div></pre></td></tr></table></figure>
+<p>setvbuf 可以精确控制缓冲类型：  </p>
+<ul>
+<li>_IOFBF 全缓冲  </li>
+<li>_IOLBF 行缓冲  </li>
+<li>_IONBF 不带缓冲  </li>
+</ul>
+<p>强制刷新流<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fflush</span><span class="params">(FILE *fp)</span></span>;</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>如果 fp 是 NULL，将导致所有输出流被冲洗</p>
+</blockquote>
+<h3 id="打开流"><a href="#打开流" class="headerlink" title="打开流"></a>打开流</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function">FILE *<span class="title">fopen</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> pathname, <span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> type)</span></span>;</div><div class="line"><span class="function">FILE *<span class="title">freopen</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> pathname, <span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> type, FILE *<span class="keyword">restrict</span> fp)</span></span>;</div><div class="line"><span class="function">FILE *<span class="title">fdoen</span><span class="params">(<span class="keyword">int</span> filedes, <span class="keyword">const</span> <span class="keyword">char</span> *type)</span></span>;</div></pre></td></tr></table></figure>
+<ol>
+<li>fopen 打开指定文件</li>
+<li>freopen 打开指定文件，并关联到某个流上</li>
+<li>fdopen 将一个标准I/O流与一个文件描述符相结合</li>
+</ol>
+<blockquote>
+<p>fdopen 函数常用语由创建管道和网络通信通道函数返回的描述符</p>
+</blockquote>
+<p>当以读和写类型打开一文件时，有下列限制：</p>
+<ul>
+<li>如果没有fflush、fseek、fsetpos 或 rewind，则输出之后不能直接输入</li>
+<li>如果没有fseek、fsetpos、rewind，或输入未到文件尾，则输入操作之后不能直接输出</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">限制</th>
+<th style="text-align:center">r</th>
+<th style="text-align:center">w</th>
+<th style="text-align:center">a</th>
+<th style="text-align:center">r+</th>
+<th style="text-align:center">w+</th>
+<th style="text-align:center">a+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">文件必须已存在</td>
+<td style="text-align:center">*</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">*</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">擦除文件以前的内容</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">*</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">*</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">流可以读</td>
+<td style="text-align:center">*</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">*</td>
+<td style="text-align:center">*</td>
+<td style="text-align:center">*</td>
+</tr>
+<tr>
+<td style="text-align:center">流可以写</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">*</td>
+<td style="text-align:center">*</td>
+<td style="text-align:center">*</td>
+<td style="text-align:center">*</td>
+<td style="text-align:center">*</td>
+</tr>
+<tr>
+<td style="text-align:center">流只可在尾端处写</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">*</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">*</td>
+</tr>
+</tbody>
+</table>
+<h3 id="读和写流"><a href="#读和写流" class="headerlink" title="读和写流"></a>读和写流</h3><ol>
+<li>每次一个字符的I/O</li>
+<li>每次一行的I/O</li>
+<li>直接I/O</li>
+</ol>
+<h4 id="一次一个字符"><a href="#一次一个字符" class="headerlink" title="一次一个字符"></a>一次一个字符</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">getc</span><span class="params">(FILE *fp)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fgetc</span><span class="params">(FILE *fp)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">getchar</span><span class="params">(<span class="keyword">void</span>)</span></span>;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>getchar 等价与 getc(stdin);<br>getc 可被实现为宏，而 fgetc 则不能。这意味着：  </p>
+<ol>
+<li>getc 的参数不应当是具有副作用的表达式</li>
+<li>fgetc 一定是函数，可以得到其地址</li>
+<li>fgetc 调用时间比 getc 长</li>
+</ol>
+</blockquote>
+<p>区分出错还是文件结尾<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">ferror</span><span class="params">(FILE *fp)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">feof</span><span class="params">(FILE *fp)</span></span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">clearerr</span><span class="params">(FILE *fp)</span></span>;</div></pre></td></tr></table></figure></p>
+<p>将读出的字符压送回流中<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">ungetc</span><span class="params">(<span class="keyword">int</span> c, FILE *fp)</span></span>;</div></pre></td></tr></table></figure></p>
+<p>有以下几个输出函数<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">putc</span><span class="params">(<span class="keyword">int</span> c, FILE *fp)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fputc</span><span class="params">(<span class="keyword">int</span> c,FILE *fp)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">putchar</span><span class="params">(<span class="keyword">int</span> c)</span></span>;</div></pre></td></tr></table></figure></p>
+<h4 id="一次一行"><a href="#一次一行" class="headerlink" title="一次一行"></a>一次一行</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">char</span> *<span class="title">fgets</span><span class="params">(<span class="keyword">char</span> *<span class="keyword">restrict</span> buf, <span class="keyword">int</span> n, FILE *<span class="keyword">restrict</span> fp)</span></span>;</div><div class="line"><span class="function"><span class="keyword">char</span> *<span class="title">gets</span><span class="params">(<span class="keyword">char</span> *buf)</span></span>;</div></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fputs</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> str, FILE *<span class="keyword">restrict</span> fp)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">puts</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *str)</span></span>;</div></pre></td></tr></table></figure>
+<h3 id="二进制I-O"><a href="#二进制I-O" class="headerlink" title="二进制I/O"></a>二进制I/O</h3><p>解决读、写整个结构的问题</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="keyword">size_t</span> fread(<span class="keyword">void</span> *<span class="keyword">restrict</span> ptr, <span class="keyword">size_t</span> size, <span class="keyword">size_t</span> nobj, FILE *<span class="keyword">restrict</span> fp);</div><div class="line"></div><div class="line"><span class="keyword">size_t</span> fwrite(<span class="keyword">const</span> <span class="keyword">void</span> *<span class="keyword">restrict</span> ptr, <span class="keyword">size_t</span> size, <span class="keyword">size_t</span> nobj, FILE *<span class="keyword">restrict</span> fp);</div></pre></td></tr></table></figure>
+<p>二进制I/O在单独机器上运行没什么问题，但在多台机器协作的情况下，可能因为编译器、系统有异，整型、浮点型格式不同等原因遇到问题。<br>面对这种问题的实际解决办法是使用较高级的协议。</p>
+<h3 id="定位流"><a href="#定位流" class="headerlink" title="定位流"></a>定位流</h3><p>三种方法定位标准I/O流  </p>
+<ol>
+<li>ftell 和 fseek</li>
+<li>ftello 和 fseeko</li>
+<li>fgetpos 和 fsetpos<blockquote>
+<p>注：需要移植到非unix系统上运行的应用程序应当使用 fgetpos 和 fsetpos</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">long</span> <span class="title">ftell</span><span class="params">(FILE *fp)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fseek</span><span class="params">(FILE *fp, <span class="keyword">long</span> offset, <span class="keyword">int</span> whence)</span></span>;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">rewind</span><span class="params">(FILE *fp)</span></span>;</div></pre></td></tr></table></figure>
+</blockquote>
+</li>
+</ol>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="keyword">off_t</span> ftello(FILE *fp);</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fseeko</span><span class="params">(FILE *fp, <span class="keyword">off_t</span> offset, <span class="keyword">int</span> whence)</span></span>;</div></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fgetpos</span><span class="params">(FILE *<span class="keyword">restrict</span> fp, <span class="keyword">fpos_t</span> *<span class="keyword">restrict</span> pos)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fsetpos</span><span class="params">(FILE *fp, <span class="keyword">const</span> <span class="keyword">fpos_t</span> *pos)</span></span>;</div></pre></td></tr></table></figure>
+<h3 id="格式化I-O"><a href="#格式化I-O" class="headerlink" title="格式化I/O"></a>格式化I/O</h3><p>格式化输出<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">printf</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> format, ...)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fprintf</span><span class="params">(FILE *<span class="keyword">restrict</span> fp, <span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> format, ...)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">sprintf</span><span class="params">(<span class="keyword">char</span> *<span class="keyword">restrict</span> buf, <span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> format, ...)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">snprintf</span><span class="params">(<span class="keyword">char</span> *<span class="keyword">restrict</span> buf, <span class="keyword">size_t</span> n, constr <span class="keyword">char</span> *<span class="keyword">restrict</span> format, ...)</span></span>;</div></pre></td></tr></table></figure></p>
+<p>%[flags][fldwidth][precision][lenmodifier]convtype</p>
+<p>flags 的可用值</p>
+<table>
+<thead>
+<tr>
+<th>标志</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-</td>
+<td>在字段内左对齐输出</td>
+</tr>
+<tr>
+<td>+</td>
+<td>总是显示带符号转换的符号</td>
+</tr>
+<tr>
+<td>（空格）</td>
+<td>如果第一个字符不是符号，则在前面加上一个空格</td>
+</tr>
+<tr>
+<td>#</td>
+<td>指定另一种转换形式（例如，对于十六进制格式，加0x前缀）</td>
+</tr>
+<tr>
+<td>0</td>
+<td>添加前导0（而非空格）进行填充</td>
+</tr>
+</tbody>
+</table>
+<p>printf 族的变体<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdarg.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">vprintf</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> format, va_list arg)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">vfprintf</span><span class="params">(FILE *<span class="keyword">restrict</span> fp, <span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> format, va_list arg)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">vsprintf</span><span class="params">(<span class="keyword">char</span> *<span class="keyword">restrict</span> buf, <span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> format, va_list arg)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">vsnprintf</span><span class="params">(<span class="keyword">char</span> *<span class="keyword">restrict</span> buf, <span class="keyword">size_t</span> n, <span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> format, va_list arg)</span></span>;</div></pre></td></tr></table></figure></p>
+<p>格式化输入<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">scanf</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> format, ...)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fscanf</span><span class="params">(FILE *<span class="keyword">restrict</span> fp, <span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> format, ...)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">sscanf</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> buf, <span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> format, ...)</span></span>;</div></pre></td></tr></table></figure></p>
+<p>%[*][fldwidth][lenmodifier]convtype</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdarg.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">vscanf</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> format, va_list arg)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">vfscanf</span><span class="params">(FILE *<span class="keyword">restrict</span> fp, <span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> format, va_list arg)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">vsscanf</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> buf, <span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> format, va_list arg)</span></span>;</div></pre></td></tr></table></figure>
+<h3 id="临时文件"><a href="#临时文件" class="headerlink" title="临时文件"></a>临时文件</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">char</span> *<span class="title">tmpnam</span><span class="params">(<span class="keyword">char</span> *ptr)</span></span>;</div><div class="line"><span class="function">FILE *<span class="title">tmpfile</span><span class="params">(<span class="keyword">void</span>)</span></span>;</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;阅读-APUE&quot;&gt;&lt;a href=&quot;#阅读-APUE&quot; class=&quot;headerlink&quot; title=&quot;阅读 APUE&quot;&gt;&lt;/a&gt;阅读 APUE&lt;/h1&gt;&lt;h2 id=&quot;标准I-O库&quot;&gt;&lt;a href=&quot;#标准I-O库&quot; class=&quot;headerlink&quot; title=&quot;标准I/O库&quot;&gt;&lt;/a&gt;标准I/O库&lt;/h2&gt;&lt;h3 id=&quot;流和FILE对象&quot;&gt;&lt;a href=&quot;#流和FILE对象&quot; class=&quot;headerlink&quot; title=&quot;流和FILE对象&quot;&gt;&lt;/a&gt;流和FILE对象&lt;/h3&gt;&lt;h4 id=&quot;流的定向&quot;&gt;&lt;a href=&quot;#流的定向&quot; class=&quot;headerlink&quot; title=&quot;流的定向&quot;&gt;&lt;/a&gt;流的定向&lt;/h4&gt;&lt;p&gt;流可用于单字节或多字节字符集&lt;br&gt;未定项的流，一旦使用多字节就定向为多字节流，一旦使用单字节就定向为单字节流&lt;br&gt;&lt;code&gt;freopen&lt;/code&gt;和&lt;code&gt;fwide&lt;/code&gt;可以改变留的定向&lt;br&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;wchar.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;fwide&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(FILE *fp, &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; mode)&lt;/span&gt;&lt;/span&gt;;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;mode &amp;lt; 0，设置为单字节——字节定向&lt;br&gt;mode &amp;gt; 0，设置为多字节——宽定向&lt;br&gt;mode = 0，查询当前定向  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注： fwide 只能用来设置未定向的流  &lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>2017-04-19</title>
     <link href="http://blog.sin5th.com/2017/04/19/2017-04-19/"/>
     <id>http://blog.sin5th.com/2017/04/19/2017-04-19/</id>
     <published>2017-04-19T03:37:25.000Z</published>
-    <updated>2017-04-19T16:21:05.000Z</updated>
+    <updated>2017-04-20T13:29:23.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="阅读-APUE"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="POSIX"><a href="#POSIX" class="headerlink" title="POSIX"></a>POSIX</h2><p>可移植的操作系统接口<br>定义的接口而非实现，因此不区分 <em>系统调用</em> 和 <em>库函数</em></p>
-<h2 id="文件-I-O"><a href="#文件-I-O" class="headerlink" title="文件 I/O"></a>文件 I/O</h2><p>进程访问文件时的层次结构</p>
-<blockquote>
-<ul>
+<h2 id="文件-I-O"><a href="#文件-I-O" class="headerlink" title="文件 I/O"></a>文件 I/O</h2><h3 id="进程访问文件时的层次结构"><a href="#进程访问文件时的层次结构" class="headerlink" title="进程访问文件时的层次结构"></a>进程访问文件时的层次结构</h3><ul>
 <li>进程表（描述符+文件指针）</li>
 <li>文件表（状态标记+当前偏移量+v节点指针）</li>
 <li>v节点表（v节点信息+i节点信息+文件长度）</li>
 </ul>
-</blockquote>
 <a id="more"></a>
-<p>fcntl</p>
-<blockquote>
+<h3 id="fcntl"><a href="#fcntl" class="headerlink" title="fcntl"></a>fcntl</h3><blockquote>
 <p>改变已打开文件的性质<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;fcntl.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fcntl</span><span class="params">(<span class="keyword">int</span> filedes, <span class="keyword">int</span> cmd, ... <span class="comment">/* int arg */</span> )</span></span>;</div></pre></td></tr></table></figure></p>
+</blockquote>
 <p>它有5种功能：</p>
 <ol>
 <li>复制一个现有的描述符（cmd = F_DUPFD）</li>
@@ -43,9 +238,7 @@
 <li>获得/设置异步I/O所有权（cmd = F_GETOWN/F_SETOWN）</li>
 <li>获得/设置记录锁（cmd = F_GETLK/F_SETLK/F_SETLKW）</li>
 </ol>
-</blockquote>
-<p>ioctl</p>
-<blockquote>
+<h3 id="ioctl"><a href="#ioctl" class="headerlink" title="ioctl"></a>ioctl</h3><blockquote>
 <p>I/O 操作的杂物箱<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;unistd.h&gt;    /* System V */</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/ioctl.h&gt; /* BSD and Linux */</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stropts.h&gt;   /* XSI STREAMS */</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">ioctl</span><span class="params">(<span class="keyword">int</span> filedes, <span class="keyword">int</span> request, ...)</span></span>;</div></pre></td></tr></table></figure></p>
 </blockquote>
 <p>上述是 ioctl 函数本身所要求的头文件。通常，还要求另外的设备专用头文件，这些头文件中可能会定义一组专用的命令。</p>
@@ -134,26 +327,26 @@
 <li>应用其他用户的规则</li>
 </ol>
 <p><code>access</code> 按实际用户ID和zuID进行访问权限检测</p>
-<p>设置用户ID位，或组ID位。一般用来对执行二进制的进程进行提权，比如 passwd</p>
-<p>设置粘住位的目录，对该目录有写权限的用户在满足下列条件之一的情况下，才能删除或更名该目录下的文件：</p>
+<p>设置<strong>用户ID位</strong>，或<strong>组ID位</strong>。一般用来对执行二进制的进程进行提权，比如 passwd</p>
+<p>设置<strong>粘住位</strong>的目录，对该目录有写权限的用户在满足下列条件之一的情况下，才能删除或更名该目录下的文件：</p>
 <ul>
 <li>拥有此文件</li>
 <li>拥有此目录</li>
 <li>是超级用户</li>
 </ul>
+<h3 id="link、unlink、remove-和-rename"><a href="#link、unlink、remove-和-rename" class="headerlink" title="link、unlink、remove 和 rename"></a>link、unlink、remove 和 rename</h3><p>unlink 常被用来确保即使程序崩溃，它所创建的临时文件也不会留下来</p>
+<h3 id="symlink-和-readlink"><a href="#symlink-和-readlink" class="headerlink" title="symlink 和 readlink"></a>symlink 和 readlink</h3><p>symlink 创建一个符号链接<br>readlink 打开链接本身（相反，open 跟随符号链接）  </p>
+<h3 id="utime"><a href="#utime" class="headerlink" title="utime"></a>utime</h3><p>utime 修改文件的<strong>访问</strong>和<strong>修改</strong>时间</p>
 ]]></content>
     
     <summary type="html">
     
       &lt;h1 id=&quot;阅读-APUE&quot;&gt;&lt;a href=&quot;#阅读-APUE&quot; class=&quot;headerlink&quot; title=&quot;阅读 APUE&quot;&gt;&lt;/a&gt;阅读 APUE&lt;/h1&gt;&lt;h2 id=&quot;POSIX&quot;&gt;&lt;a href=&quot;#POSIX&quot; class=&quot;headerlink&quot; title=&quot;POSIX&quot;&gt;&lt;/a&gt;POSIX&lt;/h2&gt;&lt;p&gt;可移植的操作系统接口&lt;br&gt;定义的接口而非实现，因此不区分 &lt;em&gt;系统调用&lt;/em&gt; 和 &lt;em&gt;库函数&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&quot;文件-I-O&quot;&gt;&lt;a href=&quot;#文件-I-O&quot; class=&quot;headerlink&quot; title=&quot;文件 I/O&quot;&gt;&lt;/a&gt;文件 I/O&lt;/h2&gt;&lt;p&gt;进程访问文件时的层次结构&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
+&lt;h2 id=&quot;文件-I-O&quot;&gt;&lt;a href=&quot;#文件-I-O&quot; class=&quot;headerlink&quot; title=&quot;文件 I/O&quot;&gt;&lt;/a&gt;文件 I/O&lt;/h2&gt;&lt;h3 id=&quot;进程访问文件时的层次结构&quot;&gt;&lt;a href=&quot;#进程访问文件时的层次结构&quot; class=&quot;headerlink&quot; title=&quot;进程访问文件时的层次结构&quot;&gt;&lt;/a&gt;进程访问文件时的层次结构&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;进程表（描述符+文件指针）&lt;/li&gt;
 &lt;li&gt;文件表（状态标记+当前偏移量+v节点指针）&lt;/li&gt;
 &lt;li&gt;v节点表（v节点信息+i节点信息+文件长度）&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/blockquote&gt;
     
     </summary>
     
