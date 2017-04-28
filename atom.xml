@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-04-24T09:23:03.000Z</updated>
+  <updated>2017-04-28T10:05:30.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -14,6 +14,87 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2017-04-27</title>
+    <link href="http://blog.sin5th.com/2017/04/27/2017-04-27/"/>
+    <id>http://blog.sin5th.com/2017/04/27/2017-04-27/</id>
+    <published>2017-04-27T09:47:38.000Z</published>
+    <updated>2017-04-28T10:05:30.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="阅读-APUE"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><blockquote>
+<p>信号看的有点晕，先概览一遍，第二圈再细读</p>
+</blockquote>
+<h2 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h2><p>线程有很多好处：</p>
+<ul>
+<li>简化异步事件的处理代码。同步编程比异步编程要简单</li>
+<li>进程间共享内存和文件描述符比较麻烦</li>
+<li>分解任务提高吞吐量</li>
+<li>改善交互程序的响应时间</li>
+</ul>
+<a id="more"></a>
+<h3 id="线程标识"><a href="#线程标识" class="headerlink" title="线程标识"></a>线程标识</h3><p>线程ID只在进程环境中有效，用 pthread_t 表示<br>因为在不同的操作系统中 pthread_t 的实现不同，因此需要专门的比较函数<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;pthread.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">pthread_equal</span><span class="params">(<span class="keyword">pthread_t</span> tid1, <span class="keyword">pthread_t</span> tid2)</span></span>;</div></pre></td></tr></table></figure></p>
+<p>获取自身的线程ID<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;pthread.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="keyword">pthread_t</span> pthread_self(<span class="keyword">void</span>);</div></pre></td></tr></table></figure></p>
+<h3 id="创建线程"><a href="#创建线程" class="headerlink" title="创建线程"></a>创建线程</h3><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">#include &lt;pthread.h&gt;</div><div class="line"></div><div class="line">int pthread_create(</div><div class="line">  pthread_t *restrict tidp,</div><div class="line">  const pthread_attr_t *restrict attr,</div><div class="line">  void *(*start_rtn),</div><div class="line">  void *restrict arg</div><div class="line">);</div></pre></td></tr></table></figure>
+<h3 id="终止线程"><a href="#终止线程" class="headerlink" title="终止线程"></a>终止线程</h3><ol>
+<li>从启动例程中返回，返回值是线程的退出码</li>
+<li>被同一进程中的其他线程取消</li>
+<li>线程调用 pthread_exit<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;pthread.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">pthread_exit</span><span class="params">(<span class="keyword">void</span> *rval_ptr)</span></span>;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>进程中的其他线程可以使用 pthread_join 函数访问到 rval_ptr 这个指针<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;pthread.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">pthread_join</span><span class="params">(<span class="keyword">pthread_t</span> thread, <span class="keyword">void</span> **rval_ptr)</span></span>;</div></pre></td></tr></table></figure></p>
+<p>进程中的其他线程可以使用 pthread_cancel 函数取消同一进程中的其他线程<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;pthread.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">pthread_cancel</span><span class="params">(<span class="keyword">pthread_t</span> tid)</span></span>;</div></pre></td></tr></table></figure></p>
+<h3 id="线程同步"><a href="#线程同步" class="headerlink" title="线程同步"></a>线程同步</h3><h4 id="互斥量"><a href="#互斥量" class="headerlink" title="互斥量"></a>互斥量</h4><p>互斥量用 pthread_mutex_t 表示，使用之前要调用 pthread_mutex_init 函数进行初始化，也可以赋值为 PTHREAD_MUTEX_INITIALIZER。使用之后要调用 pthread_mutex_destroy 函数进行摧毁，即使是动态申请的也要这样做。<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;pthread.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">pthread_mutex_init</span> <span class="params">(</span></span></div><div class="line">  <span class="keyword">pthread_mutex_t</span> *<span class="keyword">restrict</span> mutex,</div><div class="line">  <span class="keyword">const</span> <span class="keyword">pthread_mutexattr_t</span> *<span class="keyword">restrict</span> attr</div><div class="line">);</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">pthread_mutex_destroy</span> <span class="params">(</span></span></div><div class="line">  <span class="keyword">pthread_mutex_t</span> *mutex</div><div class="line">);</div></pre></td></tr></table></figure></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;pthread.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">pthread_mutex_lock</span><span class="params">(<span class="keyword">pthread_mutex_t</span> *mutex)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">pthread_mutex_trylock</span><span class="params">(<span class="keyword">pthread_mutex_t</span> *mutex)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">pthread_mutex_unlock</span><span class="params">(<span class="keyword">pthread_mutex_t</span> *mutex)</span></span>;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>如果线程对同一互斥量加锁两次，它自身就会陷入死锁状态，使用互斥量时，还有其他更不明显的方式也能产生死锁。</p>
+</blockquote>
+<h4 id="读写锁"><a href="#读写锁" class="headerlink" title="读写锁"></a>读写锁</h4><p>读写锁也叫共享-独占锁，当读模式锁定时，它是共享模式锁住的，当写模式锁定时，它是独占模式锁住的。<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;pthread.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">pthread_rwlock_init</span> <span class="params">(</span></span></div><div class="line">  <span class="keyword">pthread_rwlock_t</span> *<span class="keyword">restrict</span> rwlock,</div><div class="line">  <span class="keyword">const</span> pthread_rwlockattr *<span class="keyword">restrict</span> attr</div><div class="line">);</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">pthread_rwlock_destroy</span> <span class="params">(</span></span></div><div class="line">  <span class="keyword">pthread_rwlock_t</span> *rwlock</div><div class="line">);</div></pre></td></tr></table></figure></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;pthread.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">pthread_rwlock_rdlock</span><span class="params">(<span class="keyword">pthread_rwlock_t</span> *rwlock)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">pthread_rwlock_wrlock</span><span class="params">(<span class="keyword">pthread_rwlock_t</span> *rwlock)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">pthread_rwlock_unlock</span><span class="params">(<span class="keyword">pthread_rwlock_t</span> *rwlock)</span></span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">pthread_rwlock_tryrdlock</span><span class="params">(<span class="keyword">pthread_rwlock_t</span> *rwlock)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">pthread_rwlock_trywrlock</span><span class="params">(<span class="keyword">pthread_rwlock_t</span> *rwlock)</span></span>;</div></pre></td></tr></table></figure>
+<h4 id="条件变量"><a href="#条件变量" class="headerlink" title="条件变量"></a>条件变量</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;pthread.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">pthread_cond_init</span> <span class="params">(</span></span></div><div class="line">  <span class="keyword">pthread_cond_t</span> *<span class="keyword">restrict</span> cond,</div><div class="line">  <span class="keyword">pthread_condattr_t</span> *<span class="keyword">restrict</span> attr</div><div class="line">);</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">pthread_cond_destroy</span> <span class="params">(</span></span></div><div class="line">  <span class="keyword">pthread_cond_t</span> *cond</div><div class="line">);</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">pthread_cond_wait</span> <span class="params">(</span></span></div><div class="line">  <span class="keyword">pthread_cond_t</span> *<span class="keyword">restrict</span> cond,</div><div class="line">  <span class="keyword">pthread_mutex_t</span> *<span class="keyword">restrict</span> mutex</div><div class="line">);</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">pthread_cond_timedwait</span> <span class="params">(</span></span></div><div class="line">  <span class="keyword">pthread_cond_t</span> *<span class="keyword">restrict</span> cond,</div><div class="line">  <span class="keyword">pthread_mutex_t</span> *<span class="keyword">restrict</span> mutex,</div><div class="line">  <span class="keyword">const</span> <span class="keyword">struct</span> timespec *<span class="keyword">restrict</span> timeout</div><div class="line">);</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">pthread_cond_signal</span> <span class="params">(</span></span></div><div class="line">  <span class="keyword">pthread_cond_t</span> *cond</div><div class="line">);</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">pthread_cond_broadcast</span> <span class="params">(</span></span></div><div class="line">  <span class="keyword">pthread_cond_t</span> *cond</div><div class="line">);</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;阅读-APUE&quot;&gt;&lt;a href=&quot;#阅读-APUE&quot; class=&quot;headerlink&quot; title=&quot;阅读 APUE&quot;&gt;&lt;/a&gt;阅读 APUE&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;信号看的有点晕，先概览一遍，第二圈再细读&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;线程&quot;&gt;&lt;a href=&quot;#线程&quot; class=&quot;headerlink&quot; title=&quot;线程&quot;&gt;&lt;/a&gt;线程&lt;/h2&gt;&lt;p&gt;线程有很多好处：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;简化异步事件的处理代码。同步编程比异步编程要简单&lt;/li&gt;
+&lt;li&gt;进程间共享内存和文件描述符比较麻烦&lt;/li&gt;
+&lt;li&gt;分解任务提高吞吐量&lt;/li&gt;
+&lt;li&gt;改善交互程序的响应时间&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2017-04-25</title>
+    <link href="http://blog.sin5th.com/2017/04/25/2017-04-25/"/>
+    <id>http://blog.sin5th.com/2017/04/25/2017-04-25/</id>
+    <published>2017-04-25T05:52:11.000Z</published>
+    <updated>2017-04-25T05:52:11.000Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+    
+    </summary>
+    
+      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>2017-04-24</title>
@@ -556,7 +637,7 @@
     <link href="http://blog.sin5th.com/2017/04/17/2017-04-17/"/>
     <id>http://blog.sin5th.com/2017/04/17/2017-04-17/</id>
     <published>2017-04-17T09:27:21.000Z</published>
-    <updated>2017-04-18T14:04:49.000Z</updated>
+    <updated>2017-04-28T05:37:38.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="一些异地灾备的文章"><a href="#一些异地灾备的文章" class="headerlink" title="一些异地灾备的文章:"></a>一些异地灾备的文章:</h2><ul>
 <li><a href="http://tencentresearch.com/Article/lists/id/4115.html" target="_blank" rel="external">http://tencentresearch.com/Article/lists/id/4115.html</a></li>
