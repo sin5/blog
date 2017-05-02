@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-05-01T13:35:30.000Z</updated>
+  <updated>2017-05-02T09:40:54.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -14,6 +14,47 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2017-05-02</title>
+    <link href="http://blog.sin5th.com/2017/05/02/2017-05-02/"/>
+    <id>http://blog.sin5th.com/2017/05/02/2017-05-02/</id>
+    <published>2017-05-02T01:52:18.000Z</published>
+    <updated>2017-05-02T09:40:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="hack-news"><a href="#hack-news" class="headerlink" title="hack news"></a>hack news</h1><h2 id="headless-chrome"><a href="#headless-chrome" class="headerlink" title="headless chrome"></a><a href="https://developers.google.com/web/updates/2017/04/headless-chrome" target="_blank">headless chrome</a></h2><p>headless chrome 允许在不启动浏览器窗口的情况下, 测试浏览器的网页加载, 这对自动化测试提供了方便.</p>
+<p>成文时, 稳定版的 chrome 刚刚48版本, 还不支持 headless, 需要安装 chrome canary.<br>mac os 可以使用 <code>brew install Caskroom/versions/google-chrome-canary</code> 安装,</p>
+<a id="more"></a>
+<h1 id="book-reading"><a href="#book-reading" class="headerlink" title="book reading"></a>book reading</h1><h2 id="apue-守护进程"><a href="#apue-守护进程" class="headerlink" title="apue 守护进程"></a>apue 守护进程</h2><h3 id="守护进程的特征"><a href="#守护进程的特征" class="headerlink" title="守护进程的特征"></a>守护进程的特征</h3><p>守护进程没有控制终端, 终端前台进程组ID为 -1</p>
+<h3 id="编程规则"><a href="#编程规则" class="headerlink" title="编程规则"></a>编程规则</h3><ol>
+<li>umask 重置文件模式创建屏蔽字</li>
+<li>fork 使父进程退出</li>
+<li>setsid 开启新会话</li>
+<li>更改当前工作目录, 避免文件系统不能被拆卸</li>
+<li>关闭不再需要的文件描述符</li>
+<li>重定向标准输入/输出/出错</li>
+</ol>
+<h3 id="单实例守护进程"><a href="#单实例守护进程" class="headerlink" title="单实例守护进程"></a>单实例守护进程</h3><p>可以使用文件和记录锁, 保证同一时间只有一个进程运行</p>
+<h3 id="守护进程惯例"><a href="#守护进程惯例" class="headerlink" title="守护进程惯例"></a>守护进程惯例</h3><ul>
+<li>文件锁一般使用 /var/run/name.pid</li>
+<li>配置选项一般使用 /etc/name.conf</li>
+<li>初始化脚本一般使用 /etc/init.d/<em> 或 /etc/rc</em></li>
+<li>一般通过捕捉 SIGHUP 进行配置重载</li>
+</ul>
+<h1 id="tech-learning"><a href="#tech-learning" class="headerlink" title="tech learning"></a>tech learning</h1><h2 id="golang-reflect"><a href="#golang-reflect" class="headerlink" title="golang reflect"></a>golang reflect</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 类型断言</span></div><div class="line"><span class="keyword">if</span> v, ok := varI.(T); ok &#123;</div><div class="line">    Process(v)</div><div class="line">    <span class="keyword">return</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 类型判断</span></div><div class="line"><span class="keyword">switch</span> t := areaIntf.(<span class="keyword">type</span>) &#123;</div><div class="line"><span class="keyword">case</span> *Square:</div><div class="line">	fmt.Printf(<span class="string">"Type Square %T with value %v\n"</span>, t, t)</div><div class="line"><span class="keyword">case</span> *Circle:</div><div class="line">	fmt.Printf(<span class="string">"Type Circle %T with value %v\n"</span>, t, t)</div><div class="line"><span class="keyword">case</span> <span class="literal">nil</span>:</div><div class="line">	fmt.Printf(<span class="string">"nil value: nothing to check?\n"</span>)</div><div class="line"><span class="keyword">default</span>:</div><div class="line">	fmt.Printf(<span class="string">"Unexpected type %T\n"</span>, t)</div><div class="line">&#125;</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;hack-news&quot;&gt;&lt;a href=&quot;#hack-news&quot; class=&quot;headerlink&quot; title=&quot;hack news&quot;&gt;&lt;/a&gt;hack news&lt;/h1&gt;&lt;h2 id=&quot;headless-chrome&quot;&gt;&lt;a href=&quot;#headless-chrome&quot; class=&quot;headerlink&quot; title=&quot;headless chrome&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://developers.google.com/web/updates/2017/04/headless-chrome&quot; target=&quot;_blank&quot;&gt;headless chrome&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;headless chrome 允许在不启动浏览器窗口的情况下, 测试浏览器的网页加载, 这对自动化测试提供了方便.&lt;/p&gt;
+&lt;p&gt;成文时, 稳定版的 chrome 刚刚48版本, 还不支持 headless, 需要安装 chrome canary.&lt;br&gt;mac os 可以使用 &lt;code&gt;brew install Caskroom/versions/google-chrome-canary&lt;/code&gt; 安装,&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>2017-05-01</title>
