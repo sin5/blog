@@ -100,7 +100,7 @@
 <meta property="og:url" content="http://blog.sin5th.com/2017/05/02/2017-05-02/index.html">
 <meta property="og:site_name" content="Sin5's Blog">
 <meta property="og:description" content="hack newsheadless chromeheadless chrome 允许在不启动浏览器窗口的情况下, 测试浏览器的网页加载, 这对自动化测试提供了方便. 成文时, 稳定版的 chrome 刚刚48版本, 还不支持 headless, 需要安装 chrome canary.mac os 可以使用 brew install Caskroom/versions/google-chrome-c">
-<meta property="og:updated_time" content="2017-05-02T09:40:54.000Z">
+<meta property="og:updated_time" content="2017-05-03T01:57:43.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2017-05-02">
 <meta name="twitter:description" content="hack newsheadless chromeheadless chrome 允许在不启动浏览器窗口的情况下, 测试浏览器的网页加载, 这对自动化测试提供了方便. 成文时, 稳定版的 chrome 刚刚48版本, 还不支持 headless, 需要安装 chrome canary.mac os 可以使用 brew install Caskroom/versions/google-chrome-c">
@@ -338,8 +338,8 @@
               
                 <span class="post-meta-item-text">更新于</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-05-02T17:40:54+08:00">
-                2017-05-02
+              <time title="更新于" itemprop="dateModified" datetime="2017-05-03T09:57:43+08:00">
+                2017-05-03
               </time>
             
           </span>
@@ -398,7 +398,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  351
+                  426
                 </span>
               
 
@@ -414,7 +414,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -454,6 +454,9 @@
 </ul>
 <h1 id="tech-learning"><a href="#tech-learning" class="headerlink" title="tech learning"></a>tech learning</h1><h2 id="golang-reflect"><a href="#golang-reflect" class="headerlink" title="golang reflect"></a>golang reflect</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 类型断言</span></div><div class="line"><span class="keyword">if</span> v, ok := varI.(T); ok &#123;</div><div class="line">    Process(v)</div><div class="line">    <span class="keyword">return</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 类型判断</span></div><div class="line"><span class="keyword">switch</span> t := areaIntf.(<span class="keyword">type</span>) &#123;</div><div class="line"><span class="keyword">case</span> *Square:</div><div class="line">	fmt.Printf(<span class="string">"Type Square %T with value %v\n"</span>, t, t)</div><div class="line"><span class="keyword">case</span> *Circle:</div><div class="line">	fmt.Printf(<span class="string">"Type Circle %T with value %v\n"</span>, t, t)</div><div class="line"><span class="keyword">case</span> <span class="literal">nil</span>:</div><div class="line">	fmt.Printf(<span class="string">"nil value: nothing to check?\n"</span>)</div><div class="line"><span class="keyword">default</span>:</div><div class="line">	fmt.Printf(<span class="string">"Unexpected type %T\n"</span>, t)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="advanced-bash-scripting-guide"><a href="#advanced-bash-scripting-guide" class="headerlink" title="advanced-bash-scripting-guide"></a>advanced-bash-scripting-guide</h2><p>引用变量</p>
+<p>单引号代表全引用, 所有的值都用字面意思解释.<br>因此, 试图在单引号中转义单引号是错误的.<br>错误: <code>echo &#39;i\&#39;m something&#39;</code><br>但是可以通过其它的方式解决这个问题.<br>正确: <code>echo &#39;i&#39;\&#39;&#39;m something&#39;</code></p>
+
       
     </div>
 
@@ -688,7 +691,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hack-news"><span class="nav-number">1.</span> <span class="nav-text">hack news</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#headless-chrome"><span class="nav-number">1.1.</span> <span class="nav-text">headless chrome</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#book-reading"><span class="nav-number">2.</span> <span class="nav-text">book reading</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#apue-守护进程"><span class="nav-number">2.1.</span> <span class="nav-text">apue 守护进程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#守护进程的特征"><span class="nav-number">2.1.1.</span> <span class="nav-text">守护进程的特征</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编程规则"><span class="nav-number">2.1.2.</span> <span class="nav-text">编程规则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单实例守护进程"><span class="nav-number">2.1.3.</span> <span class="nav-text">单实例守护进程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#守护进程惯例"><span class="nav-number">2.1.4.</span> <span class="nav-text">守护进程惯例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#tech-learning"><span class="nav-number">3.</span> <span class="nav-text">tech learning</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#golang-reflect"><span class="nav-number">3.1.</span> <span class="nav-text">golang reflect</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hack-news"><span class="nav-number">1.</span> <span class="nav-text">hack news</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#headless-chrome"><span class="nav-number">1.1.</span> <span class="nav-text">headless chrome</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#book-reading"><span class="nav-number">2.</span> <span class="nav-text">book reading</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#apue-守护进程"><span class="nav-number">2.1.</span> <span class="nav-text">apue 守护进程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#守护进程的特征"><span class="nav-number">2.1.1.</span> <span class="nav-text">守护进程的特征</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编程规则"><span class="nav-number">2.1.2.</span> <span class="nav-text">编程规则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单实例守护进程"><span class="nav-number">2.1.3.</span> <span class="nav-text">单实例守护进程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#守护进程惯例"><span class="nav-number">2.1.4.</span> <span class="nav-text">守护进程惯例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#tech-learning"><span class="nav-number">3.</span> <span class="nav-text">tech learning</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#golang-reflect"><span class="nav-number">3.1.</span> <span class="nav-text">golang reflect</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#advanced-bash-scripting-guide"><span class="nav-number">3.2.</span> <span class="nav-text">advanced-bash-scripting-guide</span></a></li></ol></li></ol></div>
             
 
           </div>
