@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-05-03T01:57:43.000Z</updated>
+  <updated>2017-05-03T06:43:41.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -16,11 +16,60 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>2017-05-03</title>
+    <link href="http://blog.sin5th.com/2017/05/03/2017-05-03/"/>
+    <id>http://blog.sin5th.com/2017/05/03/2017-05-03/</id>
+    <published>2017-05-03T01:58:59.000Z</published>
+    <updated>2017-05-03T06:43:41.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="hack-news"><a href="#hack-news" class="headerlink" title="hack news"></a>hack news</h1><h2 id="乐高分类器"><a href="#乐高分类器" class="headerlink" title="乐高分类器"></a>乐高分类器</h2><p>原文地址: <a href="https://jacquesmattheij.com/sorting-two-metric-tons-of-lego" target="_blank" rel="external">https://jacquesmattheij.com/sorting-two-metric-tons-of-lego</a></p>
+<p>作者突发奇想要做个乐高分类器, 在 ebay 上挂收购, 一不小心收多了, 就立马动手搞了起来.</p>
+<p>从头到尾要面对挺多问题</p>
+<ul>
+<li>假货</li>
+<li>褪色</li>
+<li>坏损</li>
+<li>脏污</li>
+<li>稳定传送</li>
+<li>扫描</li>
+<li>判断优劣</li>
+<li>按优劣分放</li>
+</ul>
+<a id="more"></a>
+<p>作者最后的解决办法很有趣:<br>漏斗搭配一大一小两条履带, 把乐高从堆中依次运出, 经由摄像头成像. 使用神经算法区分优劣, 如果是劣质的, 就启动空气喷嘴, 吹到边上的桶里.</p>
+<p>初见题目时, 以为是区分积木零件, 最后发现是区分优劣. 但也差不多, 还是很有趣的.<br>ps. 我小时候也很喜欢乐高, 拼个奥特曼飞机什么的. 好不好看不重要, 一定得有活动关节 ^.^</p>
+<h1 id="book-reading"><a href="#book-reading" class="headerlink" title="book reading"></a>book reading</h1><h1 id="apue-高级I-O"><a href="#apue-高级I-O" class="headerlink" title="apue 高级I/O"></a>apue 高级I/O</h1><p>之前见识过<code>非阻塞I/O</code>和<code>标准I/O</code>, <code>高级I/O</code>会是什么呢?</p>
+<h1 id="tech-learning"><a href="#tech-learning" class="headerlink" title="tech learning"></a>tech learning</h1>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;hack-news&quot;&gt;&lt;a href=&quot;#hack-news&quot; class=&quot;headerlink&quot; title=&quot;hack news&quot;&gt;&lt;/a&gt;hack news&lt;/h1&gt;&lt;h2 id=&quot;乐高分类器&quot;&gt;&lt;a href=&quot;#乐高分类器&quot; class=&quot;headerlink&quot; title=&quot;乐高分类器&quot;&gt;&lt;/a&gt;乐高分类器&lt;/h2&gt;&lt;p&gt;原文地址: &lt;a href=&quot;https://jacquesmattheij.com/sorting-two-metric-tons-of-lego&quot;&gt;https://jacquesmattheij.com/sorting-two-metric-tons-of-lego&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;作者突发奇想要做个乐高分类器, 在 ebay 上挂收购, 一不小心收多了, 就立马动手搞了起来.&lt;/p&gt;
+&lt;p&gt;从头到尾要面对挺多问题&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;假货&lt;/li&gt;
+&lt;li&gt;褪色&lt;/li&gt;
+&lt;li&gt;坏损&lt;/li&gt;
+&lt;li&gt;脏污&lt;/li&gt;
+&lt;li&gt;稳定传送&lt;/li&gt;
+&lt;li&gt;扫描&lt;/li&gt;
+&lt;li&gt;判断优劣&lt;/li&gt;
+&lt;li&gt;按优劣分放&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>2017-05-02</title>
     <link href="http://blog.sin5th.com/2017/05/02/2017-05-02/"/>
     <id>http://blog.sin5th.com/2017/05/02/2017-05-02/</id>
     <published>2017-05-02T01:52:18.000Z</published>
-    <updated>2017-05-03T01:57:43.000Z</updated>
+    <updated>2017-05-03T02:05:42.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="hack-news"><a href="#hack-news" class="headerlink" title="hack news"></a>hack news</h1><h2 id="headless-chrome"><a href="#headless-chrome" class="headerlink" title="headless chrome"></a><a href="https://developers.google.com/web/updates/2017/04/headless-chrome" target="_blank">headless chrome</a></h2><p>headless chrome 允许在不启动浏览器窗口的情况下, 测试浏览器的网页加载, 这对自动化测试提供了方便.</p>
 <p>成文时, 稳定版的 chrome 刚刚48版本, 还不支持 headless, 需要安装 chrome canary.<br>mac os 可以使用 <code>brew install Caskroom/versions/google-chrome-canary</code> 安装,</p>
