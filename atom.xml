@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Sin5&#39;s Blog</title>
+  <title>Sin5th&#39;s Blog</title>
   
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-05-04T16:02:41.000Z</updated>
+  <updated>2017-05-05T03:46:06.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
-    <name>sin5</name>
+    <name>sin5th</name>
     
   </author>
   
@@ -20,14 +20,23 @@
     <link href="http://blog.sin5th.com/2017/05/05/2017-05-05/"/>
     <id>http://blog.sin5th.com/2017/05/05/2017-05-05/</id>
     <published>2017-05-04T16:02:41.000Z</published>
-    <updated>2017-05-04T16:02:41.000Z</updated>
+    <updated>2017-05-05T03:46:06.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="hack-news"><a href="#hack-news" class="headerlink" title="hack news"></a>hack news</h1><a id="more"></a>
+    <content type="html"><![CDATA[<h1 id="hack-news"><a href="#hack-news" class="headerlink" title="hack news"></a>hack news</h1><h2 id="土耳其封锁维基百科"><a href="#土耳其封锁维基百科" class="headerlink" title="土耳其封锁维基百科"></a>土耳其封锁维基百科</h2><p><a href="https://turkeyblocks.org/2017/04/29/wikipedia-blocked-turkey/" target="_blank" rel="external">链接地址</a></p>
+<p>当地时间4月29日, The Turkey Blocks 确认了对维基百科在线的封锁. 其声称根据行政管理指令, 维基百科在线被限制了所有语言版本的访问. 不久后升级为永久指令.</p>
+<a id="more"></a>
+<p>评论摘选<br><a href="https://news.ycombinator.com/user?id=RcouF1uZ4gsC" target="_blank" rel="external">RcouF1uZ4gsC</a></p>
+<blockquote>
+<p>2016年将是全球互联网的巅峰. 中国对互联网政治控制的成功, 与埃及/突尼斯被开放互联网推翻政权的失败形成对比, 一个开放/自由的互联网并不符合某些人的利益. 如果你觉着西方的民主自由幸免于此, 看看”虚假新闻”和”No Platform”. 我们正在从自由/开放的共享与讨论, 走向思想镇压(目前看来是个坏主意, 但未来就不一定了).</p>
+<p>大量的网络内容控制在少数公司手中(如果 Google 和 Facebook 限制你的站点, 那你几乎不会有什么曝光度). 此外我们正在从用户控制的通用计算机, 向安全/移动监控设备方向发展. 政府可以通过对一些公司施压, 控制哪些信息可以流向民众.</p>
+<p>为政府服务的&lt;第一修正案&gt;始终使用”危险”这个托词. 言论自由和法律同等重要. 如果我们被强大的非政府组织利用, 去镇压我们不喜欢的言论, 事实上就离被政府控制相距不远了.</p>
+</blockquote>
 <h1 id="book-reading"><a href="#book-reading" class="headerlink" title="book reading"></a>book reading</h1><h1 id="tech-learning"><a href="#tech-learning" class="headerlink" title="tech learning"></a>tech learning</h1>]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;hack-news&quot;&gt;&lt;a href=&quot;#hack-news&quot; class=&quot;headerlink&quot; title=&quot;hack news&quot;&gt;&lt;/a&gt;hack news&lt;/h1&gt;
+      &lt;h1 id=&quot;hack-news&quot;&gt;&lt;a href=&quot;#hack-news&quot; class=&quot;headerlink&quot; title=&quot;hack news&quot;&gt;&lt;/a&gt;hack news&lt;/h1&gt;&lt;h2 id=&quot;土耳其封锁维基百科&quot;&gt;&lt;a href=&quot;#土耳其封锁维基百科&quot; class=&quot;headerlink&quot; title=&quot;土耳其封锁维基百科&quot;&gt;&lt;/a&gt;土耳其封锁维基百科&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://turkeyblocks.org/2017/04/29/wikipedia-blocked-turkey/&quot;&gt;链接地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;当地时间4月29日, The Turkey Blocks 确认了对维基百科在线的封锁. 其声称根据行政管理指令, 维基百科在线被限制了所有语言版本的访问. 不久后升级为永久指令.&lt;/p&gt;
     
     </summary>
     
