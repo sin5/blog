@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-05-05T09:50:18.000Z</updated>
+  <updated>2017-05-05T15:07:17.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://blog.sin5th.com/2017/05/05/2017-05-05/"/>
     <id>http://blog.sin5th.com/2017/05/05/2017-05-05/</id>
     <published>2017-05-04T16:02:41.000Z</published>
-    <updated>2017-05-05T09:50:18.000Z</updated>
+    <updated>2017-05-05T15:07:17.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="hack-news"><a href="#hack-news" class="headerlink" title="hack news"></a>hack news</h1><h2 id="土耳其封锁维基百科"><a href="#土耳其封锁维基百科" class="headerlink" title="土耳其封锁维基百科"></a>土耳其封锁维基百科</h2><p><a href="https://turkeyblocks.org/2017/04/29/wikipedia-blocked-turkey/" target="_blank" rel="external">链接地址</a></p>
 <p>当地时间4月29日, The Turkey Blocks 确认了对维基百科在线的封锁. 其声称根据行政管理指令, 维基百科在线被限制了所有语言版本的访问. 不久后升级为永久指令.</p>
@@ -31,7 +31,9 @@
 <p>大量的网络内容控制在少数公司手中(如果 Google 和 Facebook 限制你的站点, 那你几乎不会有什么曝光度). 此外我们正在从用户控制的通用计算机, 向安全/移动监控设备方向发展. 政府可以通过对一些公司施压, 控制哪些信息可以流向民众.</p>
 <p>为政府服务的&lt;第一修正案&gt;始终使用”危险”这个托词. 言论自由和法律同等重要. 如果我们被强大的非政府组织利用, 去镇压我们不喜欢的言论, 事实上就离被政府控制相距不远了.</p>
 </blockquote>
-<h1 id="book-reading"><a href="#book-reading" class="headerlink" title="book reading"></a>book reading</h1><h1 id="tech-learning"><a href="#tech-learning" class="headerlink" title="tech learning"></a>tech learning</h1><h2 id="go-的最佳实践"><a href="#go-的最佳实践" class="headerlink" title="go 的最佳实践"></a>go 的最佳实践</h2><p><a href="https://blog.rubylearning.com/best-practices-for-a-new-go-developer-8660384302fc" target="_blank" rel="external">链接地址</a><br>本人的技能入门套路是: quick start -&gt; tutorial -&gt; best practice<br>阅读最佳实践是必要的过程, 避免自学的弯路.</p>
+<hr>
+<h1 id="book-reading"><a href="#book-reading" class="headerlink" title="book reading"></a>book reading</h1><hr>
+<h1 id="tech-learning"><a href="#tech-learning" class="headerlink" title="tech learning"></a>tech learning</h1><h2 id="go-的最佳实践"><a href="#go-的最佳实践" class="headerlink" title="go 的最佳实践"></a>go 的最佳实践</h2><p><a href="https://blog.rubylearning.com/best-practices-for-a-new-go-developer-8660384302fc" target="_blank" rel="external">链接地址</a><br>本人的技能入门套路是: quick start -&gt; tutorial -&gt; best practice<br>阅读最佳实践是必要的过程, 避免自学的弯路.</p>
 <ol>
 <li>面向对象 != 类与继承. golang 可以算是面向对象的语言, 但它表达的方式与 java/ruby/… 并不相同, 它仅提供 interface 特性满足开发者封装对象的需要.</li>
 <li>组合 vs 继承. 这是一场语言无关的, 亘古持久的战争. 但不论是 <code>组合</code>, 还是 <code>继承</code>, 目的都是将 <code>代码</code> 转化成 <code>关系</code>, 减少代码量(常说的复用). 但从另一个角度讲, 组合是一种更加松散的关系, 很容易想到它的反义词–分离, 与分离之后依然健全的独立功能. 但继承的反义词–(并没有找到合适的词), 总让人有一种丧失根基的感觉.</li>
@@ -39,6 +41,8 @@
 <li>reading/writing/testing. 阅读标准库是学习语言的好途径, 如果是从其他语言转过来的, 找一个熟悉的模块能很快体会到 go 的玩法. 试着去解决遇到的问题, 动手写代码的同时, 写好文档和测试. go 语言提供了很好的测试支持.</li>
 <li>标准库. go 的标准库比较完备, 初学者应该尽量使用, 不要过多地以来第三方库或者框架.</li>
 </ol>
+<hr>
+<h1 id="ted"><a href="#ted" class="headerlink" title="ted"></a>ted</h1><h2 id="爱情应有的样子"><a href="#爱情应有的样子" class="headerlink" title="爱情应有的样子"></a>爱情应有的样子</h2><p><a href="http://open.163.com/movie/2017/2/D/7/MC9FQL66A_MCA50R4D7.html" target="_blank" rel="external">视频地址</a><br>爱常常让我们感到痛苦, 我们也习惯于用痛苦的多少, 衡量爱的深浅. 但爱本来是两个人合作经营的丰硕果实, 应当是愉快的. 让爱情回到它应有的样子, 让我们说 <code>世间最美好的事, 莫过于此</code> 或者 <code>爱情比我想象的短, 但还是很美好的</code></p>
 ]]></content>
     
     <summary type="html">
@@ -58,7 +62,7 @@
     <link href="http://blog.sin5th.com/2017/05/04/2017-05-04/"/>
     <id>http://blog.sin5th.com/2017/05/04/2017-05-04/</id>
     <published>2017-05-04T14:28:45.000Z</published>
-    <updated>2017-05-04T15:55:32.000Z</updated>
+    <updated>2017-05-05T01:54:29.000Z</updated>
     
     <content type="html"><![CDATA[<p>今天一直忙交接, 下午又接了个电话面试, 没腾出学习的时间. 看个 TED 睡了.</p>
 <p>越发觉得自己太过实在, 甚至有些傻. 会做不会说, 不能愉快地 show.</p>
@@ -202,11 +206,11 @@
     <link href="http://blog.sin5th.com/2017/05/01/2017-05-01/"/>
     <id>http://blog.sin5th.com/2017/05/01/2017-05-01/</id>
     <published>2017-05-01T13:20:47.000Z</published>
-    <updated>2017-05-01T13:35:30.000Z</updated>
+    <updated>2017-05-05T15:04:23.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="golang-初体验"><a href="#golang-初体验" class="headerlink" title="golang 初体验"></a>golang 初体验</h1><p>最近考虑学习 golang, 跟随 <a href="https://tour.go-zh.org/" target="_blank" rel="external">https://tour.go-zh.org/</a> 把基础语法跑了一遍.</p>
 <p>由于之前掌握过 python/lua/js, 对 golang 有着似曾相识的感觉. 闭包/匿名函数/微线程, 都标志这是一门很”现代”的语言.</p>
-<p>后继的学习都记录在 <a href="https://github.com/sin5/go-learning" target="_blank" rel="external">https://github.com/sin5/go-learning</a></p>
+<p>后继的学习都记录在 <a href="https://github.com/sin5th/go-learning" target="_blank" rel="external">https://github.com/sin5th/go-learning</a></p>
 <a id="more"></a>
 ]]></content>
     
@@ -214,7 +218,7 @@
     
       &lt;h1 id=&quot;golang-初体验&quot;&gt;&lt;a href=&quot;#golang-初体验&quot; class=&quot;headerlink&quot; title=&quot;golang 初体验&quot;&gt;&lt;/a&gt;golang 初体验&lt;/h1&gt;&lt;p&gt;最近考虑学习 golang, 跟随 &lt;a href=&quot;https://tour.go-zh.org/&quot;&gt;https://tour.go-zh.org/&lt;/a&gt; 把基础语法跑了一遍.&lt;/p&gt;
 &lt;p&gt;由于之前掌握过 python/lua/js, 对 golang 有着似曾相识的感觉. 闭包/匿名函数/微线程, 都标志这是一门很”现代”的语言.&lt;/p&gt;
-&lt;p&gt;后继的学习都记录在 &lt;a href=&quot;https://github.com/sin5/go-learning&quot;&gt;https://github.com/sin5/go-learning&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;后继的学习都记录在 &lt;a href=&quot;https://github.com/sin5th/go-learning&quot;&gt;https://github.com/sin5th/go-learning&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
