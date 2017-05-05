@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Sin5's Blog
+title: Sin5th's Blog
 subtitle:
 description: 我有一壶酒，足以慰风尘<br/>尽倾江河里，赠饮天下人
-author: sin5
+author: sin5th
 language: zh-Hans
 timezone:
 
@@ -86,7 +86,7 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: 
-    github: git@github.com:sin5/sin5.github.io
+  repo:
+    github: git@github.com:sin5th/sin5th.github.io
     coding: git@git.coding.net:sin5th/blog.sin5th.git
   branch: master
