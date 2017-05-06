@@ -6,13 +6,13 @@ categories:
 tags:
 ---
 
-# hack news
-
 
 <!--more-->
-
-
+---
+# idea leaning
+---
+# hack news
+---
 # book reading
-
-
-# tech learning
+---
+# tech leaning
