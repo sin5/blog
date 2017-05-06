@@ -6,7 +6,7 @@ comments: false
 ---
 
 [Index](http://sin5th.com)
-[Github](http://github.com/sin5)
+[Github](http://github.com/sin5th)
 
 
 广泛求知, 忌浅尝辄止;
