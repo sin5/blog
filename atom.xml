@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-05-05T15:07:17.000Z</updated>
+  <updated>2017-05-06T14:45:09.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -16,11 +16,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>2017-05-06</title>
+    <link href="http://blog.sin5th.com/2017/05/06/2017-05-06/"/>
+    <id>http://blog.sin5th.com/2017/05/06/2017-05-06/</id>
+    <published>2017-05-06T14:16:42.000Z</published>
+    <updated>2017-05-06T14:45:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="ted"><a href="#ted" class="headerlink" title="ted"></a>ted</h1><h2 id="如何做得更好"><a href="#如何做得更好" class="headerlink" title="如何做得更好"></a>如何做得更好</h2><p><a href="http://open.163.com/movie/2017/2/C/U/MCC01J0QP_MCC021ACU.html" target="_blank" rel="external">视频地址</a><br>高效的人和团队, 始终兼顾 <code>学习</code> 和 <code>执行</code>. 学习过程将注意力集中在未知的领域, 接受失败, 并转化为新的技能; 执行过程将注意力集中在已知的领域, 避免失败, 并产出成果.</p>
+<p>太过关注成绩的学校, 驱使学生远离学习, 沉浸在执行中; 太过关注执行力的企业, 将员工限制在已知领域, 从而失去创新与进步.</p>
+<a id="more"></a>
+<hr>
+<h1 id="book-reading"><a href="#book-reading" class="headerlink" title="book reading"></a>book reading</h1><hr>
+<h1 id="tech-learning"><a href="#tech-learning" class="headerlink" title="tech learning"></a>tech learning</h1><hr>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;ted&quot;&gt;&lt;a href=&quot;#ted&quot; class=&quot;headerlink&quot; title=&quot;ted&quot;&gt;&lt;/a&gt;ted&lt;/h1&gt;&lt;h2 id=&quot;如何做得更好&quot;&gt;&lt;a href=&quot;#如何做得更好&quot; class=&quot;headerlink&quot; title=&quot;如何做得更好&quot;&gt;&lt;/a&gt;如何做得更好&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://open.163.com/movie/2017/2/C/U/MCC01J0QP_MCC021ACU.html&quot;&gt;视频地址&lt;/a&gt;&lt;br&gt;高效的人和团队, 始终兼顾 &lt;code&gt;学习&lt;/code&gt; 和 &lt;code&gt;执行&lt;/code&gt;. 学习过程将注意力集中在未知的领域, 接受失败, 并转化为新的技能; 执行过程将注意力集中在已知的领域, 避免失败, 并产出成果.&lt;/p&gt;
+&lt;p&gt;太过关注成绩的学校, 驱使学生远离学习, 沉浸在执行中; 太过关注执行力的企业, 将员工限制在已知领域, 从而失去创新与进步.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>2017-05-05</title>
     <link href="http://blog.sin5th.com/2017/05/05/2017-05-05/"/>
     <id>http://blog.sin5th.com/2017/05/05/2017-05-05/</id>
     <published>2017-05-04T16:02:41.000Z</published>
-    <updated>2017-05-05T15:07:17.000Z</updated>
+    <updated>2017-05-06T14:16:03.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="hack-news"><a href="#hack-news" class="headerlink" title="hack news"></a>hack news</h1><h2 id="土耳其封锁维基百科"><a href="#土耳其封锁维基百科" class="headerlink" title="土耳其封锁维基百科"></a>土耳其封锁维基百科</h2><p><a href="https://turkeyblocks.org/2017/04/29/wikipedia-blocked-turkey/" target="_blank" rel="external">链接地址</a></p>
 <p>当地时间4月29日, The Turkey Blocks 确认了对维基百科在线的封锁. 其声称根据行政管理指令, 维基百科在线被限制了所有语言版本的访问. 不久后升级为永久指令.</p>
