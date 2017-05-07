@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-05-06T15:51:51.000Z</updated>
+  <updated>2017-05-07T05:53:06.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -14,6 +14,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2017-05-07</title>
+    <link href="http://blog.sin5th.com/2017/05/07/2017-05-07/"/>
+    <id>http://blog.sin5th.com/2017/05/07/2017-05-07/</id>
+    <published>2017-05-07T05:44:08.000Z</published>
+    <updated>2017-05-07T05:53:06.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><h1 id="idea-leaning"><a href="#idea-leaning" class="headerlink" title="idea leaning"></a>idea leaning</h1><hr>
+<h1 id="hack-news"><a href="#hack-news" class="headerlink" title="hack news"></a>hack news</h1><hr>
+<h1 id="book-reading"><a href="#book-reading" class="headerlink" title="book reading"></a>book reading</h1><h2 id="APUE-进程间通信"><a href="#APUE-进程间通信" class="headerlink" title="APUE 进程间通信"></a>APUE 进程间通信</h2><h3 id="管道"><a href="#管道" class="headerlink" title="管道"></a>管道</h3><p><code>pipe</code> 函数将两个文件描述符关联起来，分别用作单工通信的输入、输出。使用时一般在父进程中调用，然后通过fork将文件描述符传递给子进程。</p>
+<p><code>popen</code> 函数先调用pipe产生关联的文件描述符，之后调用fork和exec，将子进程的输出传回给调用进程。简化了管道的使用。</p>
+<h2 id="如果当前程序产生某个进程的输入，同时从该进程读取输出时，则称该进程为当前程序的协同进程。"><a href="#如果当前程序产生某个进程的输入，同时从该进程读取输出时，则称该进程为当前程序的协同进程。" class="headerlink" title="如果当前程序产生某个进程的输入，同时从该进程读取输出时，则称该进程为当前程序的协同进程。"></a>如果当前程序产生某个进程的输入，同时从该进程读取输出时，则称该进程为当前程序的协同进程。</h2><h1 id="tech-leaning"><a href="#tech-leaning" class="headerlink" title="tech leaning"></a>tech leaning</h1>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;
+    
+    </summary>
+    
+      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>2017-05-06</title>
