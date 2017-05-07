@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-05-07T05:53:06.000Z</updated>
+  <updated>2017-05-07T06:35:56.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -20,17 +20,42 @@
     <link href="http://blog.sin5th.com/2017/05/07/2017-05-07/"/>
     <id>http://blog.sin5th.com/2017/05/07/2017-05-07/</id>
     <published>2017-05-07T05:44:08.000Z</published>
-    <updated>2017-05-07T05:53:06.000Z</updated>
+    <updated>2017-05-07T06:35:56.000Z</updated>
     
-    <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><h1 id="idea-leaning"><a href="#idea-leaning" class="headerlink" title="idea leaning"></a>idea leaning</h1><hr>
-<h1 id="hack-news"><a href="#hack-news" class="headerlink" title="hack news"></a>hack news</h1><hr>
+    <content type="html"><![CDATA[<ul>
+<li>使用 pipe 进行进程间通信</li>
+<li>看 google 如何防止 JSON hijacking</li>
+</ul>
+<a id="more"></a>
+<hr>
+<h1 id="idea-leaning"><a href="#idea-leaning" class="headerlink" title="idea leaning"></a>idea leaning</h1><hr>
+<h1 id="hack-news"><a href="#hack-news" class="headerlink" title="hack news"></a>hack news</h1><h2 id="为何-google-的-json-response-包含-while-1-前缀？"><a href="#为何-google-的-json-response-包含-while-1-前缀？" class="headerlink" title="为何 google 的 json response 包含 while(1) 前缀？"></a>为何 google 的 json response 包含 while(1) 前缀？</h2><p><a href="http://stackoverflow.com/questions/2669690/why-does-google-prepend-while1-to-their-json-responses" target="_blank" rel="external">链接地址</a></p>
+<p>最佳答案表示，这是为了防止 <a href="http://haacked.com/archive/2009/06/25/json-hijacking.aspx" target="_blank" rel="external">JSON 劫持</a></p>
+<blockquote>
+<p>虽然恶意网站会因为同源限制无法跨域名发起 ajax 请求，但是仍然可以在 <code>&lt;script&gt;</code> 中加入链接，然后通过<a href="http://ejohn.org/blog/re-securing-json/" target="_blank" rel="external">重写全局的数组构造器和访问方式</a>来达到窃取信息的目的。</p>
+<p>在一个正常的 ajax 请求中，有途径可以去除这些额外的前缀；而在 <code>&lt;script&gt;</code> 标签中，却会造成脚本无限循环或解释出错。</p>
+</blockquote>
+<p>有人追问为何不使用<code>CSRF-token</code>？热心网友回答</p>
+<blockquote>
+<p>谷歌这种体量的公司，用 CSRF-token 要考虑的问题有些多，而且很浪费资源。</p>
+</blockquote>
+<p>另有网友表示</p>
+<blockquote>
+<p>他会通过在服务器端检验 http header 来避免这种问题。（感觉可行，不过没有尝试过）</p>
+</blockquote>
+<hr>
 <h1 id="book-reading"><a href="#book-reading" class="headerlink" title="book reading"></a>book reading</h1><h2 id="APUE-进程间通信"><a href="#APUE-进程间通信" class="headerlink" title="APUE 进程间通信"></a>APUE 进程间通信</h2><h3 id="管道"><a href="#管道" class="headerlink" title="管道"></a>管道</h3><p><code>pipe</code> 函数将两个文件描述符关联起来，分别用作单工通信的输入、输出。使用时一般在父进程中调用，然后通过fork将文件描述符传递给子进程。</p>
 <p><code>popen</code> 函数先调用pipe产生关联的文件描述符，之后调用fork和exec，将子进程的输出传回给调用进程。简化了管道的使用。</p>
-<h2 id="如果当前程序产生某个进程的输入，同时从该进程读取输出时，则称该进程为当前程序的协同进程。"><a href="#如果当前程序产生某个进程的输入，同时从该进程读取输出时，则称该进程为当前程序的协同进程。" class="headerlink" title="如果当前程序产生某个进程的输入，同时从该进程读取输出时，则称该进程为当前程序的协同进程。"></a>如果当前程序产生某个进程的输入，同时从该进程读取输出时，则称该进程为当前程序的协同进程。</h2><h1 id="tech-leaning"><a href="#tech-leaning" class="headerlink" title="tech leaning"></a>tech leaning</h1>]]></content>
+<p>如果当前程序产生某个进程的输入，同时从该进程读取输出时，则称该进程为当前程序的协同进程。</p>
+<hr>
+<h1 id="tech-leaning"><a href="#tech-leaning" class="headerlink" title="tech leaning"></a>tech leaning</h1>]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;
+      &lt;ul&gt;
+&lt;li&gt;使用 pipe 进行进程间通信&lt;/li&gt;
+&lt;li&gt;看 google 如何防止 JSON hijacking&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
