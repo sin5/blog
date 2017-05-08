@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-05-07T15:51:07.000Z</updated>
+  <updated>2017-05-08T03:51:05.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -14,6 +14,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2017-05-08</title>
+    <link href="http://blog.sin5th.com/2017/05/08/2017-05-08/"/>
+    <id>http://blog.sin5th.com/2017/05/08/2017-05-08/</id>
+    <published>2017-05-08T03:33:20.000Z</published>
+    <updated>2017-05-08T03:51:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<ul>
+<li>GNU libstdc++ 的内存深坑</li>
+</ul>
+<a id="more"></a>
+<hr>
+<h1 id="idea-leaning"><a href="#idea-leaning" class="headerlink" title="idea leaning"></a>idea leaning</h1><hr>
+<h1 id="hack-news"><a href="#hack-news" class="headerlink" title="hack news"></a>hack news</h1><h2 id="标准库中的惊悚"><a href="#标准库中的惊悚" class="headerlink" title="标准库中的惊悚"></a>标准库中的惊悚</h2><p><a href="https://www.zerotier.com/blog/2017-05-05-theleak.shtml" target="_blank" rel="external">链接地址</a></p>
+<p>原作者在一次客户升级任务中，惨遭 <em>内存泄漏</em> 毒手。</p>
+<blockquote>
+<p>风波初起，devops 工程师妙手“回春”，定期重启稳住状况，为原作者争取时间；</p>
+<p>原作者天真烂漫，遍寻 “内存泄漏”；不着，质疑标准库，又对 <em>hyper-optimized C++ template origami</em> 望而却步；</p>
+<p>猛忆起玄妙词语 <em>内存碎片</em>，一番实践却又功亏一篑；</p>
+<p>万念俱灰，对标准库再起杀心。终发现 libstdc++ 内存分配深坑（它为了应对 <code>malloc is slow</code>，包裹了一层分配池，于是乎…）</p>
+</blockquote>
+<p>设置环境变量 GLIBCPP_FORCE_NEW 可以强制 libstdc++ 关闭内存分配池。：D</p>
+<hr>
+<h1 id="book-reading"><a href="#book-reading" class="headerlink" title="book reading"></a>book reading</h1><hr>
+<h1 id="tech-leaning"><a href="#tech-leaning" class="headerlink" title="tech leaning"></a>tech leaning</h1>]]></content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;GNU libstdc++ 的内存深坑&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>2017-05-07</title>
