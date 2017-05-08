@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-05-08T06:48:54.000Z</updated>
+  <updated>2017-05-08T10:33:14.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -20,11 +20,12 @@
     <link href="http://blog.sin5th.com/2017/05/08/2017-05-08/"/>
     <id>http://blog.sin5th.com/2017/05/08/2017-05-08/</id>
     <published>2017-05-08T03:33:20.000Z</published>
-    <updated>2017-05-08T06:48:54.000Z</updated>
+    <updated>2017-05-08T10:33:14.000Z</updated>
     
     <content type="html"><![CDATA[<ul>
 <li>GNU libstdc++ 的内存深坑</li>
 <li>Unix 中的命名管道</li>
+<li>golang net/http 阅读</li>
 </ul>
 <a id="more"></a>
 <hr>
@@ -55,13 +56,19 @@
 </li>
 </ol>
 <hr>
-<h1 id="tech-learning"><a href="#tech-learning" class="headerlink" title="tech learning"></a>tech learning</h1>]]></content>
+<h1 id="tech-learning"><a href="#tech-learning" class="headerlink" title="tech learning"></a>tech learning</h1><h2 id="golang-net-http-阅读"><a href="#golang-net-http-阅读" class="headerlink" title="golang net/http 阅读"></a>golang net/http 阅读</h2><p><a href="http://tour.golang.org" target="_blank" rel="external">http://tour.golang.org</a> 看完以为就算 golang 入门了，读读标准库发觉还差得多。</p>
+<h3 id="select-on-closed-chan"><a href="#select-on-closed-chan" class="headerlink" title="select on closed chan"></a><code>select</code> on closed chan</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 出自 net/http/client.go</span></div><div class="line"><span class="comment">// 当 cancel 被 close 之后，函数永远返回 true</span></div><div class="line">wasCanceled = <span class="function"><span class="keyword">func</span><span class="params">()</span> <span class="title">bool</span></span> &#123;</div><div class="line">	<span class="keyword">select</span> &#123;</div><div class="line">	<span class="keyword">case</span> &lt;-cancel:</div><div class="line">		<span class="keyword">return</span> <span class="literal">true</span></div><div class="line">	<span class="keyword">default</span>:</div><div class="line">		<span class="keyword">return</span> <span class="literal">false</span></div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="append-l-another-l…"><a href="#append-l-another-l…" class="headerlink" title="append(l, another_l…)"></a><code>append</code>(l, another_l…)</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 出自 net/http/client_test.go</span></div><div class="line"><span class="comment">// append(b, buf[:n]...) 中 ... 是将数组或分片展开</span></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">pedanticReadAll</span><span class="params">(r io.Reader)</span> <span class="params">(b []<span class="keyword">byte</span>, err error)</span></span> &#123;</div><div class="line">	<span class="keyword">var</span> bufa [<span class="number">64</span>]<span class="keyword">byte</span></div><div class="line">	buf := bufa[:]</div><div class="line">	<span class="keyword">for</span> &#123;</div><div class="line">		n, err := r.Read(buf)</div><div class="line">		<span class="keyword">if</span> n == <span class="number">0</span> &amp;&amp; err == <span class="literal">nil</span> &#123;</div><div class="line">			<span class="keyword">return</span> <span class="literal">nil</span>, fmt.Errorf(<span class="string">"Read: n=0 with err=nil"</span>)</div><div class="line">		&#125;</div><div class="line">		b = <span class="built_in">append</span>(b, buf[:n]...)</div><div class="line">		<span class="keyword">if</span> err == io.EOF &#123;</div><div class="line">			n, err := r.Read(buf)</div><div class="line">			<span class="keyword">if</span> n != <span class="number">0</span> || err != io.EOF &#123;</div><div class="line">				<span class="keyword">return</span> <span class="literal">nil</span>, fmt.Errorf(<span class="string">"Read: n=%d err=%#v after EOF"</span>, n, err)</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">return</span> b, <span class="literal">nil</span></div><div class="line">		&#125;</div><div class="line">		<span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</div><div class="line">			<span class="keyword">return</span> b, err</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="error-is-a-interface"><a href="#error-is-a-interface" class="headerlink" title="error is a interface"></a><code>error</code> is a interface</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 出自 net/http/client_test.go</span></div><div class="line"><span class="comment">// error 是一个接口，因此 checkErr == nil</span></div><div class="line"><span class="keyword">var</span> checkErr error</div><div class="line">c = &amp;Client&#123;CheckRedirect: <span class="function"><span class="keyword">func</span><span class="params">(req *Request, via []*Request)</span> <span class="title">error</span></span> &#123;</div><div class="line">	<span class="keyword">return</span> checkErr</div><div class="line">&#125;&#125;</div></pre></td></tr></table></figure>
+<h3 id="chan-send-only-amp-receive-only"><a href="#chan-send-only-amp-receive-only" class="headerlink" title="chan send-only &amp; receive-only"></a><code>chan</code> send-only &amp; receive-only</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 出自 net/http/request.go</span></div><div class="line"><span class="comment">// &lt;-chan 代表只读管道，chan&lt;- 代表只写管道</span></div><div class="line">Cancel &lt;-<span class="keyword">chan</span> <span class="keyword">struct</span>&#123;&#125;</div></pre></td></tr></table></figure>
+]]></content>
     
     <summary type="html">
     
       &lt;ul&gt;
 &lt;li&gt;GNU libstdc++ 的内存深坑&lt;/li&gt;
 &lt;li&gt;Unix 中的命名管道&lt;/li&gt;
+&lt;li&gt;golang net/http 阅读&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
