@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-05-08T10:33:14.000Z</updated>
+  <updated>2017-05-08T14:09:56.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -20,16 +20,20 @@
     <link href="http://blog.sin5th.com/2017/05/08/2017-05-08/"/>
     <id>http://blog.sin5th.com/2017/05/08/2017-05-08/</id>
     <published>2017-05-08T03:33:20.000Z</published>
-    <updated>2017-05-08T10:33:14.000Z</updated>
+    <updated>2017-05-08T14:09:56.000Z</updated>
     
     <content type="html"><![CDATA[<ul>
 <li>GNU libstdc++ 的内存深坑</li>
 <li>Unix 中的命名管道</li>
 <li>golang net/http 阅读</li>
+<li>被拒绝不可怕</li>
 </ul>
 <a id="more"></a>
 <hr>
-<h1 id="idea-learning"><a href="#idea-learning" class="headerlink" title="idea learning"></a>idea learning</h1><hr>
+<h1 id="idea-learning"><a href="#idea-learning" class="headerlink" title="idea learning"></a>idea learning</h1><p><a href="http://open.163.com/movie/2017/2/6/B/MC918H30S_MC9VQJL6B.html" target="_blank" rel="external">视频地址</a><br>被拒绝时不逃跑，继续询问、争取，会有机会成功，或者找到通往成功的方向。</p>
+<p>在请求别人时，主动说出别人的疑虑，会容易获得信任。</p>
+<p>事情的成功，不一定在于水平，也可能在于争取。</p>
+<hr>
 <h1 id="hack-news"><a href="#hack-news" class="headerlink" title="hack news"></a>hack news</h1><h2 id="标准库中的惊悚"><a href="#标准库中的惊悚" class="headerlink" title="标准库中的惊悚"></a>标准库中的惊悚</h2><p><a href="https://www.zerotier.com/blog/2017-05-05-theleak.shtml" target="_blank" rel="external">链接地址</a></p>
 <p>原作者在一次客户升级任务中，惨遭 <em>内存泄漏</em> 毒手。</p>
 <blockquote>
@@ -69,6 +73,7 @@
 &lt;li&gt;GNU libstdc++ 的内存深坑&lt;/li&gt;
 &lt;li&gt;Unix 中的命名管道&lt;/li&gt;
 &lt;li&gt;golang net/http 阅读&lt;/li&gt;
+&lt;li&gt;被拒绝不可怕&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
