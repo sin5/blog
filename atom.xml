@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-05-08T03:51:05.000Z</updated>
+  <updated>2017-05-08T06:18:54.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -20,10 +20,11 @@
     <link href="http://blog.sin5th.com/2017/05/08/2017-05-08/"/>
     <id>http://blog.sin5th.com/2017/05/08/2017-05-08/</id>
     <published>2017-05-08T03:33:20.000Z</published>
-    <updated>2017-05-08T03:51:05.000Z</updated>
+    <updated>2017-05-08T06:18:54.000Z</updated>
     
     <content type="html"><![CDATA[<ul>
 <li>GNU libstdc++ 的内存深坑</li>
+<li>Unix 中的命名管道</li>
 </ul>
 <a id="more"></a>
 <hr>
@@ -38,13 +39,29 @@
 </blockquote>
 <p>设置环境变量 GLIBCPP_FORCE_NEW 可以强制 libstdc++ 关闭内存分配池。：D</p>
 <hr>
-<h1 id="book-reading"><a href="#book-reading" class="headerlink" title="book reading"></a>book reading</h1><hr>
+<h1 id="book-reading"><a href="#book-reading" class="headerlink" title="book reading"></a>book reading</h1><h2 id="APUE-FIFO"><a href="#APUE-FIFO" class="headerlink" title="APUE FIFO"></a>APUE FIFO</h2><p>命名管道是 Unix 进程间通信的另一手段。不同于 pipe 只能在有关联的进程中使用，fifo 允许任意两个（或多个）进程进行通信，不过 fifo 也是单向通信。</p>
+<p>fifo 一般用来做两件事：</p>
+<ol>
+<li><p>复制输出流</p>
+<blockquote>
+<p>当需要多个程序同时处理一种输出时，可以使用 tee 和 fifo。<br>tee 会将输入内容同时输出到 stdout 和一个命名文件；<br>如果这个命名文件为 fifo 类型，则启动另一进程进行读取，即可达到所需的效果。</p>
+</blockquote>
+</li>
+<li><p>客户-服务器进程通信</p>
+<blockquote>
+<p>服务器从一个众所周知的 fifo 文件读取，而客户端向该文件写入。</p>
+<p><em>注：当没有进程以写入模式打开 fifo 文件时，读取进程将收到 EOF。为避免此问题，服务器进程一般以读写模式打开</em></p>
+</blockquote>
+</li>
+</ol>
+<hr>
 <h1 id="tech-leaning"><a href="#tech-leaning" class="headerlink" title="tech leaning"></a>tech leaning</h1>]]></content>
     
     <summary type="html">
     
       &lt;ul&gt;
 &lt;li&gt;GNU libstdc++ 的内存深坑&lt;/li&gt;
+&lt;li&gt;Unix 中的命名管道&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
