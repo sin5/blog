@@ -4,7 +4,7 @@
 
 # Site
 title: Sin5th's Blog
-subtitle:
+subtitle: sin5th
 description: 我有一壶酒，足以慰风尘<br/>尽倾江河里，赠饮天下人
 author: sin5th
 language: zh-Hans
@@ -90,3 +90,6 @@ deploy:
     github: git@github.com:sin5th/sin5th.github.io
     coding: git@git.coding.net:sin5th/blog.sin5th.git
   branch: master
+
+toc:
+  maxDepth: 3
