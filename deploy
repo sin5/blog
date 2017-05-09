@@ -1,0 +1,5 @@
+#!/bin/bash
+basepath=$(cd `dirname $0`; pwd)
+
+cd $basepath && hexo d -g 
+git add . && git commit -m "auto saved" && git push
