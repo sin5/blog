@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Sin5th&#39;s Blog</title>
-  <subtitle>sin5th</subtitle>
+  <title>sin5th blog</title>
+  
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-05-08T14:09:56.000Z</updated>
+  <updated>2017-05-09T08:43:16.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -14,6 +14,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2017-05-09</title>
+    <link href="http://blog.sin5th.com/2017/05/09/2017-05-09/"/>
+    <id>http://blog.sin5th.com/2017/05/09/2017-05-09/</id>
+    <published>2017-05-09T08:30:52.000Z</published>
+    <updated>2017-05-09T08:43:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<ul>
+<li>Uber 涉嫌使用软件躲避审查，受到法律调查</li>
+</ul>
+<a id="more"></a>
+<hr>
+<h1 id="idea-learning"><a href="#idea-learning" class="headerlink" title="idea learning"></a>idea learning</h1><hr>
+<h1 id="hack-news"><a href="#hack-news" class="headerlink" title="hack news"></a>hack news</h1><p><a href="http://www.reuters.com/article/us-uber-tech-crime-exclusive-idUSKBN1802U1" target="_blank" rel="external">链接地址</a><br>Uber 涉嫌利用 Greyball 软件，协助司机躲避监管，受到司法部的调查。</p>
+<p>称其通过挖掘信用卡、地理位置等信息，辨识用户身份，并进一步阻碍监管人员“钓鱼执法”。</p>
+<p>最近，Uber 商业及法律问题不断，引起众多社会舆论。</p>
+<p>该调查不代表任何违法事件的发生。</p>
+<hr>
+<h1 id="book-reading"><a href="#book-reading" class="headerlink" title="book reading"></a>book reading</h1><hr>
+<h1 id="tech-learning"><a href="#tech-learning" class="headerlink" title="tech learning"></a>tech learning</h1>]]></content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;Uber 涉嫌使用软件躲避审查，受到法律调查&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>2017-05-08</title>
