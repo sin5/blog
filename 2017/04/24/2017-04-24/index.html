@@ -60,7 +60,7 @@
   
     
     
-    <link href="sin5th.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -112,7 +112,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Pisces',
-    sidebar: {"position":"left","display":"always","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    sidebar: {"position":"right","offset":12,"offset_float":0,"b2t":true,"scrollpercent":true},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -148,16 +148,6 @@
 
 
 
-  <script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?5da47edba6e90eef90cd833019844594";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
-
 
 
 
@@ -172,7 +162,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail ">
+  <div class="container sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -188,7 +178,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <h1 class="site-subtitle" itemprop="description"></h1>
       
   </div>
 
@@ -257,6 +247,26 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            站点地图
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
 
       
     </ul>
@@ -303,14 +313,14 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
             
             
               
                 2017-04-24
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -320,27 +330,13 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
-              
               <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-24T21:51:27+08:00">
                 2017-04-24
               </time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2017-04-24T17:23:03+08:00">
-                2017-04-24
-              </time>
             
           </span>
 
@@ -352,8 +348,6 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">分类于</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -395,8 +389,6 @@
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">字数统计</span>
-                
                 <span title="字数统计">
                   438
                 </span>
@@ -410,8 +402,6 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                
-                  <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
                   2
@@ -433,7 +423,7 @@
       
 
       
-        <h1 id="阅读-apue"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="进程控制"><a href="#进程控制" class="headerlink" title="进程控制"></a>进程控制</h2><p>本章介绍 UNIX 的进程控制，包括创建新进程、执行进程和进程终止</p>
+        <h1 id="阅读-APUE"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="进程控制"><a href="#进程控制" class="headerlink" title="进程控制"></a>进程控制</h2><p>本章介绍 UNIX 的进程控制，包括创建新进程、执行进程和进程终止</p>
 <h3 id="进程标识符"><a href="#进程标识符" class="headerlink" title="进程标识符"></a>进程标识符</h3><p>每个进程都有一个非负数型表示的唯一进程ID</p>
 <p>ID为 0 的进程通常是调度进程，常被称为交换进程（swapper）<br>ID为 1 的进程通常是init进程，负责在自举内核后启动一个UNIX系统  </p>
 <a id="more"></a>
@@ -489,21 +479,6 @@
     <div>
       
         
-  <ul class="post-copyright">
-    <li class="post-copyright-author">
-      <strong>本文作者：</strong>
-      sin5th
-    </li>
-    <li class="post-copyright-link">
-      <strong>本文链接：</strong>
-      <a href="http://blog.sin5th.com/2017/04/24/2017-04-24/" title="2017-04-24">http://blog.sin5th.com/2017/04/24/2017-04-24/</a>
-    </li>
-    <li class="post-copyright-license">
-      <strong>版权声明： </strong>
-      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！
-    </li>
-  </ul>
-
 
       
     </div>
@@ -541,7 +516,6 @@
       
     </footer>
   </article>
-
 
 
     <div class="post-spread">
@@ -629,15 +603,15 @@
                alt="sin5th" />
           <p class="site-author-name" itemprop="name">sin5th</p>
            
-              <p class="site-description motion-element" itemprop="description">我有一壶酒，足以慰风尘<br/>尽倾江河里，赠饮天下人</p>
-          
+              <p class="site-description motion-element" itemprop="description"></p>
+           
         </div>
         <nav class="site-state motion-element">
 
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">18</span>
+                <span class="site-state-item-count">19</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -678,6 +652,17 @@
 
         <div class="links-of-author motion-element">
           
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/sin5th" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+          
         </div>
 
         
@@ -707,7 +692,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#阅读-apue"><span class="nav-number">1.</span> <span class="nav-text">阅读 APUE</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#进程控制"><span class="nav-number">1.1.</span> <span class="nav-text">进程控制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#进程标识符"><span class="nav-number">1.1.1.</span> <span class="nav-text">进程标识符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fork-函数"><span class="nav-number">1.1.2.</span> <span class="nav-text">fork 函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#wait-和-waitpid-函数"><span class="nav-number">1.1.3.</span> <span class="nav-text">wait 和 waitpid 函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#exec-函数"><span class="nav-number">1.1.4.</span> <span class="nav-text">exec 函数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#进程关系"><span class="nav-number">1.2.</span> <span class="nav-text">进程关系</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#阅读-APUE"><span class="nav-number">1.</span> <span class="nav-text">阅读 APUE</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#进程控制"><span class="nav-number">1.1.</span> <span class="nav-text">进程控制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#进程标识符"><span class="nav-number">1.1.1.</span> <span class="nav-text">进程标识符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fork-函数"><span class="nav-number">1.1.2.</span> <span class="nav-text">fork 函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#wait-和-waitpid-函数"><span class="nav-number">1.1.3.</span> <span class="nav-text">wait 和 waitpid 函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#exec-函数"><span class="nav-number">1.1.4.</span> <span class="nav-text">exec 函数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#进程关系"><span class="nav-number">1.2.</span> <span class="nav-text">进程关系</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -715,6 +700,13 @@
       <!--/noindex-->
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -738,17 +730,6 @@
 </div>
 
 
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Pisces
-  </a>
-</div>
-
 
         
 
@@ -756,11 +737,6 @@
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
   </div>
@@ -903,10 +879,28 @@
   
 
   
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
 
   
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.0"></script>
+
 
   
 

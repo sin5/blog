@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-05-10T14:13:12.000Z</updated>
+  <updated>2017-05-11T03:15:58.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -16,11 +16,54 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>2017-05-11</title>
+    <link href="http://blog.sin5th.com/2017/05/11/2017-05-11/"/>
+    <id>http://blog.sin5th.com/2017/05/11/2017-05-11/</id>
+    <published>2017-05-11T02:18:18.000Z</published>
+    <updated>2017-05-11T03:15:58.000Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a>
+<div class="hr-sect">Hack News</div>
+
+
+
+<div class="hr-sect">Tech Learning</div>
+
+
+
+<div class="hr-sect">Book Reading</div>
+
+
+
+<div class="hr-sect">Ideas Spreading</div>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;div class=&quot;hr-sect&quot;&gt;Hack News&lt;/div&gt;
+
+
+
+&lt;div class=&quot;hr-sect&quot;&gt;Tech Learning&lt;/div&gt;
+
+
+
+&lt;div class=&quot;hr-sect&quot;&gt;Book Reading&lt;/div
+    
+    </summary>
+    
+      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>2017-05-10</title>
     <link href="http://blog.sin5th.com/2017/05/10/2017-05-10/"/>
     <id>http://blog.sin5th.com/2017/05/10/2017-05-10/</id>
     <published>2017-05-10T02:10:39.000Z</published>
-    <updated>2017-05-10T14:13:12.000Z</updated>
+    <updated>2017-05-11T03:14:55.000Z</updated>
     
     <content type="html"><![CDATA[<ul>
 <li>开始自己的音乐制作</li>
@@ -29,13 +72,9 @@
 <li>更好的方式迎接死亡</li>
 </ul>
 <a id="more"></a>
-<hr>
-<h1 id="idea-learning"><a href="#idea-learning" class="headerlink" title="idea learning"></a>idea learning</h1><h2 id="更好的方式"><a href="#更好的方式" class="headerlink" title="更好的方式"></a>更好的方式</h2><p><a href="http://open.163.com/movie/2015/7/4/7/MAUJNN86J_MAUJO1D47.html" target="_blank" rel="external">视频地址</a></p>
-<p>死亡，一个绝大多数人不想谈论的词，但也是所有人都将面临的事。</p>
-<p>我们抵触它、避讳它，但却没能给我们带来什么真实的意义。医院是压抑的，疗养院是单调的…</p>
-<p>火葬最初被99.8%的人所抵触，但最终还是为大多数人接受。所以，何不换一种方式看待死亡。</p>
-<hr>
-<h1 id="hack-news"><a href="#hack-news" class="headerlink" title="hack news"></a>hack news</h1><h2 id="音乐制作"><a href="#音乐制作" class="headerlink" title="音乐制作"></a>音乐制作</h2><p><a href="https://learningmusic.ableton.com/index.html" target="_blank" rel="external">链接地址</a></p>
+<div class="hr-sect">Hack News</div>
+
+<h1 id="音乐制作"><a href="#音乐制作" class="headerlink" title="音乐制作"></a>音乐制作</h1><p><a href="https://learningmusic.ableton.com/index.html" target="_blank" rel="external">链接地址</a></p>
 <p>很多音乐都是通过混合乐器声制作而成的，了解一些基本的知识，你也可以制作出动人的音乐。</p>
 <p>常见的发声器有：</p>
 <ul>
@@ -44,18 +83,26 @@
 <li>clap（击掌）</li>
 <li>kick（大鼓）</li>
 </ul>
-<hr>
-<h1 id="book-reading"><a href="#book-reading" class="headerlink" title="book reading"></a>book reading</h1><h2 id="apue-xsi-ipc"><a href="#APUE-XSI-IPC" class="headerlink" title="APUE XSI IPC"></a>APUE XSI IPC</h2><p>除了管道、命名管道之外，另外三种 IPC：</p>
+<div class="hr-sect">Tech Learning</div>
+
+<h1 id="git-shallow-clone"><a href="#git-shallow-clone" class="headerlink" title="git shallow clone"></a>git shallow clone</h1><p><a href="https://www.perforce.com/blog/141218/git-beyond-basics-using-shallow-clones" target="_blank" rel="external">链接地址</a></p>
+<p>因为 git clone 不仅下载文件，还会下载每一个版本变更。在持续集成（CI）、持续交付（CD）中，自动化的下载容易引起 git 服务器负载问题。。</p>
+<p><code>git clone --depth 1</code> 能简单地避免该问题。</p>
+<p><em>Git 1.9 版本之前，shallow clone 的代码库不支持 pull/push。</em></p>
+<div class="hr-sect">Book Reading</div>
+
+<h1 id="apue-xsi-ipc"><a href="#APUE-XSI-IPC" class="headerlink" title="APUE XSI IPC"></a>APUE XSI IPC</h1><p>除了管道、命名管道之外，另外三种 IPC：</p>
 <ul>
 <li>消息队列</li>
 <li>信号量</li>
 <li>共享存储</li>
 </ul>
-<hr>
-<h1 id="tech-learning"><a href="#tech-learning" class="headerlink" title="tech learning"></a>tech learning</h1><h2 id="git-shallow-clone"><a href="#git-shallow-clone" class="headerlink" title="git shallow clone"></a>git shallow clone</h2><p><a href="https://www.perforce.com/blog/141218/git-beyond-basics-using-shallow-clones" target="_blank" rel="external">链接地址</a></p>
-<p>因为 git clone 不仅下载文件，还会下载每一个版本变更。在持续集成（CI）、持续交付（CD）中，自动化的下载容易引起 git 服务器负载问题。。</p>
-<p><code>git clone --depth 1</code> 能简单地避免该问题。</p>
-<p><em>Git 1.9 版本之前，shallow clone 的代码库不支持 pull/push。</em></p>
+<div class="hr-sect">Ideas Spreading</div>
+
+<h1 id="更好的方式"><a href="#更好的方式" class="headerlink" title="更好的方式"></a>更好的方式</h1><p><a href="http://open.163.com/movie/2015/7/4/7/MAUJNN86J_MAUJO1D47.html" target="_blank" rel="external">视频地址</a></p>
+<p>死亡，一个绝大多数人不想谈论的词，但也是所有人都将面临的事。</p>
+<p>我们抵触它、避讳它，但却没能给我们带来什么真实的意义。医院是压抑的，疗养院是单调的…</p>
+<p>火葬最初被99.8%的人所抵触，但最终还是为大多数人接受。所以，何不换一种方式看待死亡。</p>
 ]]></content>
     
     <summary type="html">
@@ -79,7 +126,7 @@
     <link href="http://blog.sin5th.com/2017/05/09/2017-05-09/"/>
     <id>http://blog.sin5th.com/2017/05/09/2017-05-09/</id>
     <published>2017-05-09T08:30:52.000Z</published>
-    <updated>2017-05-09T15:54:18.000Z</updated>
+    <updated>2017-05-11T03:13:51.000Z</updated>
     
     <content type="html"><![CDATA[<ul>
 <li>Uber 涉嫌使用软件躲避审查，受到法律调查</li>
@@ -87,18 +134,15 @@
 <li>go 中的继承</li>
 </ul>
 <a id="more"></a>
-<hr>
-<h1 id="idea-learning"><a href="#idea-learning" class="headerlink" title="idea learning"></a>idea learning</h1><h2 id="如何掌控你的自由时间"><a href="#如何掌控你的自由时间" class="headerlink" title="如何掌控你的自由时间"></a>如何掌控你的自由时间</h2><p><a href="http://open.163.com/movie/2016/12/I/B/MC82BCQAN_MC8U8L3IB.html" target="_blank" rel="external">视频地址</a><br>我们总说把握好时间，就能过上想要的生活。事实是，先有想要怎样的生活，才会去安排时间。</p>
-<p>与其说“没有时间”，不如说“我不想把时间花费在这件事上”，所以，时间就是选择。</p>
-<p>就如同那句老话：<em>时间就是海绵里的水，挤挤总是有的。</em></p>
-<hr>
-<h1 id="hack-news"><a href="#hack-news" class="headerlink" title="hack news"></a>hack news</h1><h2 id="uber-司法调查"><a href="#Uber-司法调查" class="headerlink" title="Uber 司法调查"></a>Uber 司法调查</h2><p><a href="http://www.reuters.com/article/us-uber-tech-crime-exclusive-idUSKBN1802U1" target="_blank" rel="external">链接地址</a><br>Uber 涉嫌利用 Greyball 软件，协助司机躲避监管，受到司法部的调查。</p>
+<div class="hr-sect">Hack News</div>
+
+<h1 id="uber-受到法律调查"><a href="#Uber-受到法律调查" class="headerlink" title="Uber 受到法律调查"></a>Uber 受到法律调查</h1><p><a href="http://www.reuters.com/article/us-uber-tech-crime-exclusive-idUSKBN1802U1" target="_blank" rel="external">链接地址</a><br>Uber 涉嫌利用 Greyball 软件，协助司机躲避监管，受到司法部的调查。</p>
 <p>称其通过挖掘信用卡、地理位置等信息，辨识用户身份，并进一步阻碍监管人员“钓鱼执法”。</p>
 <p>最近，Uber 商业及法律问题不断，引起众多社会舆论。</p>
 <p>该调查不代表任何违法事件的发生。</p>
-<hr>
-<h1 id="book-reading"><a href="#book-reading" class="headerlink" title="book reading"></a>book reading</h1><hr>
-<h1 id="tech-learning"><a href="#tech-learning" class="headerlink" title="tech learning"></a>tech learning</h1><h2 id="inherition-in-go"><a href="#inherition-in-go" class="headerlink" title="inherition in go"></a>inherition in go</h2><p>首先，golang 不支持类与继承。</p>
+<div class="hr-sect">Tech Learning</div>
+
+<h1 id="inherition-in-go"><a href="#inherition-in-go" class="headerlink" title="inherition in go"></a>inherition in go</h1><p>首先，golang 不支持类与继承。</p>
 <p>但我们总会遇到这样的场景，有一种对象 A，它包含许多属性与方法的定义。现在需要一种对象 B，它和 A 几乎相同，只在一个方法上略有不同。</p>
 <p>如果是 c++/java 出身，会自然地写出类似下面的定义：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">class A &#123;</div><div class="line">  attr_a;</div><div class="line">  attr_b;</div><div class="line">  method_a;</div><div class="line">  method_b;</div><div class="line">&#125;</div><div class="line"></div><div class="line">class B(A) &#123;</div><div class="line">  method_b; // another implementation</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>如果是 js/lua 出身，会自然地写出类似下面的定义：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">ProtoTypeA = &#123;</div><div class="line">  method_a;</div><div class="line">  method_b;</div><div class="line">&#125;</div><div class="line"></div><div class="line">function A(attr_a, attr_b)&#123;</div><div class="line">  o = new object;</div><div class="line">  o.attr_a = attr_a;</div><div class="line">  o.attr_b = attr_b;</div><div class="line">  set_prototype(o, ProtoTypeA);</div><div class="line">&#125;</div><div class="line"></div><div class="line">ProtoTypeB = &#123;</div><div class="line">  method_b; // another implementation</div><div class="line">&#125;</div><div class="line"></div><div class="line">set_prototype(ProtoTypeB, ProtoTypeA)</div><div class="line"></div><div class="line">function B(attr_a, attr_b)&#123;</div><div class="line">  o = A(attr_a, attr_b);</div><div class="line">  set_prototype(o, ProtoTypeB)</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
@@ -107,6 +151,14 @@
 <blockquote>
 <p>如果想达到类似的效果，可以声明一个代理函数，然后在实例初始化过程中（当然，这个过程是自己规划出来的）对代理函数进行赋值（这一步有点像 js/lua），不过还是比较受限且麻烦的。<br>*先到这里，没来得及思考、查阅更好的方法。或许 golang 根本不鼓励这种玩法也说不定。</p>
 </blockquote>
+<div class="hr-sect">Book Reading</div>
+
+
+
+<p><div class="hr-sect">Ideas Spreading</div></p>
+<h1 id="如何掌控你的自由时间"><a href="#如何掌控你的自由时间" class="headerlink" title="如何掌控你的自由时间"></a>如何掌控你的自由时间</h1><p><a href="http://open.163.com/movie/2016/12/I/B/MC82BCQAN_MC8U8L3IB.html" target="_blank" rel="external">视频地址</a><br>我们总说把握好时间，就能过上想要的生活。事实是，先有想要怎样的生活，才会去安排时间。</p>
+<p>与其说“没有时间”，不如说“我不想把时间花费在这件事上”，所以，时间就是选择。</p>
+<p>就如同那句老话：<em>时间就是海绵里的水，挤挤总是有的。</em></p>
 ]]></content>
     
     <summary type="html">
@@ -129,21 +181,18 @@
     <link href="http://blog.sin5th.com/2017/05/08/2017-05-08/"/>
     <id>http://blog.sin5th.com/2017/05/08/2017-05-08/</id>
     <published>2017-05-08T03:33:20.000Z</published>
-    <updated>2017-05-08T14:09:56.000Z</updated>
+    <updated>2017-05-11T03:11:40.000Z</updated>
     
     <content type="html"><![CDATA[<ul>
 <li>GNU libstdc++ 的内存深坑</li>
 <li>Unix 中的命名管道</li>
-<li>golang net/http 阅读</li>
+<li>阅读 net/http</li>
 <li>被拒绝不可怕</li>
 </ul>
 <a id="more"></a>
-<hr>
-<h1 id="idea-learning"><a href="#idea-learning" class="headerlink" title="idea learning"></a>idea learning</h1><p><a href="http://open.163.com/movie/2017/2/6/B/MC918H30S_MC9VQJL6B.html" target="_blank" rel="external">视频地址</a><br>被拒绝时不逃跑，继续询问、争取，会有机会成功，或者找到通往成功的方向。</p>
-<p>在请求别人时，主动说出别人的疑虑，会容易获得信任。</p>
-<p>事情的成功，不一定在于水平，也可能在于争取。</p>
-<hr>
-<h1 id="hack-news"><a href="#hack-news" class="headerlink" title="hack news"></a>hack news</h1><h2 id="标准库中的惊悚"><a href="#标准库中的惊悚" class="headerlink" title="标准库中的惊悚"></a>标准库中的惊悚</h2><p><a href="https://www.zerotier.com/blog/2017-05-05-theleak.shtml" target="_blank" rel="external">链接地址</a></p>
+<div class="hr-sect">Hack News</div>
+
+<h1 id="标准库中的惊悚"><a href="#标准库中的惊悚" class="headerlink" title="标准库中的惊悚"></a>标准库中的惊悚</h1><p><a href="https://www.zerotier.com/blog/2017-05-05-theleak.shtml" target="_blank" rel="external">链接地址</a></p>
 <p>原作者在一次客户升级任务中，惨遭 <em>内存泄漏</em> 毒手。</p>
 <blockquote>
 <p>风波初起，devops 工程师妙手“回春”，定期重启稳住状况，为原作者争取时间；</p>
@@ -152,8 +201,16 @@
 <p>万念俱灰，对标准库再起杀心。终发现 libstdc++ 内存分配深坑（它为了应对 <code>malloc is slow</code>，包裹了一层分配池，于是乎…）</p>
 </blockquote>
 <p>设置环境变量 GLIBCPP_FORCE_NEW 可以强制 libstdc++ 关闭内存分配池。：D</p>
-<hr>
-<h1 id="book-reading"><a href="#book-reading" class="headerlink" title="book reading"></a>book reading</h1><h2 id="apue-fifo"><a href="#APUE-FIFO" class="headerlink" title="APUE FIFO"></a>APUE FIFO</h2><p>命名管道是 Unix 进程间通信的另一手段。不同于 pipe 只能在有关联的进程中使用，fifo 允许任意两个（或多个）进程进行通信，不过 fifo 也是单向通信。</p>
+<div class="hr-sect">Tech Learning</div>
+
+<h1 id="nethttp-in-go"><a href="#net-http-in-go" class="headerlink" title="net/http in go"></a>net/http in go</h1><p><a href="http://tour.golang.org" target="_blank" rel="external">http://tour.golang.org</a> 看完以为就算 golang 入门了，读读标准库发觉还差得多。</p>
+<h2 id="select-on-closed-chan"><a href="#select-on-closed-chan" class="headerlink" title="select on closed chan"></a><code>select</code> on closed chan</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 出自 net/http/client.go</span></div><div class="line"><span class="comment">// 当 cancel 被 close 之后，函数永远返回 true</span></div><div class="line">wasCanceled = <span class="function"><span class="keyword">func</span><span class="params">()</span> <span class="title">bool</span></span> &#123;</div><div class="line">	<span class="keyword">select</span> &#123;</div><div class="line">	<span class="keyword">case</span> &lt;-cancel:</div><div class="line">		<span class="keyword">return</span> <span class="literal">true</span></div><div class="line">	<span class="keyword">default</span>:</div><div class="line">		<span class="keyword">return</span> <span class="literal">false</span></div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="appendl-another_l"><a href="#append-l-another-l…" class="headerlink" title="append(l, another_l…)"></a><code>append</code>(l, another_l…)</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 出自 net/http/client_test.go</span></div><div class="line"><span class="comment">// append(b, buf[:n]...) 中 ... 是将数组或分片展开</span></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">pedanticReadAll</span><span class="params">(r io.Reader)</span> <span class="params">(b []<span class="keyword">byte</span>, err error)</span></span> &#123;</div><div class="line">	<span class="keyword">var</span> bufa [<span class="number">64</span>]<span class="keyword">byte</span></div><div class="line">	buf := bufa[:]</div><div class="line">	<span class="keyword">for</span> &#123;</div><div class="line">		n, err := r.Read(buf)</div><div class="line">		<span class="keyword">if</span> n == <span class="number">0</span> &amp;&amp; err == <span class="literal">nil</span> &#123;</div><div class="line">			<span class="keyword">return</span> <span class="literal">nil</span>, fmt.Errorf(<span class="string">"Read: n=0 with err=nil"</span>)</div><div class="line">		&#125;</div><div class="line">		b = <span class="built_in">append</span>(b, buf[:n]...)</div><div class="line">		<span class="keyword">if</span> err == io.EOF &#123;</div><div class="line">			n, err := r.Read(buf)</div><div class="line">			<span class="keyword">if</span> n != <span class="number">0</span> || err != io.EOF &#123;</div><div class="line">				<span class="keyword">return</span> <span class="literal">nil</span>, fmt.Errorf(<span class="string">"Read: n=%d err=%#v after EOF"</span>, n, err)</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">return</span> b, <span class="literal">nil</span></div><div class="line">		&#125;</div><div class="line">		<span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</div><div class="line">			<span class="keyword">return</span> b, err</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="error-is-a-interface"><a href="#error-is-a-interface" class="headerlink" title="error is a interface"></a><code>error</code> is a interface</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 出自 net/http/client_test.go</span></div><div class="line"><span class="comment">// error 是一个接口，因此 checkErr == nil</span></div><div class="line"><span class="keyword">var</span> checkErr error</div><div class="line">c = &amp;Client&#123;CheckRedirect: <span class="function"><span class="keyword">func</span><span class="params">(req *Request, via []*Request)</span> <span class="title">error</span></span> &#123;</div><div class="line">	<span class="keyword">return</span> checkErr</div><div class="line">&#125;&#125;</div></pre></td></tr></table></figure>
+<h2 id="chan-send-only-amp-receive-only"><a href="#chan-send-only-amp-receive-only" class="headerlink" title="chan send-only &amp; receive-only"></a><code>chan</code> send-only &amp; receive-only</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 出自 net/http/request.go</span></div><div class="line"><span class="comment">// &lt;-chan 代表只读管道，chan&lt;- 代表只写管道</span></div><div class="line">Cancel &lt;-<span class="keyword">chan</span> <span class="keyword">struct</span>&#123;&#125;</div></pre></td></tr></table></figure>
+<div class="hr-sect">Book Reading</div>
+
+<h1 id="apue-fifo"><a href="#APUE-FIFO" class="headerlink" title="APUE FIFO"></a>APUE FIFO</h1><p>命名管道是 Unix 进程间通信的另一手段。不同于 pipe 只能在有关联的进程中使用，fifo 允许任意两个（或多个）进程进行通信，不过 fifo 也是单向通信。</p>
 <p>fifo 一般用来做两件事：</p>
 <ol>
 <li><p>复制输出流</p>
@@ -168,12 +225,11 @@
 </blockquote>
 </li>
 </ol>
-<hr>
-<h1 id="tech-learning"><a href="#tech-learning" class="headerlink" title="tech learning"></a>tech learning</h1><h2 id="golang-nethttp-阅读"><a href="#golang-net-http-阅读" class="headerlink" title="golang net/http 阅读"></a>golang net/http 阅读</h2><p><a href="http://tour.golang.org" target="_blank" rel="external">http://tour.golang.org</a> 看完以为就算 golang 入门了，读读标准库发觉还差得多。</p>
-<h3 id="select-on-closed-chan"><a href="#select-on-closed-chan" class="headerlink" title="select on closed chan"></a><code>select</code> on closed chan</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 出自 net/http/client.go</span></div><div class="line"><span class="comment">// 当 cancel 被 close 之后，函数永远返回 true</span></div><div class="line">wasCanceled = <span class="function"><span class="keyword">func</span><span class="params">()</span> <span class="title">bool</span></span> &#123;</div><div class="line">	<span class="keyword">select</span> &#123;</div><div class="line">	<span class="keyword">case</span> &lt;-cancel:</div><div class="line">		<span class="keyword">return</span> <span class="literal">true</span></div><div class="line">	<span class="keyword">default</span>:</div><div class="line">		<span class="keyword">return</span> <span class="literal">false</span></div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="appendl-another_l"><a href="#append-l-another-l…" class="headerlink" title="append(l, another_l…)"></a><code>append</code>(l, another_l…)</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 出自 net/http/client_test.go</span></div><div class="line"><span class="comment">// append(b, buf[:n]...) 中 ... 是将数组或分片展开</span></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">pedanticReadAll</span><span class="params">(r io.Reader)</span> <span class="params">(b []<span class="keyword">byte</span>, err error)</span></span> &#123;</div><div class="line">	<span class="keyword">var</span> bufa [<span class="number">64</span>]<span class="keyword">byte</span></div><div class="line">	buf := bufa[:]</div><div class="line">	<span class="keyword">for</span> &#123;</div><div class="line">		n, err := r.Read(buf)</div><div class="line">		<span class="keyword">if</span> n == <span class="number">0</span> &amp;&amp; err == <span class="literal">nil</span> &#123;</div><div class="line">			<span class="keyword">return</span> <span class="literal">nil</span>, fmt.Errorf(<span class="string">"Read: n=0 with err=nil"</span>)</div><div class="line">		&#125;</div><div class="line">		b = <span class="built_in">append</span>(b, buf[:n]...)</div><div class="line">		<span class="keyword">if</span> err == io.EOF &#123;</div><div class="line">			n, err := r.Read(buf)</div><div class="line">			<span class="keyword">if</span> n != <span class="number">0</span> || err != io.EOF &#123;</div><div class="line">				<span class="keyword">return</span> <span class="literal">nil</span>, fmt.Errorf(<span class="string">"Read: n=%d err=%#v after EOF"</span>, n, err)</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">return</span> b, <span class="literal">nil</span></div><div class="line">		&#125;</div><div class="line">		<span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</div><div class="line">			<span class="keyword">return</span> b, err</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="error-is-a-interface"><a href="#error-is-a-interface" class="headerlink" title="error is a interface"></a><code>error</code> is a interface</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 出自 net/http/client_test.go</span></div><div class="line"><span class="comment">// error 是一个接口，因此 checkErr == nil</span></div><div class="line"><span class="keyword">var</span> checkErr error</div><div class="line">c = &amp;Client&#123;CheckRedirect: <span class="function"><span class="keyword">func</span><span class="params">(req *Request, via []*Request)</span> <span class="title">error</span></span> &#123;</div><div class="line">	<span class="keyword">return</span> checkErr</div><div class="line">&#125;&#125;</div></pre></td></tr></table></figure>
-<h3 id="chan-send-only-amp-receive-only"><a href="#chan-send-only-amp-receive-only" class="headerlink" title="chan send-only &amp; receive-only"></a><code>chan</code> send-only &amp; receive-only</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 出自 net/http/request.go</span></div><div class="line"><span class="comment">// &lt;-chan 代表只读管道，chan&lt;- 代表只写管道</span></div><div class="line">Cancel &lt;-<span class="keyword">chan</span> <span class="keyword">struct</span>&#123;&#125;</div></pre></td></tr></table></figure>
+<div class="hr-sect">Ideas Spreading</div>
+
+<h1 id="每天被拒绝"><a href="#每天被拒绝" class="headerlink" title="每天被拒绝"></a>每天被拒绝</h1><p><a href="http://open.163.com/movie/2017/2/6/B/MC918H30S_MC9VQJL6B.html" target="_blank" rel="external">视频地址</a><br>被拒绝时不逃跑，继续询问、争取，会有机会成功，或者找到通往成功的方向。</p>
+<p>在请求别人时，主动说出别人的疑虑，会容易获得信任。</p>
+<p>事情的成功，不一定在于水平，也可能在于争取。</p>
 ]]></content>
     
     <summary type="html">
@@ -181,7 +237,7 @@
       &lt;ul&gt;
 &lt;li&gt;GNU libstdc++ 的内存深坑&lt;/li&gt;
 &lt;li&gt;Unix 中的命名管道&lt;/li&gt;
-&lt;li&gt;golang net/http 阅读&lt;/li&gt;
+&lt;li&gt;阅读 net/http&lt;/li&gt;
 &lt;li&gt;被拒绝不可怕&lt;/li&gt;
 &lt;/ul&gt;
     
@@ -197,7 +253,7 @@
     <link href="http://blog.sin5th.com/2017/05/07/2017-05-07/"/>
     <id>http://blog.sin5th.com/2017/05/07/2017-05-07/</id>
     <published>2017-05-07T05:44:08.000Z</published>
-    <updated>2017-05-08T06:48:50.000Z</updated>
+    <updated>2017-05-11T03:10:07.000Z</updated>
     
     <content type="html"><![CDATA[<ul>
 <li>使用 pipe 进行进程间通信</li>
@@ -206,17 +262,9 @@
 <li>理解 bash 算数表达式的返回状态</li>
 </ul>
 <a id="more"></a>
-<hr>
-<h1 id="idea-learning"><a href="#idea-learning" class="headerlink" title="idea learning"></a>idea learning</h1><h2 id="自媒体时代你能自己吗"><a href="#自媒体时代，你能自己吗？" class="headerlink" title="自媒体时代，你能自己吗？"></a>自媒体时代，你能自己吗？</h2><p><a href="http://open.163.com/movie/2017/5/9/9/MCIGB2D5E_MCIGB6K99.html" target="_blank" rel="external">视频地址</a></p>
-<p>在通信技术日益发达的今天，我们每一个人都可以称作媒体，当我们点下 like 时，按下 share 时，都将声音传播了出去。</p>
-<p>在自媒体时代，不再有人警告你“以下内容儿童不宜观看”，唯有洞察内心、增强分辨力才能不被世界的真真假假所摆布。</p>
-<p>个人感受</p>
-<blockquote>
-<p>主讲人出身传统媒体，对自媒体的<strong>失控</strong>感到不适。列举了虚假内容传播的诸多事例，但流言这词却实非自媒体独有。</p>
-<p>我们不该把任何人当傻子看待，当大家对自媒体的信任程度趋于稳定时，当自媒体之间的差别被逐渐放大后，自媒体和传统媒体并没有本质上的差别。洗牌只是洗牌，不会多张牌、也不会少张牌，受影响的是持牌的玩家，但民众只是看客。</p>
-</blockquote>
-<hr>
-<h1 id="hack-news"><a href="#hack-news" class="headerlink" title="hack news"></a>hack news</h1><h2 id="为何-google-的-json-response-包含-while1-前缀"><a href="#为何-google-的-json-response-包含-while-1-前缀？" class="headerlink" title="为何 google 的 json response 包含 while(1) 前缀？"></a>为何 google 的 json response 包含 while(1) 前缀？</h2><p><a href="http://stackoverflow.com/questions/2669690/why-does-google-prepend-while1-to-their-json-responses" target="_blank" rel="external">链接地址</a></p>
+<div class="hr-sect">Hack News</div>
+
+<h1 id="为何-google-的-json-response-包含-while1-前缀"><a href="#为何-google-的-json-response-包含-while-1-前缀？" class="headerlink" title="为何 google 的 json response 包含 while(1) 前缀？"></a>为何 google 的 json response 包含 while(1) 前缀？</h1><p><a href="http://stackoverflow.com/questions/2669690/why-does-google-prepend-while1-to-their-json-responses" target="_blank" rel="external">链接地址</a></p>
 <p>最佳答案表示，这是为了防止 <a href="http://haacked.com/archive/2009/06/25/json-hijacking.aspx" target="_blank" rel="external">JSON 劫持</a></p>
 <blockquote>
 <p>虽然恶意网站会因为同源限制无法跨域名发起 ajax 请求，但是仍然可以在 <code>&lt;script&gt;</code> 中加入链接，然后通过<a href="http://ejohn.org/blog/re-securing-json/" target="_blank" rel="external">重写全局的数组构造器和访问方式</a>来达到窃取信息的目的。</p>
@@ -230,14 +278,25 @@
 <blockquote>
 <p>他会通过在服务器端检验 http header 来避免这种问题。（感觉可行，不过没有尝试过）</p>
 </blockquote>
-<hr>
-<h1 id="book-reading"><a href="#book-reading" class="headerlink" title="book reading"></a>book reading</h1><h2 id="apue-进程间通信"><a href="#APUE-进程间通信" class="headerlink" title="APUE 进程间通信"></a>APUE 进程间通信</h2><h3 id="管道"><a href="#管道" class="headerlink" title="管道"></a>管道</h3><p><code>pipe</code> 函数将两个文件描述符关联起来，分别用作单工通信的输入、输出。使用时一般在父进程中调用，然后通过fork将文件描述符传递给子进程。</p>
-<p><code>popen</code> 函数先调用pipe产生关联的文件描述符，之后调用fork和exec，将子进程的输出传回给调用进程。简化了管道的使用。</p>
-<p>如果当前程序产生某个进程的输入，同时从该进程读取输出时，则称该进程为当前程序的协同进程。</p>
-<hr>
-<h1 id="tech-learning"><a href="#tech-learning" class="headerlink" title="tech learning"></a>tech learning</h1><h2 id="bash"><a href="#bash" class="headerlink" title="bash"></a>bash</h2><h3 id="扩展算数表达式的退出状态不代表正误"><a href="#扩展算数表达式的退出状态不代表正误" class="headerlink" title="扩展算数表达式的退出状态不代表正误"></a>扩展算数表达式的退出状态不代表正误</h3><p>在 bash 中，算数表达式的退出状态，并不总代表执行是否成功，也与表达式返回值相关。</p>
+<div class="hr-sect">Tech Learning</div>
+
+<h1 id="bash"><a href="#bash" class="headerlink" title="bash"></a>bash</h1><h2 id="扩展算数表达式的退出状态不代表正误"><a href="#扩展算数表达式的退出状态不代表正误" class="headerlink" title="扩展算数表达式的退出状态不代表正误"></a>扩展算数表达式的退出状态不代表正误</h2><p>在 bash 中，算数表达式的退出状态，并不总代表执行是否成功，也与表达式返回值相关。</p>
 <p>(( 1/0 )) 报错，rc=1<br>(( 0 )) 正确，rc=1<br>(( 1 )) 正确，rc=0<br>当表达式正常运算时，返回状态与返回值相反。即，运算结果为0时，退出状态为1（表示false)；否则相反。</p>
 <p><a href="https://linuxstory.gitbooks.io/advanced-bash-scripting-guide-in-chinese/content/source/part2/07_1_test_constructs.html" target="_blank" rel="external">范例摘自</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">(( 0 &amp;&amp; 1 ))                 <span class="comment"># 逻辑与</span></div><div class="line"><span class="built_in">echo</span> $?     <span class="comment"># 1     ***</span></div><div class="line"><span class="comment"># 然后 ...</span></div><div class="line"><span class="built_in">let</span> <span class="string">"num = (( 0 &amp;&amp; 1 ))"</span></div><div class="line"><span class="built_in">echo</span> <span class="variable">$num</span>   <span class="comment"># 0</span></div><div class="line"><span class="comment"># 然而 ...</span></div><div class="line"><span class="built_in">let</span> <span class="string">"num = (( 0 &amp;&amp; 1 ))"</span></div><div class="line"><span class="built_in">echo</span> $?     <span class="comment"># 1     ***</span></div><div class="line"></div><div class="line"></div><div class="line">(( 200 || 11 ))              <span class="comment"># 逻辑或</span></div><div class="line"><span class="built_in">echo</span> $?     <span class="comment"># 0     ***</span></div><div class="line"><span class="comment"># ...</span></div><div class="line"><span class="built_in">let</span> <span class="string">"num = (( 200 || 11 ))"</span></div><div class="line"><span class="built_in">echo</span> <span class="variable">$num</span>   <span class="comment"># 1</span></div><div class="line"><span class="built_in">let</span> <span class="string">"num = (( 200 || 11 ))"</span></div><div class="line"><span class="built_in">echo</span> $?     <span class="comment"># 0     ***</span></div><div class="line"></div><div class="line"></div><div class="line">(( 200 | 11 ))               <span class="comment"># 按位或</span></div><div class="line"><span class="built_in">echo</span> $?                      <span class="comment"># 0     ***</span></div><div class="line"><span class="comment"># ...</span></div><div class="line"><span class="built_in">let</span> <span class="string">"num = (( 200 | 11 ))"</span></div><div class="line"><span class="built_in">echo</span> <span class="variable">$num</span>                    <span class="comment"># 203</span></div><div class="line"><span class="built_in">let</span> <span class="string">"num = (( 200 | 11 ))"</span></div><div class="line"><span class="built_in">echo</span> $?                      <span class="comment"># 0     ***</span></div><div class="line"></div><div class="line"><span class="comment"># "let" 结构的退出状态与双括号算术扩展的退出状态相同。</span></div></pre></td></tr></table></figure></p>
+<div class="hr-sect">Book Reading</div>
+
+<h1 id="apue-进程间通信"><a href="#APUE-进程间通信" class="headerlink" title="APUE 进程间通信"></a>APUE 进程间通信</h1><h2 id="管道"><a href="#管道" class="headerlink" title="管道"></a>管道</h2><p><code>pipe</code> 函数将两个文件描述符关联起来，分别用作单工通信的输入、输出。使用时一般在父进程中调用，然后通过fork将文件描述符传递给子进程。</p>
+<p><code>popen</code> 函数先调用pipe产生关联的文件描述符，之后调用fork和exec，将子进程的输出传回给调用进程。简化了管道的使用。</p>
+<p>如果当前程序产生某个进程的输入，同时从该进程读取输出时，则称该进程为当前程序的协同进程。</p>
+<div class="hr-sect">Ideas Spreading</div>
+
+<h1 id="自媒体时代你能自己吗"><a href="#自媒体时代，你能自己吗？" class="headerlink" title="自媒体时代，你能自己吗？"></a>自媒体时代，你能自己吗？</h1><p><a href="http://open.163.com/movie/2017/5/9/9/MCIGB2D5E_MCIGB6K99.html" target="_blank" rel="external">视频地址</a></p>
+<p>在通信技术日益发达的今天，我们每一个人都可以称作媒体，当我们点下 like 时，按下 share 时，都将声音传播了出去。</p>
+<p>在自媒体时代，不再有人警告你“以下内容儿童不宜观看”，唯有洞察内心、增强分辨力才能不被世界的真真假假所摆布。</p>
+<p>个人感受</p>
+<blockquote>
+<p>主讲人出身传统媒体，对自媒体的<strong>失控</strong>感到不适。列举了虚假内容传播的诸多事例，但流言这词却实非自媒体独有。我们不该把任何人当傻子看待，当大家对自媒体的信任程度趋于稳定时，当自媒体之间的差别被逐渐放大后，自媒体和传统媒体并没有本质上的差别。洗牌只是洗牌，不会多张牌、也不会少张牌，受影响的是持牌的玩家，但民众只是看客。</p>
+</blockquote>
 ]]></content>
     
     <summary type="html">
@@ -261,27 +320,46 @@
     <link href="http://blog.sin5th.com/2017/05/06/2017-05-06/"/>
     <id>http://blog.sin5th.com/2017/05/06/2017-05-06/</id>
     <published>2017-05-06T14:16:42.000Z</published>
-    <updated>2017-05-06T15:51:51.000Z</updated>
+    <updated>2017-05-11T03:06:58.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="ted"><a href="#ted" class="headerlink" title="ted"></a>ted</h1><h2 id="如何做得更好"><a href="#如何做得更好" class="headerlink" title="如何做得更好"></a>如何做得更好</h2><p><a href="http://open.163.com/movie/2017/2/C/U/MCC01J0QP_MCC021ACU.html" target="_blank" rel="external">视频地址</a><br>高效的人和团队, 始终兼顾 <code>学习</code> 和 <code>执行</code>. 学习过程将注意力集中在未知的领域, 接受失败, 并转化为新的技能; 执行过程将注意力集中在已知的领域, 避免失败, 并产出成果.</p>
-<p>太过关注成绩的学校, 驱使学生远离学习, 沉浸在执行中; 太过关注执行力的企业, 将员工限制在已知领域, 从而失去创新与进步.</p>
+    <content type="html"><![CDATA[<ul>
+<li>如何做的更好</li>
+<li>程序员的银行账户</li>
+<li>js 预处理</li>
+</ul>
 <a id="more"></a>
-<hr>
-<h1 id="hack-news"><a href="#hack-news" class="headerlink" title="hack news"></a>hack news</h1><h2 id="可编程的银行账户"><a href="#可编程的银行账户" class="headerlink" title="可编程的银行账户"></a>可编程的银行账户</h2><p><a href="https://root.co.za/" target="_blank" rel="external">https://root.co.za/</a><br>借助 api 构建自己的使用接口，用程序管理钱。</p>
-<h2 id="prepack尚处于开发阶段"><a href="#prepack（尚处于开发阶段）" class="headerlink" title="prepack（尚处于开发阶段）"></a>prepack（尚处于开发阶段）</h2><p><a href="https://prepack.io/" target="_blank" rel="external">https://prepack.io/</a><br>prepack 是一款用来优化 js 代码的工具，通过：把编译期能确定下来的值计算出来；简化赋值过程；避免中间计算和对象分配；等等方式来提高 js 代码的性能质量。</p>
+<div class="hr-sect">Hack News</div>
+
+<h1 id="可编程的银行账户"><a href="#可编程的银行账户" class="headerlink" title="可编程的银行账户"></a>可编程的银行账户</h1><p><a href="https://root.co.za/" target="_blank" rel="external">链接地址</a></p>
+<p>借助 api 构建自己的使用接口，用程序管理钱。</p>
+<h1 id="js-prepack"><a href="#js-prepack" class="headerlink" title="js prepack"></a>js prepack</h1><p><a href="https://prepack.io/" target="_blank" rel="external">链接地址</a></p>
+<p>prepack 是一款用来优化 js 代码的工具，通过把编译期能确定下来的值计算出来；简化赋值过程；避免中间计算和对象分配；等等方式来提高 js 代码的性能质量。</p>
 <blockquote>
-<p>个人感受<br>我始终认为代码质量是软件的关键指标之一，并且要分<code>维护性</code>、<code>运行性</code>这两个方面进行考量。维护性是为了让人清晰地理解，运行性是为了让机器清晰地理解。<br>前人已经创造了许多减少二者摩擦的方法，比如预处理（中的宏定义）、注释（foo=3 # threads number)等等。prepack 也应属此类。</p>
-<p>卖水果的老农一阵嘀咕，云上便跑起一份代码。那时，我们终将明白：程序猿已逝，老鸟亦新雏。</p>
+<p>我始终认为代码质量是软件的关键指标之一，并且要分<code>维护性</code>、<code>运行性</code>这两个方面进行考量。维护性是为了让人清晰地理解，运行性是为了让机器清晰地理解。前人已经创造了许多减少二者摩擦的方法，比如预处理（中的宏定义）、注释（foo=3 # threads number)等等。prepack 也应属此类。</p>
 </blockquote>
-<hr>
-<h1 id="book-reading"><a href="#book-reading" class="headerlink" title="book reading"></a>book reading</h1><hr>
-<h1 id="tech-learning"><a href="#tech-learning" class="headerlink" title="tech learning"></a>tech learning</h1><hr>
+<p>卖水果的老农一阵嘀咕，云上便跑起一份代码。那时，我们终将明白：程序猿已逝，老鸟亦新雏。</p>
+<div class="hr-sect">Tech Learning</div>
+
+
+
+<div class="hr-sect">Book Reading</div>
+
+
+
+<div class="hr-sect">Ideas Spreading</div>
+
+<h1 id="如何做得更好"><a href="#如何做得更好" class="headerlink" title="如何做得更好"></a>如何做得更好</h1><p><a href="http://open.163.com/movie/2017/2/C/U/MCC01J0QP_MCC021ACU.html" target="_blank" rel="external">视频地址</a></p>
+<p>高效的人和团队, 始终兼顾 <code>学习</code> 和 <code>执行</code>. 学习过程将注意力集中在未知的领域, 接受失败, 并转化为新的技能; 执行过程将注意力集中在已知的领域, 避免失败, 并产出成果.</p>
+<p>太过关注成绩的学校, 驱使学生远离学习, 沉浸在执行中; 太过关注执行力的企业, 将员工限制在已知领域, 从而失去创新与进步.</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;ted&quot;&gt;&lt;a href=&quot;#ted&quot; class=&quot;headerlink&quot; title=&quot;ted&quot;&gt;&lt;/a&gt;ted&lt;/h1&gt;&lt;h2 id=&quot;如何做得更好&quot;&gt;&lt;a href=&quot;#如何做得更好&quot; class=&quot;headerlink&quot; title=&quot;如何做得更好&quot;&gt;&lt;/a&gt;如何做得更好&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://open.163.com/movie/2017/2/C/U/MCC01J0QP_MCC021ACU.html&quot;&gt;视频地址&lt;/a&gt;&lt;br&gt;高效的人和团队, 始终兼顾 &lt;code&gt;学习&lt;/code&gt; 和 &lt;code&gt;执行&lt;/code&gt;. 学习过程将注意力集中在未知的领域, 接受失败, 并转化为新的技能; 执行过程将注意力集中在已知的领域, 避免失败, 并产出成果.&lt;/p&gt;
-&lt;p&gt;太过关注成绩的学校, 驱使学生远离学习, 沉浸在执行中; 太过关注执行力的企业, 将员工限制在已知领域, 从而失去创新与进步.&lt;/p&gt;
+      &lt;ul&gt;
+&lt;li&gt;如何做的更好&lt;/li&gt;
+&lt;li&gt;程序员的银行账户&lt;/li&gt;
+&lt;li&gt;js 预处理&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
@@ -342,7 +420,7 @@
     <content type="html"><![CDATA[<p>今天一直忙交接, 下午又接了个电话面试, 没腾出学习的时间. 看个 TED 睡了.</p>
 <p>越发觉得自己太过实在, 甚至有些傻. 会做不会说, 不能愉快地 show.</p>
 <a id="more"></a>
-<h1 id="ted"><a href="#TED" class="headerlink" title="TED"></a>TED</h1><h2 id="高度科学的憎恨者分类法"><a href="#高度科学的憎恨者分类法" class="headerlink" title="高度科学的憎恨者分类法"></a>高度科学的憎恨者分类法</h2><p><a href="http://open.163.com/movie/2017/4/V/C/MCHRQ90VG_MCHRQBHVC.html" target="_blank" rel="external">视频地址</a></p>
+<h1 id="TED"><a href="#TED" class="headerlink" title="TED"></a>TED</h1><h2 id="高度科学的憎恨者分类法"><a href="#高度科学的憎恨者分类法" class="headerlink" title="高度科学的憎恨者分类法"></a>高度科学的憎恨者分类法</h2><p><a href="http://open.163.com/movie/2017/4/V/C/MCHRQ90VG_MCHRQBHVC.html" target="_blank" rel="external">视频地址</a></p>
 <p>不像是演讲, 更像个脱口秀, 看了两遍也没能找到主旨, 大概是说 <em>社会正义喜剧</em> 很好看吧 ^.^</p>
 <h2 id="知道自己该待在哪个圈子"><a href="#知道自己该待在哪个圈子" class="headerlink" title="知道自己该待在哪个圈子"></a>知道自己该待在哪个圈子</h2><p><a href="http://open.163.com/movie/2017/4/F/Q/MCI0S927E_MCI0SDJFQ.html" target="_blank" rel="external">视频地址</a></p>
 <p>主讲人说了4个小故事, 依次描述了由内及外的四个圈:<br>舒适圈 ) 伸展圈 ) 恐慌圈 ) 恐慌圈之外</p>
@@ -403,10 +481,10 @@
 <p>作者最后的解决办法很有趣:<br>漏斗搭配一大一小两条履带, 把乐高从堆中依次运出, 经由摄像头成像. 使用神经算法区分优劣, 如果是劣质的, 就启动空气喷嘴, 吹到边上的桶里.</p>
 <p>初见题目时, 以为是区分积木零件, 最后发现是区分优劣. 但也差不多, 还是很有趣的.<br>ps. 我小时候也很喜欢乐高, 拼个奥特曼飞机什么的. 好不好看不重要, 一定得有活动关节 ^.^</p>
 <hr>
-<h1 id="book-reading"><a href="#book-reading" class="headerlink" title="book reading"></a>book reading</h1><h2 id="apue-高级io"><a href="#apue-高级I-O" class="headerlink" title="apue 高级I/O"></a>apue 高级I/O</h2><p>之前见识过<code>非阻塞I/O</code>和<code>标准I/O</code>, <code>高级I/O</code>会是什么呢?</p>
+<h1 id="book-reading"><a href="#book-reading" class="headerlink" title="book reading"></a>book reading</h1><h2 id="apue-高级I-O"><a href="#apue-高级I-O" class="headerlink" title="apue 高级I/O"></a>apue 高级I/O</h2><p>之前见识过<code>非阻塞I/O</code>和<code>标准I/O</code>, <code>高级I/O</code>会是什么呢?</p>
 <h2 id="第四次革命"><a href="#第四次革命" class="headerlink" title="第四次革命"></a>第四次革命</h2><p>哥白尼的日心说, 否定了地球是宇宙的中心<br>达尔文的进化论, 否定了人类是上帝的杰作<br>弗洛伊德的精神分析, 否定了人类的自主意识<br>图灵的计算模型, 否定了人类的独一无二  </p>
 <hr>
-<h1 id="ted"><a href="#ted" class="headerlink" title="ted"></a>ted</h1><h2 id="你发过短性息吗"><a href="#你发过“短性息”吗？" class="headerlink" title="你发过“短性息”吗？"></a>你发过“短性息”吗？</h2><p><a href="http://open.163.com/movie/2017/2/0/V/MCCS6ND1H_MCCSBPI0V.html" target="_blank" rel="external">链接地址</a><br>主讲人强调社会(法律/舆论)对 sexting 等”色情”产物的担忧不必要, 处理措施过于形式化.<br>更多的关注点应该放在”隐私”问题上, 即是否征得了隐私所有者的同意.</p>
+<h1 id="ted"><a href="#ted" class="headerlink" title="ted"></a>ted</h1><h2 id="你发过“短性息”吗？"><a href="#你发过“短性息”吗？" class="headerlink" title="你发过“短性息”吗？"></a>你发过“短性息”吗？</h2><p><a href="http://open.163.com/movie/2017/2/0/V/MCCS6ND1H_MCCSBPI0V.html" target="_blank" rel="external">链接地址</a><br>主讲人强调社会(法律/舆论)对 sexting 等”色情”产物的担忧不必要, 处理措施过于形式化.<br>更多的关注点应该放在”隐私”问题上, 即是否征得了隐私所有者的同意.</p>
 ]]></content>
     
     <summary type="html">
@@ -509,7 +587,7 @@
     <published>2017-04-27T09:47:38.000Z</published>
     <updated>2017-04-28T10:05:30.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="阅读-apue"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><blockquote>
+    <content type="html"><![CDATA[<h1 id="阅读-APUE"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><blockquote>
 <p>信号看的有点晕，先概览一遍，第二圈再细读</p>
 </blockquote>
 <h2 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h2><p>线程有很多好处：</p>
@@ -568,7 +646,7 @@
     <published>2017-04-24T13:51:27.000Z</published>
     <updated>2017-04-24T09:23:03.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="阅读-apue"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="进程控制"><a href="#进程控制" class="headerlink" title="进程控制"></a>进程控制</h2><p>本章介绍 UNIX 的进程控制，包括创建新进程、执行进程和进程终止</p>
+    <content type="html"><![CDATA[<h1 id="阅读-APUE"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="进程控制"><a href="#进程控制" class="headerlink" title="进程控制"></a>进程控制</h2><p>本章介绍 UNIX 的进程控制，包括创建新进程、执行进程和进程终止</p>
 <h3 id="进程标识符"><a href="#进程标识符" class="headerlink" title="进程标识符"></a>进程标识符</h3><p>每个进程都有一个非负数型表示的唯一进程ID</p>
 <p>ID为 0 的进程通常是调度进程，常被称为交换进程（swapper）<br>ID为 1 的进程通常是init进程，负责在自举内核后启动一个UNIX系统  </p>
 <a id="more"></a>
@@ -625,7 +703,7 @@
     <published>2017-04-21T07:40:18.000Z</published>
     <updated>2017-04-23T13:48:19.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="阅读-apue"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="进程环境"><a href="#进程环境" class="headerlink" title="进程环境"></a>进程环境</h2><ul>
+    <content type="html"><![CDATA[<h1 id="阅读-APUE"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="进程环境"><a href="#进程环境" class="headerlink" title="进程环境"></a>进程环境</h2><ul>
 <li>main 函数是如何被调用</li>
 <li>命令行参数如何传送给执行程序</li>
 <li>典型的存储器布局是什么样式</li>
@@ -651,7 +729,7 @@
 <p>atexit 函数<br>登记 exit 的回调函数。同一函数被登记多次，也会被调用多次。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#include &lt;stdlib.h&gt;</div><div class="line"></div><div class="line">int atexit(void (*func)(void));</div></pre></td></tr></table></figure>
 <h3 id="环境表"><a href="#环境表" class="headerlink" title="环境表"></a>环境表</h3><p>extern char **environ;</p>
-<h3 id="c程序的存储空间布局"><a href="#C程序的存储空间布局" class="headerlink" title="C程序的存储空间布局"></a>C程序的存储空间布局</h3><p>C程序一直由下面几部分组成：</p>
+<h3 id="C程序的存储空间布局"><a href="#C程序的存储空间布局" class="headerlink" title="C程序的存储空间布局"></a>C程序的存储空间布局</h3><p>C程序一直由下面几部分组成：</p>
 <ul>
 <li>正文段。由 CPU 执行的机器指令部分</li>
 <li>初始化数据段。包含了程序中需明确地赋初值的变量</li>
@@ -708,13 +786,13 @@
     <published>2017-04-20T01:56:25.000Z</published>
     <updated>2017-04-21T05:59:38.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="阅读-apue"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="标准io库"><a href="#标准I-O库" class="headerlink" title="标准I/O库"></a>标准I/O库</h2><h3 id="流和file对象"><a href="#流和FILE对象" class="headerlink" title="流和FILE对象"></a>流和FILE对象</h3><h4 id="流的定向"><a href="#流的定向" class="headerlink" title="流的定向"></a>流的定向</h4><p>流可用于单字节或多字节字符集<br>未定项的流，一旦使用多字节就定向为多字节流，一旦使用单字节就定向为单字节流<br><code>freopen</code>和<code>fwide</code>可以改变留的定向<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;wchar.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fwide</span><span class="params">(FILE *fp, <span class="keyword">int</span> mode)</span></span>;</div></pre></td></tr></table></figure></p>
+    <content type="html"><![CDATA[<h1 id="阅读-APUE"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="标准I-O库"><a href="#标准I-O库" class="headerlink" title="标准I/O库"></a>标准I/O库</h2><h3 id="流和FILE对象"><a href="#流和FILE对象" class="headerlink" title="流和FILE对象"></a>流和FILE对象</h3><h4 id="流的定向"><a href="#流的定向" class="headerlink" title="流的定向"></a>流的定向</h4><p>流可用于单字节或多字节字符集<br>未定项的流，一旦使用多字节就定向为多字节流，一旦使用单字节就定向为单字节流<br><code>freopen</code>和<code>fwide</code>可以改变留的定向<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;wchar.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fwide</span><span class="params">(FILE *fp, <span class="keyword">int</span> mode)</span></span>;</div></pre></td></tr></table></figure></p>
 <p>mode &lt; 0，设置为单字节——字节定向<br>mode &gt; 0，设置为多字节——宽定向<br>mode = 0，查询当前定向  </p>
 <blockquote>
 <p>注： fwide 只能用来设置未定向的流  </p>
 </blockquote>
 <a id="more"></a>
-<h3 id="标准输入-标准输出和标准出错"><a href="#标准输入、标准输出和标准出错" class="headerlink" title="标准输入、标准输出和标准出错"></a>标准输入、标准输出和标准出错</h3><p>stdin，stdout，stderr 定义在 <stdio.h></stdio.h></p>
+<h3 id="标准输入、标准输出和标准出错"><a href="#标准输入、标准输出和标准出错" class="headerlink" title="标准输入、标准输出和标准出错"></a>标准输入、标准输出和标准出错</h3><p>stdin，stdout，stderr 定义在 <stdio.h></stdio.h></p>
 <h3 id="缓冲"><a href="#缓冲" class="headerlink" title="缓冲"></a>缓冲</h3><p>标准I/O库提供缓冲的目的是尽可能减少使用read和write调用的次数。</p>
 <h4 id="三种类型"><a href="#三种类型" class="headerlink" title="三种类型"></a>三种类型</h4><ol>
 <li>全缓冲</li>
@@ -829,7 +907,7 @@
 <p>有以下几个输出函数<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">putc</span><span class="params">(<span class="keyword">int</span> c, FILE *fp)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fputc</span><span class="params">(<span class="keyword">int</span> c,FILE *fp)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">putchar</span><span class="params">(<span class="keyword">int</span> c)</span></span>;</div></pre></td></tr></table></figure></p>
 <h4 id="一次一行"><a href="#一次一行" class="headerlink" title="一次一行"></a>一次一行</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">char</span> *<span class="title">fgets</span><span class="params">(<span class="keyword">char</span> *<span class="keyword">restrict</span> buf, <span class="keyword">int</span> n, FILE *<span class="keyword">restrict</span> fp)</span></span>;</div><div class="line"><span class="function"><span class="keyword">char</span> *<span class="title">gets</span><span class="params">(<span class="keyword">char</span> *buf)</span></span>;</div></pre></td></tr></table></figure>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fputs</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> str, FILE *<span class="keyword">restrict</span> fp)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">puts</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *str)</span></span>;</div></pre></td></tr></table></figure>
-<h3 id="二进制io"><a href="#二进制I-O" class="headerlink" title="二进制I/O"></a>二进制I/O</h3><p>解决读、写整个结构的问题</p>
+<h3 id="二进制I-O"><a href="#二进制I-O" class="headerlink" title="二进制I/O"></a>二进制I/O</h3><p>解决读、写整个结构的问题</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="keyword">size_t</span> fread(<span class="keyword">void</span> *<span class="keyword">restrict</span> ptr, <span class="keyword">size_t</span> size, <span class="keyword">size_t</span> nobj, FILE *<span class="keyword">restrict</span> fp);</div><div class="line"></div><div class="line"><span class="keyword">size_t</span> fwrite(<span class="keyword">const</span> <span class="keyword">void</span> *<span class="keyword">restrict</span> ptr, <span class="keyword">size_t</span> size, <span class="keyword">size_t</span> nobj, FILE *<span class="keyword">restrict</span> fp);</div></pre></td></tr></table></figure>
 <p>二进制I/O在单独机器上运行没什么问题，但在多台机器协作的情况下，可能因为编译器、系统有异，整型、浮点型格式不同等原因遇到问题。<br>面对这种问题的实际解决办法是使用较高级的协议。</p>
 <h3 id="定位流"><a href="#定位流" class="headerlink" title="定位流"></a>定位流</h3><p>三种方法定位标准I/O流  </p>
@@ -844,7 +922,7 @@
 </ol>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="keyword">off_t</span> ftello(FILE *fp);</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fseeko</span><span class="params">(FILE *fp, <span class="keyword">off_t</span> offset, <span class="keyword">int</span> whence)</span></span>;</div></pre></td></tr></table></figure>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fgetpos</span><span class="params">(FILE *<span class="keyword">restrict</span> fp, <span class="keyword">fpos_t</span> *<span class="keyword">restrict</span> pos)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fsetpos</span><span class="params">(FILE *fp, <span class="keyword">const</span> <span class="keyword">fpos_t</span> *pos)</span></span>;</div></pre></td></tr></table></figure>
-<h3 id="格式化io"><a href="#格式化I-O" class="headerlink" title="格式化I/O"></a>格式化I/O</h3><p>格式化输出<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">printf</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> format, ...)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fprintf</span><span class="params">(FILE *<span class="keyword">restrict</span> fp, <span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> format, ...)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">sprintf</span><span class="params">(<span class="keyword">char</span> *<span class="keyword">restrict</span> buf, <span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> format, ...)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">snprintf</span><span class="params">(<span class="keyword">char</span> *<span class="keyword">restrict</span> buf, <span class="keyword">size_t</span> n, constr <span class="keyword">char</span> *<span class="keyword">restrict</span> format, ...)</span></span>;</div></pre></td></tr></table></figure></p>
+<h3 id="格式化I-O"><a href="#格式化I-O" class="headerlink" title="格式化I/O"></a>格式化I/O</h3><p>格式化输出<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">printf</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> format, ...)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fprintf</span><span class="params">(FILE *<span class="keyword">restrict</span> fp, <span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> format, ...)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">sprintf</span><span class="params">(<span class="keyword">char</span> *<span class="keyword">restrict</span> buf, <span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> format, ...)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">snprintf</span><span class="params">(<span class="keyword">char</span> *<span class="keyword">restrict</span> buf, <span class="keyword">size_t</span> n, constr <span class="keyword">char</span> *<span class="keyword">restrict</span> format, ...)</span></span>;</div></pre></td></tr></table></figure></p>
 <p>%[flags][fldwidth][precision][lenmodifier]convtype</p>
 <p>flags 的可用值</p>
 <table>
@@ -906,8 +984,8 @@
     <published>2017-04-19T03:37:25.000Z</published>
     <updated>2017-04-20T13:29:23.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="阅读-apue"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="posix"><a href="#POSIX" class="headerlink" title="POSIX"></a>POSIX</h2><p>可移植的操作系统接口<br>定义的接口而非实现，因此不区分 <em>系统调用</em> 和 <em>库函数</em></p>
-<h2 id="文件-io"><a href="#文件-I-O" class="headerlink" title="文件 I/O"></a>文件 I/O</h2><h3 id="进程访问文件时的层次结构"><a href="#进程访问文件时的层次结构" class="headerlink" title="进程访问文件时的层次结构"></a>进程访问文件时的层次结构</h3><ul>
+    <content type="html"><![CDATA[<h1 id="阅读-APUE"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="POSIX"><a href="#POSIX" class="headerlink" title="POSIX"></a>POSIX</h2><p>可移植的操作系统接口<br>定义的接口而非实现，因此不区分 <em>系统调用</em> 和 <em>库函数</em></p>
+<h2 id="文件-I-O"><a href="#文件-I-O" class="headerlink" title="文件 I/O"></a>文件 I/O</h2><h3 id="进程访问文件时的层次结构"><a href="#进程访问文件时的层次结构" class="headerlink" title="进程访问文件时的层次结构"></a>进程访问文件时的层次结构</h3><ul>
 <li>进程表（描述符+文件指针）</li>
 <li>文件表（状态标记+当前偏移量+v节点指针）</li>
 <li>v节点表（v节点信息+i节点信息+文件长度）</li>
@@ -928,7 +1006,7 @@
 <p>I/O 操作的杂物箱<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;unistd.h&gt;    /* System V */</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/ioctl.h&gt; /* BSD and Linux */</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stropts.h&gt;   /* XSI STREAMS */</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">ioctl</span><span class="params">(<span class="keyword">int</span> filedes, <span class="keyword">int</span> request, ...)</span></span>;</div></pre></td></tr></table></figure></p>
 </blockquote>
 <p>上述是 ioctl 函数本身所要求的头文件。通常，还要求另外的设备专用头文件，这些头文件中可能会定义一组专用的命令。</p>
-<h2 id="文件和目录"><a href="#文件和目录" class="headerlink" title="文件和目录"></a>文件和目录</h2><h3 id="stat-fstat-lstat"><a href="#stat、fstat、lstat" class="headerlink" title="stat、fstat、lstat"></a>stat、fstat、lstat</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/stat.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">stat</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> pathname, <span class="keyword">struct</span> stat *<span class="keyword">restrict</span> buf)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fstat</span><span class="params">(<span class="keyword">int</span> filedes, <span class="keyword">struct</span> stat *buf)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">lstat</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> pathname, <span class="keyword">struct</span> stat *<span class="keyword">restrict</span> buf)</span></span>;</div></pre></td></tr></table></figure>
+<h2 id="文件和目录"><a href="#文件和目录" class="headerlink" title="文件和目录"></a>文件和目录</h2><h3 id="stat、fstat、lstat"><a href="#stat、fstat、lstat" class="headerlink" title="stat、fstat、lstat"></a>stat、fstat、lstat</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/stat.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">stat</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> pathname, <span class="keyword">struct</span> stat *<span class="keyword">restrict</span> buf)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fstat</span><span class="params">(<span class="keyword">int</span> filedes, <span class="keyword">struct</span> stat *buf)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">lstat</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> pathname, <span class="keyword">struct</span> stat *<span class="keyword">restrict</span> buf)</span></span>;</div></pre></td></tr></table></figure>
 <p>stat 函数返回与明明文件有关的信息结构。<br>fstat 函数获取已在描述符 filedes 上打开文件的有关信息。<br>lstat 函数类似于 stat，但是当命名的文件是一个符号链接时，lstat 返回符号链接的有关信息。</p>
 <h3 id="文件类型"><a href="#文件类型" class="headerlink" title="文件类型"></a>文件类型</h3><p>包含在 stat 结构的 st_mode 成员中，使用以下宏确定文件类型</p>
 <ol>
@@ -940,12 +1018,12 @@
 <li>套接字 S_ISSOCK</li>
 <li>符号链接 S_ISLNK</li>
 </ol>
-<h3 id="确定-ipc-对象的类型的宏"><a href="#确定-IPC-对象的类型的宏" class="headerlink" title="确定 IPC 对象的类型的宏"></a>确定 IPC 对象的类型的宏</h3><ol>
+<h3 id="确定-IPC-对象的类型的宏"><a href="#确定-IPC-对象的类型的宏" class="headerlink" title="确定 IPC 对象的类型的宏"></a>确定 IPC 对象的类型的宏</h3><ol>
 <li>消息队列 S_TYPEISMQ</li>
 <li>信号量 S_TYPEISSEM</li>
 <li>共享存储对象 S_TYPEISSHM</li>
 </ol>
-<h3 id="用户id和组id"><a href="#用户ID和组ID" class="headerlink" title="用户ID和组ID"></a>用户ID和组ID</h3><ul>
+<h3 id="用户ID和组ID"><a href="#用户ID和组ID" class="headerlink" title="用户ID和组ID"></a>用户ID和组ID</h3><ul>
 <li>实际用户ID和组ID<ul>
 <li>标识我们究竟是谁</li>
 </ul>
@@ -1020,7 +1098,7 @@
 <li>拥有此目录</li>
 <li>是超级用户</li>
 </ul>
-<h3 id="link-unlink-remove-和-rename"><a href="#link、unlink、remove-和-rename" class="headerlink" title="link、unlink、remove 和 rename"></a>link、unlink、remove 和 rename</h3><p>unlink 常被用来确保即使程序崩溃，它所创建的临时文件也不会留下来</p>
+<h3 id="link、unlink、remove-和-rename"><a href="#link、unlink、remove-和-rename" class="headerlink" title="link、unlink、remove 和 rename"></a>link、unlink、remove 和 rename</h3><p>unlink 常被用来确保即使程序崩溃，它所创建的临时文件也不会留下来</p>
 <h3 id="symlink-和-readlink"><a href="#symlink-和-readlink" class="headerlink" title="symlink 和 readlink"></a>symlink 和 readlink</h3><p>symlink 创建一个符号链接<br>readlink 打开链接本身（相反，open 跟随符号链接）  </p>
 <h3 id="utime"><a href="#utime" class="headerlink" title="utime"></a>utime</h3><p>utime 修改文件的<strong>访问</strong>和<strong>修改</strong>时间</p>
 ]]></content>
@@ -1048,8 +1126,8 @@
     <published>2017-04-18T06:53:13.000Z</published>
     <updated>2017-04-18T15:38:15.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="阅读-apue"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h2><p>一般用整型常量代表错误原因，如 EACCES 为权限不足。<br>strerror(int) 将整型常量转化为错误字符串。<br>perror(const char *) 打印 <code>自定义字串: 错误字符串</code>。</p>
-<h2 id="用户组"><a href="#用户-组" class="headerlink" title="用户/组"></a>用户/组</h2><p>unix 中用户和组都是用32位整型表示的。<br>相比字符串，整型节省空间、检索高效。<br>getuid，getpid 分别返回<code>用户id</code>和<code>组id</code>。</p>
+    <content type="html"><![CDATA[<h1 id="阅读-APUE"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h2><p>一般用整型常量代表错误原因，如 EACCES 为权限不足。<br>strerror(int) 将整型常量转化为错误字符串。<br>perror(const char *) 打印 <code>自定义字串: 错误字符串</code>。</p>
+<h2 id="用户-组"><a href="#用户-组" class="headerlink" title="用户/组"></a>用户/组</h2><p>unix 中用户和组都是用32位整型表示的。<br>相比字符串，整型节省空间、检索高效。<br>getuid，getpid 分别返回<code>用户id</code>和<code>组id</code>。</p>
 <h2 id="信号"><a href="#信号" class="headerlink" title="信号"></a>信号</h2><p>三种处理方式：忽略、系统默认、自定义。<br>signal 函数可以为信号注册处理函数。</p>
 <a id="more"></a>
 <h2 id="时间"><a href="#时间" class="headerlink" title="时间"></a>时间</h2><p>unix 使用<code>日历时间</code>和<code>进程时间</code>两种时间值。</p>
@@ -1082,7 +1160,7 @@
 <blockquote>
 <p>设 a、b、c 三个字符串。若<code>ab&gt;ba</code>，则<code>a&gt;b</code>；<br>将所有数字按照字母序递增，拼接后即是最小的数。</p>
 </blockquote>
-<h2 id="从1到n整数中1出现的次数"><a href="#从1到n整数中1出现的次数" class="headerlink" title="从1到n整数中1出现的次数"></a>从1到n整数中1出现的次数</h2><h2 id="连续子数组的最大和"><a href="#连续子数组的最大和" class="headerlink" title="连续子数组的最大和"></a>连续子数组的最大和</h2><h2 id="最小的k个数"><a href="#最小的K个数" class="headerlink" title="最小的K个数"></a>最小的K个数</h2><h2 id="数组中出现次数超过一半的数字"><a href="#数组中出现次数超过一半的数字" class="headerlink" title="数组中出现次数超过一半的数字"></a>数组中出现次数超过一半的数字</h2>]]></content>
+<h2 id="从1到n整数中1出现的次数"><a href="#从1到n整数中1出现的次数" class="headerlink" title="从1到n整数中1出现的次数"></a>从1到n整数中1出现的次数</h2><h2 id="连续子数组的最大和"><a href="#连续子数组的最大和" class="headerlink" title="连续子数组的最大和"></a>连续子数组的最大和</h2><h2 id="最小的K个数"><a href="#最小的K个数" class="headerlink" title="最小的K个数"></a>最小的K个数</h2><h2 id="数组中出现次数超过一半的数字"><a href="#数组中出现次数超过一半的数字" class="headerlink" title="数组中出现次数超过一半的数字"></a>数组中出现次数超过一半的数字</h2>]]></content>
     
     <summary type="html">
     
