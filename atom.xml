@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-05-11T03:15:58.000Z</updated>
+  <updated>2017-05-11T13:43:16.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -20,13 +20,28 @@
     <link href="http://blog.sin5th.com/2017/05/11/2017-05-11/"/>
     <id>http://blog.sin5th.com/2017/05/11/2017-05-11/</id>
     <published>2017-05-11T02:18:18.000Z</published>
-    <updated>2017-05-11T03:15:58.000Z</updated>
+    <updated>2017-05-11T13:43:16.000Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a>
+    <content type="html"><![CDATA[<ul>
+<li>为自由而战</li>
+</ul>
+<a id="more"></a>
 <div class="hr-sect">Hack News</div>
 
-
-
+<h1 id="mozilla-发起活动拯救网络自由"><a href="#mozilla-发起活动，拯救网络自由" class="headerlink" title="mozilla 发起活动，拯救网络自由"></a>mozilla 发起活动，拯救网络自由</h1><p><a href="https://blog.mozilla.org/blog/2017/05/08/next-10-days-critical-internets-future/" target="_blank" rel="external">链接地址</a></p>
+<p>美国联邦通信委员（FCC）会将于5月18日进行“废除网络中立”的投票。</p>
+<p>在 Mozilla 看来，这项决定会严重影响网络的使用方式，比如：</p>
+<ul>
+<li>言论自由</li>
+<li>公平竞争</li>
+<li>技术革新</li>
+<li>自由选择</li>
+</ul>
+<p>作为应对，Mozilla 号召人们参与“签名活动”，通过收集签名与录音的形式，将意见传递给 FCC。</p>
+<p>评论中充满对网络运营商的担忧，担心他们垄断网络通道，榨取高额费用。</p>
+<blockquote>
+<p>从网友们的辩论中，意识到一件事：A引起B；B引起C；但减少A未必减少C。比如，运营商收费低造成互联网公司快速崛起并且趋于垄断，垄断导致新兴公司难以抗衡。但是运营商收费却对解决垄断毫无意义，甚至进一步提高了创业公司比肩大企业的门槛。</p>
+</blockquote>
 <div class="hr-sect">Tech Learning</div>
 
 
@@ -40,16 +55,9 @@
     
     <summary type="html">
     
-      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;div class=&quot;hr-sect&quot;&gt;Hack News&lt;/div&gt;
-
-
-
-&lt;div class=&quot;hr-sect&quot;&gt;Tech Learning&lt;/div&gt;
-
-
-
-&lt;div class=&quot;hr-sect&quot;&gt;Book Reading&lt;/div
+      &lt;ul&gt;
+&lt;li&gt;为自由而战&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
