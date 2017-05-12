@@ -3,12 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: sin5th blog
+title: Sin5's Blog
 subtitle:
-description: 我有一壶酒，足以慰风尘<br/>尽倾江河里，赠饮天下人
-author: sin5th
+description: 武鑫的博客
+signature: 我有一壶酒，足以慰风尘<br/>尽倾江河里，赠饮天下人
+author: 武鑫
 language: zh-Hans
-timezone:
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
