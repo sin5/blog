@@ -1,5 +1,11 @@
 #!/bin/bash
 basepath=$(cd `dirname $0`; pwd)
 
-cd $basepath && hexo d -g 
-git add . && git commit -m "auto saved" && git push
+cd $basepath || exit 1
+if git add .;then
+  git commit -m "auto saved"
+  git push
+  hexo d -g
+else
+  echo 'no update'
+fi
