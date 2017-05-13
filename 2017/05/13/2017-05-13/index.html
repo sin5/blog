@@ -93,15 +93,20 @@
 
 
 
-<meta name="description" content="武鑫的博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Sin5's Blog">
-<meta property="og:url" content="http://blog.sin5th.com/archives/2017/05/page/2/index.html">
+<meta name="description" content="Hack ╮(￣▽￣)╭ News  正确理解 CPU 利用率链接地址 Brendan Gregg 发布博文，指出常见的 CPU 利用率计算方式有误导性，是仅仅通过追踪 idle 进程占用 CPU 时间的比例得出的结果。 而实际程序瓶颈是否在 CPU，不能仅仅根据这个指标来判定，因为 stalled 状态的进程也被算在其中，在内存访问很多时，这种进程并没有真正地利用 CPU 去进行运算，而是将时间">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2017-05-13">
+<meta property="og:url" content="http://blog.sin5th.com/2017/05/13/2017-05-13/index.html">
 <meta property="og:site_name" content="Sin5's Blog">
-<meta property="og:description" content="武鑫的博客">
+<meta property="og:description" content="Hack ╮(￣▽￣)╭ News  正确理解 CPU 利用率链接地址 Brendan Gregg 发布博文，指出常见的 CPU 利用率计算方式有误导性，是仅仅通过追踪 idle 进程占用 CPU 时间的比例得出的结果。 而实际程序瓶颈是否在 CPU，不能仅仅根据这个指标来判定，因为 stalled 状态的进程也被算在其中，在内存访问很多时，这种进程并没有真正地利用 CPU 去进行运算，而是将时间">
+<meta property="og:image" content="http://blog.sin5th.com/images/www.brendangregg.com/cpubusyidle.png">
+<meta property="og:image" content="http://blog.sin5th.com/images/www.brendangregg.com/cpubusystalledidle.png">
+<meta property="og:updated_time" content="2017-05-13T14:18:48.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Sin5's Blog">
-<meta name="twitter:description" content="武鑫的博客">
+<meta name="twitter:title" content="2017-05-13">
+<meta name="twitter:description" content="Hack ╮(￣▽￣)╭ News  正确理解 CPU 利用率链接地址 Brendan Gregg 发布博文，指出常见的 CPU 利用率计算方式有误导性，是仅仅通过追踪 idle 进程占用 CPU 时间的比例得出的结果。 而实际程序瓶颈是否在 CPU，不能仅仅根据这个指标来判定，因为 stalled 状态的进程也被算在其中，在内存访问很多时，这种进程并没有真正地利用 CPU 去进行运算，而是将时间">
+<meta name="twitter:image" content="http://blog.sin5th.com/images/www.brendangregg.com/cpubusyidle.png">
 
 
 
@@ -129,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.sin5th.com/archives/2017/05/page/2/"/>
+  <link rel="canonical" href="http://blog.sin5th.com/2017/05/13/2017-05-13/"/>
 
 
 
 
 
-  <title> 归档 | Sin5's Blog </title>
+  <title> 2017-05-13 | Sin5's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -160,7 +165,7 @@
     
   
 
-  <div class="container sidebar-position-right  page-archive  ">
+  <div class="container sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -284,144 +289,249 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 21 篇日志。 继续努力。
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.sin5th.com/2017/05/13/2017-05-13/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="武鑫">
+      <meta itemprop="description" content="我有一壶酒，足以慰风尘<br/>尽倾江河里，赠饮天下人">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/7314785">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sin5's Blog">
     </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                2017-05-13
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-13T20:51:17+08:00">
+                2017-05-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/日志/" itemprop="url" rel="index">
+                    <span itemprop="name">日志</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/05/13/2017-05-13/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/05/13/2017-05-13/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                <span title="字数统计">
+                  229
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
 
       
       
+
+      
+        <div class="hr-sect">Hack ╮(￣▽￣)╭ News</div>
+
+<h1 id="正确理解-cpu-利用率"><a href="#正确理解-CPU-利用率" class="headerlink" title="正确理解 CPU 利用率"></a>正确理解 CPU 利用率</h1><p><a href="http://www.brendangregg.com/blog/2017-05-09/cpu-utilization-is-wrong.html" target="_blank" rel="external">链接地址</a></p>
+<p>Brendan Gregg 发布博文，指出<strong>常见的 CPU 利用率计算方式</strong>有误导性，是仅仅通过追踪 idle 进程占用 CPU 时间的比例得出的结果。</p>
+<p>而实际程序瓶颈是否在 CPU，不能仅仅根据这个指标来判定，因为 stalled 状态的进程也被算在其中，在内存访问很多时，这种进程并没有真正地利用 CPU 去进行运算，而是将时间都耗费在等待内存上。</p>
+<blockquote>
+<p>我们以为的 90% CPU 都在工作<br><img src="/images/www.brendangregg.com/cpubusyidle.png" alt="busy"><br>实际上它们都卡住了<br><img src="/images/www.brendangregg.com/cpubusystalledidle.png" alt="stalled"></p>
+</blockquote>
+<p>因此，评价 CPU 究竟使用了多少，应该参考 IPC（instructions per cycle）这个指标，它描述 cpu 真正执行指令的时间占比。</p>
+<p>网友对此观点有赞许，也有质疑。质疑声集中在对<strong>利用率</strong>一词的理解。</p>
+<div class="hr-sect">Tech (￣▽￣)~* Learning</div>
+
+
+
+<div class="hr-sect">Book ╰(￣▽￣)╭ Reading</div>
+
+
+
+<div class="hr-sect">Idea (～￣▽￣)～ Spreading</div>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
       
 
       
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/05/12/2017-05-12/" rel="prev" title="2017-05-12">
+                2017-05-12 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
         </div>
       
-      
 
       
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/03/2017-05-03/" itemprop="url">
-              
-                <span itemprop="name">2017-05-03</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-03T09:58:59+08:00"
-              content="2017-05-03" >
-          05-03
-        </time>
-      </div>
-
-    </header>
+      
+    </footer>
   </article>
 
 
-
-    
-
+    <div class="post-spread">
       
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
         
-            <a class="post-title-link" href="/2017/05/02/2017-05-02/" itemprop="url">
-              
-                <span itemprop="name">2017-05-02</span>
-              
-            </a>
-        
-      </h2>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "1",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      },
+      "slide": {
+        "bdImg": "5",
+        "bdPos": "left",
+        "bdTop": "100"
+      }
+    }
+  </script>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-02T09:52:18+08:00"
-              content="2017-05-02" >
-          05-02
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
 
       
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/01/2017-05-01/" itemprop="url">
-              
-                <span itemprop="name">2017-05-01</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-01T21:20:47+08:00"
-              content="2017-05-01" >
-          05-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/2017/05/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/archives/2017/05/">1</a><span class="page-number current">2</span>
-  </nav>
-
-
+    </div>
+  </div>
 
 
           </div>
@@ -429,6 +539,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -448,8 +569,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="https://avatars1.githubusercontent.com/u/7314785"
@@ -535,6 +665,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#正确理解-cpu-利用率"><span class="nav-number">1.</span> <span class="nav-text">正确理解 CPU 利用率</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -645,11 +791,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
 
 
   
@@ -668,6 +812,18 @@
       <script id="dsq-count-scr" src="https://blog-sin5th-com.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://blog.sin5th.com/2017/05/13/2017-05-13/';
+          this.page.identifier = '2017/05/13/2017-05-13/';
+          this.page.title = '2017-05-13';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://blog-sin5th-com.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
