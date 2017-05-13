@@ -2,10 +2,11 @@
 basepath=$(cd `dirname $0`; pwd)
 
 cd $basepath || exit 1
-if git add .;then
+if [[ "`git --no-pager diff`" == "" ]];then
+  echo 'no update'
+else
+  git add .
   git commit -m "auto saved"
   git push
   hexo d -g
-else
-  echo 'no update'
 fi
