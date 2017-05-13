@@ -7,6 +7,6 @@ if [[ "`git --no-pager diff`" == "" ]];then
 else
   git add .
   git commit -m "auto saved"
-  echo git push
-  echo hexo d -g
+  git push
+  hexo d -g
 fi
