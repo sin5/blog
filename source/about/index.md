@@ -8,10 +8,9 @@ comments: false
 姓名：武鑫
 昵称：sin5th
 职业：后端研发
-语言栈：lua、python、go
 爱好：读书、手绘
-最喜欢的动漫：头文字D
+语言栈：lua、python、go
 
+> 人行中正，剑走偏锋
 
-> 广泛求知，忌浅尝辄止；
-据理力争，忌故步自封。
+![86](/images/sin5th.com/86.jpg)
