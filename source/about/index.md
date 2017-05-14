@@ -5,12 +5,9 @@ type: "about"
 comments: false
 ---
 
-姓名：武鑫
-昵称：sin5th
-职业：后端研发
-爱好：读书、手绘
-语言栈：lua、python、go
-
-> 人行中正，剑走偏锋
-
-![86](/images/sin5th.com/86.jpg)
+<p style="text-align: center">
+我有一壶酒，足以慰风尘；尽倾江海里，赠饮天下人。
+<img src="/images/sin5th.com/86.jpg" alt="86">
+<br>武鑫 / sin5th
+后端研发 / lua、py、go
+</p>
