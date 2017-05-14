@@ -2,7 +2,7 @@
 basepath=$(cd `dirname $0`; pwd)
 
 cd $basepath || exit 1
-if [[ "`git --no-pager diff`" == "" ]];then
+if [[ "`git --no-pager status -sz`" == "" ]];then
   echo 'no update'
 else
   git add .
