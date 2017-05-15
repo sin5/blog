@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-05-14T10:51:31.000Z</updated>
+  <updated>2017-05-15T05:51:19.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -14,6 +14,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2017-05-15</title>
+    <link href="http://blog.sin5th.com/2017/05/15/2017-05-15/"/>
+    <id>http://blog.sin5th.com/2017/05/15/2017-05-15/</id>
+    <published>2017-05-15T05:36:50.000Z</published>
+    <updated>2017-05-15T05:51:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class="hr-sect">Hack ╮(￣▽￣)╭ News</div>
+
+<h1 id="对抗职业疲劳"><a href="#对抗职业疲劳" class="headerlink" title="对抗职业疲劳"></a>对抗职业疲劳</h1><p><a href="https://kierantie.com/a/burnout/" target="_blank" rel="external">链接地址</a></p>
+<p>工作体面、薪水满意、压力合适…为什么还是遭遇了职业疲劳。Drs. Michael P. Leitner 和 Christina Maslach 的 《The Truth About Burnout》概括了 6 个关键点：</p>
+<ol>
+<li>话语权</li>
+<li>价值观</li>
+<li>薪酬待遇</li>
+<li>工作量</li>
+<li>职业发展</li>
+<li>交流环境</li>
+</ol>
+<p>作者说他为了应对职业疲劳采取过休假、交流等等方式，但都不见成效。最后，彻底地改换了工作，成为了一名自由职业者。</p>
+<p>在文中的最后，作者告诫我们：</p>
+<ul>
+<li>不要讳疾忌医，正确看待自己的职业疲劳</li>
+<li>耐心应对，从疲劳中恢复是个漫长的过程</li>
+<li>提早预防，治疗的效果永远比不上治疗</li>
+</ul>
+<div class="hr-sect">Tech (￣▽￣)~* Learning</div>
+
+
+
+<div class="hr-sect">Book ╰(￣▽￣)╭ Reading</div>
+
+
+
+<div class="hr-sect">Idea (～￣▽￣)～ Spreading</div>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;hr-sect&quot;&gt;Hack ╮(￣▽￣)╭ News&lt;/div&gt;
+
+&lt;h1 id=&quot;对抗职业疲劳&quot;&gt;&lt;a href=&quot;#对抗职业疲劳&quot; class=&quot;headerlink&quot; title=&quot;对抗职业疲劳&quot;&gt;&lt;/a&gt;对抗职业疲劳&lt;/h1&gt;&lt;p&gt;&lt;a href=
+    
+    </summary>
+    
+      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>2017-05-14</title>
@@ -592,7 +642,7 @@
     <content type="html"><![CDATA[<p>今天一直忙交接, 下午又接了个电话面试, 没腾出学习的时间. 看个 TED 睡了.</p>
 <p>越发觉得自己太过实在, 甚至有些傻. 会做不会说, 不能愉快地 show.</p>
 <a id="more"></a>
-<h1 id="TED"><a href="#TED" class="headerlink" title="TED"></a>TED</h1><h2 id="高度科学的憎恨者分类法"><a href="#高度科学的憎恨者分类法" class="headerlink" title="高度科学的憎恨者分类法"></a>高度科学的憎恨者分类法</h2><p><a href="http://open.163.com/movie/2017/4/V/C/MCHRQ90VG_MCHRQBHVC.html" target="_blank" rel="external">视频地址</a></p>
+<h1 id="ted"><a href="#TED" class="headerlink" title="TED"></a>TED</h1><h2 id="高度科学的憎恨者分类法"><a href="#高度科学的憎恨者分类法" class="headerlink" title="高度科学的憎恨者分类法"></a>高度科学的憎恨者分类法</h2><p><a href="http://open.163.com/movie/2017/4/V/C/MCHRQ90VG_MCHRQBHVC.html" target="_blank" rel="external">视频地址</a></p>
 <p>不像是演讲, 更像个脱口秀, 看了两遍也没能找到主旨, 大概是说 <em>社会正义喜剧</em> 很好看吧 ^.^</p>
 <h2 id="知道自己该待在哪个圈子"><a href="#知道自己该待在哪个圈子" class="headerlink" title="知道自己该待在哪个圈子"></a>知道自己该待在哪个圈子</h2><p><a href="http://open.163.com/movie/2017/4/F/Q/MCI0S927E_MCI0SDJFQ.html" target="_blank" rel="external">视频地址</a></p>
 <p>主讲人说了4个小故事, 依次描述了由内及外的四个圈:<br>舒适圈 ) 伸展圈 ) 恐慌圈 ) 恐慌圈之外</p>
@@ -653,10 +703,10 @@
 <p>作者最后的解决办法很有趣:<br>漏斗搭配一大一小两条履带, 把乐高从堆中依次运出, 经由摄像头成像. 使用神经算法区分优劣, 如果是劣质的, 就启动空气喷嘴, 吹到边上的桶里.</p>
 <p>初见题目时, 以为是区分积木零件, 最后发现是区分优劣. 但也差不多, 还是很有趣的.<br>ps. 我小时候也很喜欢乐高, 拼个奥特曼飞机什么的. 好不好看不重要, 一定得有活动关节 ^.^</p>
 <hr>
-<h1 id="book-reading"><a href="#book-reading" class="headerlink" title="book reading"></a>book reading</h1><h2 id="apue-高级I-O"><a href="#apue-高级I-O" class="headerlink" title="apue 高级I/O"></a>apue 高级I/O</h2><p>之前见识过<code>非阻塞I/O</code>和<code>标准I/O</code>, <code>高级I/O</code>会是什么呢?</p>
+<h1 id="book-reading"><a href="#book-reading" class="headerlink" title="book reading"></a>book reading</h1><h2 id="apue-高级io"><a href="#apue-高级I-O" class="headerlink" title="apue 高级I/O"></a>apue 高级I/O</h2><p>之前见识过<code>非阻塞I/O</code>和<code>标准I/O</code>, <code>高级I/O</code>会是什么呢?</p>
 <h2 id="第四次革命"><a href="#第四次革命" class="headerlink" title="第四次革命"></a>第四次革命</h2><p>哥白尼的日心说, 否定了地球是宇宙的中心<br>达尔文的进化论, 否定了人类是上帝的杰作<br>弗洛伊德的精神分析, 否定了人类的自主意识<br>图灵的计算模型, 否定了人类的独一无二  </p>
 <hr>
-<h1 id="ted"><a href="#ted" class="headerlink" title="ted"></a>ted</h1><h2 id="你发过“短性息”吗？"><a href="#你发过“短性息”吗？" class="headerlink" title="你发过“短性息”吗？"></a>你发过“短性息”吗？</h2><p><a href="http://open.163.com/movie/2017/2/0/V/MCCS6ND1H_MCCSBPI0V.html" target="_blank" rel="external">链接地址</a><br>主讲人强调社会(法律/舆论)对 sexting 等”色情”产物的担忧不必要, 处理措施过于形式化.<br>更多的关注点应该放在”隐私”问题上, 即是否征得了隐私所有者的同意.</p>
+<h1 id="ted"><a href="#ted" class="headerlink" title="ted"></a>ted</h1><h2 id="你发过短性息吗"><a href="#你发过“短性息”吗？" class="headerlink" title="你发过“短性息”吗？"></a>你发过“短性息”吗？</h2><p><a href="http://open.163.com/movie/2017/2/0/V/MCCS6ND1H_MCCSBPI0V.html" target="_blank" rel="external">链接地址</a><br>主讲人强调社会(法律/舆论)对 sexting 等”色情”产物的担忧不必要, 处理措施过于形式化.<br>更多的关注点应该放在”隐私”问题上, 即是否征得了隐私所有者的同意.</p>
 ]]></content>
     
     <summary type="html">
@@ -759,7 +809,7 @@
     <published>2017-04-27T09:47:38.000Z</published>
     <updated>2017-04-28T10:05:30.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="阅读-APUE"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><blockquote>
+    <content type="html"><![CDATA[<h1 id="阅读-apue"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><blockquote>
 <p>信号看的有点晕，先概览一遍，第二圈再细读</p>
 </blockquote>
 <h2 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h2><p>线程有很多好处：</p>
@@ -818,7 +868,7 @@
     <published>2017-04-24T13:51:27.000Z</published>
     <updated>2017-04-24T09:23:03.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="阅读-APUE"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="进程控制"><a href="#进程控制" class="headerlink" title="进程控制"></a>进程控制</h2><p>本章介绍 UNIX 的进程控制，包括创建新进程、执行进程和进程终止</p>
+    <content type="html"><![CDATA[<h1 id="阅读-apue"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="进程控制"><a href="#进程控制" class="headerlink" title="进程控制"></a>进程控制</h2><p>本章介绍 UNIX 的进程控制，包括创建新进程、执行进程和进程终止</p>
 <h3 id="进程标识符"><a href="#进程标识符" class="headerlink" title="进程标识符"></a>进程标识符</h3><p>每个进程都有一个非负数型表示的唯一进程ID</p>
 <p>ID为 0 的进程通常是调度进程，常被称为交换进程（swapper）<br>ID为 1 的进程通常是init进程，负责在自举内核后启动一个UNIX系统  </p>
 <a id="more"></a>
@@ -875,7 +925,7 @@
     <published>2017-04-21T07:40:18.000Z</published>
     <updated>2017-04-23T13:48:19.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="阅读-APUE"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="进程环境"><a href="#进程环境" class="headerlink" title="进程环境"></a>进程环境</h2><ul>
+    <content type="html"><![CDATA[<h1 id="阅读-apue"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="进程环境"><a href="#进程环境" class="headerlink" title="进程环境"></a>进程环境</h2><ul>
 <li>main 函数是如何被调用</li>
 <li>命令行参数如何传送给执行程序</li>
 <li>典型的存储器布局是什么样式</li>
@@ -901,7 +951,7 @@
 <p>atexit 函数<br>登记 exit 的回调函数。同一函数被登记多次，也会被调用多次。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#include &lt;stdlib.h&gt;</div><div class="line"></div><div class="line">int atexit(void (*func)(void));</div></pre></td></tr></table></figure>
 <h3 id="环境表"><a href="#环境表" class="headerlink" title="环境表"></a>环境表</h3><p>extern char **environ;</p>
-<h3 id="C程序的存储空间布局"><a href="#C程序的存储空间布局" class="headerlink" title="C程序的存储空间布局"></a>C程序的存储空间布局</h3><p>C程序一直由下面几部分组成：</p>
+<h3 id="c程序的存储空间布局"><a href="#C程序的存储空间布局" class="headerlink" title="C程序的存储空间布局"></a>C程序的存储空间布局</h3><p>C程序一直由下面几部分组成：</p>
 <ul>
 <li>正文段。由 CPU 执行的机器指令部分</li>
 <li>初始化数据段。包含了程序中需明确地赋初值的变量</li>
@@ -958,13 +1008,13 @@
     <published>2017-04-20T01:56:25.000Z</published>
     <updated>2017-04-21T05:59:38.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="阅读-APUE"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="标准I-O库"><a href="#标准I-O库" class="headerlink" title="标准I/O库"></a>标准I/O库</h2><h3 id="流和FILE对象"><a href="#流和FILE对象" class="headerlink" title="流和FILE对象"></a>流和FILE对象</h3><h4 id="流的定向"><a href="#流的定向" class="headerlink" title="流的定向"></a>流的定向</h4><p>流可用于单字节或多字节字符集<br>未定项的流，一旦使用多字节就定向为多字节流，一旦使用单字节就定向为单字节流<br><code>freopen</code>和<code>fwide</code>可以改变留的定向<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;wchar.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fwide</span><span class="params">(FILE *fp, <span class="keyword">int</span> mode)</span></span>;</div></pre></td></tr></table></figure></p>
+    <content type="html"><![CDATA[<h1 id="阅读-apue"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="标准io库"><a href="#标准I-O库" class="headerlink" title="标准I/O库"></a>标准I/O库</h2><h3 id="流和file对象"><a href="#流和FILE对象" class="headerlink" title="流和FILE对象"></a>流和FILE对象</h3><h4 id="流的定向"><a href="#流的定向" class="headerlink" title="流的定向"></a>流的定向</h4><p>流可用于单字节或多字节字符集<br>未定项的流，一旦使用多字节就定向为多字节流，一旦使用单字节就定向为单字节流<br><code>freopen</code>和<code>fwide</code>可以改变留的定向<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;wchar.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fwide</span><span class="params">(FILE *fp, <span class="keyword">int</span> mode)</span></span>;</div></pre></td></tr></table></figure></p>
 <p>mode &lt; 0，设置为单字节——字节定向<br>mode &gt; 0，设置为多字节——宽定向<br>mode = 0，查询当前定向  </p>
 <blockquote>
 <p>注： fwide 只能用来设置未定向的流  </p>
 </blockquote>
 <a id="more"></a>
-<h3 id="标准输入、标准输出和标准出错"><a href="#标准输入、标准输出和标准出错" class="headerlink" title="标准输入、标准输出和标准出错"></a>标准输入、标准输出和标准出错</h3><p>stdin，stdout，stderr 定义在 <stdio.h></stdio.h></p>
+<h3 id="标准输入-标准输出和标准出错"><a href="#标准输入、标准输出和标准出错" class="headerlink" title="标准输入、标准输出和标准出错"></a>标准输入、标准输出和标准出错</h3><p>stdin，stdout，stderr 定义在 <stdio.h></stdio.h></p>
 <h3 id="缓冲"><a href="#缓冲" class="headerlink" title="缓冲"></a>缓冲</h3><p>标准I/O库提供缓冲的目的是尽可能减少使用read和write调用的次数。</p>
 <h4 id="三种类型"><a href="#三种类型" class="headerlink" title="三种类型"></a>三种类型</h4><ol>
 <li>全缓冲</li>
@@ -1079,7 +1129,7 @@
 <p>有以下几个输出函数<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">putc</span><span class="params">(<span class="keyword">int</span> c, FILE *fp)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fputc</span><span class="params">(<span class="keyword">int</span> c,FILE *fp)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">putchar</span><span class="params">(<span class="keyword">int</span> c)</span></span>;</div></pre></td></tr></table></figure></p>
 <h4 id="一次一行"><a href="#一次一行" class="headerlink" title="一次一行"></a>一次一行</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">char</span> *<span class="title">fgets</span><span class="params">(<span class="keyword">char</span> *<span class="keyword">restrict</span> buf, <span class="keyword">int</span> n, FILE *<span class="keyword">restrict</span> fp)</span></span>;</div><div class="line"><span class="function"><span class="keyword">char</span> *<span class="title">gets</span><span class="params">(<span class="keyword">char</span> *buf)</span></span>;</div></pre></td></tr></table></figure>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fputs</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> str, FILE *<span class="keyword">restrict</span> fp)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">puts</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *str)</span></span>;</div></pre></td></tr></table></figure>
-<h3 id="二进制I-O"><a href="#二进制I-O" class="headerlink" title="二进制I/O"></a>二进制I/O</h3><p>解决读、写整个结构的问题</p>
+<h3 id="二进制io"><a href="#二进制I-O" class="headerlink" title="二进制I/O"></a>二进制I/O</h3><p>解决读、写整个结构的问题</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="keyword">size_t</span> fread(<span class="keyword">void</span> *<span class="keyword">restrict</span> ptr, <span class="keyword">size_t</span> size, <span class="keyword">size_t</span> nobj, FILE *<span class="keyword">restrict</span> fp);</div><div class="line"></div><div class="line"><span class="keyword">size_t</span> fwrite(<span class="keyword">const</span> <span class="keyword">void</span> *<span class="keyword">restrict</span> ptr, <span class="keyword">size_t</span> size, <span class="keyword">size_t</span> nobj, FILE *<span class="keyword">restrict</span> fp);</div></pre></td></tr></table></figure>
 <p>二进制I/O在单独机器上运行没什么问题，但在多台机器协作的情况下，可能因为编译器、系统有异，整型、浮点型格式不同等原因遇到问题。<br>面对这种问题的实际解决办法是使用较高级的协议。</p>
 <h3 id="定位流"><a href="#定位流" class="headerlink" title="定位流"></a>定位流</h3><p>三种方法定位标准I/O流  </p>
@@ -1094,7 +1144,7 @@
 </ol>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="keyword">off_t</span> ftello(FILE *fp);</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fseeko</span><span class="params">(FILE *fp, <span class="keyword">off_t</span> offset, <span class="keyword">int</span> whence)</span></span>;</div></pre></td></tr></table></figure>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fgetpos</span><span class="params">(FILE *<span class="keyword">restrict</span> fp, <span class="keyword">fpos_t</span> *<span class="keyword">restrict</span> pos)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fsetpos</span><span class="params">(FILE *fp, <span class="keyword">const</span> <span class="keyword">fpos_t</span> *pos)</span></span>;</div></pre></td></tr></table></figure>
-<h3 id="格式化I-O"><a href="#格式化I-O" class="headerlink" title="格式化I/O"></a>格式化I/O</h3><p>格式化输出<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">printf</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> format, ...)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fprintf</span><span class="params">(FILE *<span class="keyword">restrict</span> fp, <span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> format, ...)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">sprintf</span><span class="params">(<span class="keyword">char</span> *<span class="keyword">restrict</span> buf, <span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> format, ...)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">snprintf</span><span class="params">(<span class="keyword">char</span> *<span class="keyword">restrict</span> buf, <span class="keyword">size_t</span> n, constr <span class="keyword">char</span> *<span class="keyword">restrict</span> format, ...)</span></span>;</div></pre></td></tr></table></figure></p>
+<h3 id="格式化io"><a href="#格式化I-O" class="headerlink" title="格式化I/O"></a>格式化I/O</h3><p>格式化输出<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">printf</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> format, ...)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fprintf</span><span class="params">(FILE *<span class="keyword">restrict</span> fp, <span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> format, ...)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">sprintf</span><span class="params">(<span class="keyword">char</span> *<span class="keyword">restrict</span> buf, <span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> format, ...)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">snprintf</span><span class="params">(<span class="keyword">char</span> *<span class="keyword">restrict</span> buf, <span class="keyword">size_t</span> n, constr <span class="keyword">char</span> *<span class="keyword">restrict</span> format, ...)</span></span>;</div></pre></td></tr></table></figure></p>
 <p>%[flags][fldwidth][precision][lenmodifier]convtype</p>
 <p>flags 的可用值</p>
 <table>
@@ -1156,8 +1206,8 @@
     <published>2017-04-19T03:37:25.000Z</published>
     <updated>2017-04-20T13:29:23.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="阅读-APUE"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="POSIX"><a href="#POSIX" class="headerlink" title="POSIX"></a>POSIX</h2><p>可移植的操作系统接口<br>定义的接口而非实现，因此不区分 <em>系统调用</em> 和 <em>库函数</em></p>
-<h2 id="文件-I-O"><a href="#文件-I-O" class="headerlink" title="文件 I/O"></a>文件 I/O</h2><h3 id="进程访问文件时的层次结构"><a href="#进程访问文件时的层次结构" class="headerlink" title="进程访问文件时的层次结构"></a>进程访问文件时的层次结构</h3><ul>
+    <content type="html"><![CDATA[<h1 id="阅读-apue"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="posix"><a href="#POSIX" class="headerlink" title="POSIX"></a>POSIX</h2><p>可移植的操作系统接口<br>定义的接口而非实现，因此不区分 <em>系统调用</em> 和 <em>库函数</em></p>
+<h2 id="文件-io"><a href="#文件-I-O" class="headerlink" title="文件 I/O"></a>文件 I/O</h2><h3 id="进程访问文件时的层次结构"><a href="#进程访问文件时的层次结构" class="headerlink" title="进程访问文件时的层次结构"></a>进程访问文件时的层次结构</h3><ul>
 <li>进程表（描述符+文件指针）</li>
 <li>文件表（状态标记+当前偏移量+v节点指针）</li>
 <li>v节点表（v节点信息+i节点信息+文件长度）</li>
@@ -1178,7 +1228,7 @@
 <p>I/O 操作的杂物箱<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;unistd.h&gt;    /* System V */</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/ioctl.h&gt; /* BSD and Linux */</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stropts.h&gt;   /* XSI STREAMS */</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">ioctl</span><span class="params">(<span class="keyword">int</span> filedes, <span class="keyword">int</span> request, ...)</span></span>;</div></pre></td></tr></table></figure></p>
 </blockquote>
 <p>上述是 ioctl 函数本身所要求的头文件。通常，还要求另外的设备专用头文件，这些头文件中可能会定义一组专用的命令。</p>
-<h2 id="文件和目录"><a href="#文件和目录" class="headerlink" title="文件和目录"></a>文件和目录</h2><h3 id="stat、fstat、lstat"><a href="#stat、fstat、lstat" class="headerlink" title="stat、fstat、lstat"></a>stat、fstat、lstat</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/stat.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">stat</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> pathname, <span class="keyword">struct</span> stat *<span class="keyword">restrict</span> buf)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fstat</span><span class="params">(<span class="keyword">int</span> filedes, <span class="keyword">struct</span> stat *buf)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">lstat</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> pathname, <span class="keyword">struct</span> stat *<span class="keyword">restrict</span> buf)</span></span>;</div></pre></td></tr></table></figure>
+<h2 id="文件和目录"><a href="#文件和目录" class="headerlink" title="文件和目录"></a>文件和目录</h2><h3 id="stat-fstat-lstat"><a href="#stat、fstat、lstat" class="headerlink" title="stat、fstat、lstat"></a>stat、fstat、lstat</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/stat.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">stat</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> pathname, <span class="keyword">struct</span> stat *<span class="keyword">restrict</span> buf)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">fstat</span><span class="params">(<span class="keyword">int</span> filedes, <span class="keyword">struct</span> stat *buf)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">lstat</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *<span class="keyword">restrict</span> pathname, <span class="keyword">struct</span> stat *<span class="keyword">restrict</span> buf)</span></span>;</div></pre></td></tr></table></figure>
 <p>stat 函数返回与明明文件有关的信息结构。<br>fstat 函数获取已在描述符 filedes 上打开文件的有关信息。<br>lstat 函数类似于 stat，但是当命名的文件是一个符号链接时，lstat 返回符号链接的有关信息。</p>
 <h3 id="文件类型"><a href="#文件类型" class="headerlink" title="文件类型"></a>文件类型</h3><p>包含在 stat 结构的 st_mode 成员中，使用以下宏确定文件类型</p>
 <ol>
@@ -1190,12 +1240,12 @@
 <li>套接字 S_ISSOCK</li>
 <li>符号链接 S_ISLNK</li>
 </ol>
-<h3 id="确定-IPC-对象的类型的宏"><a href="#确定-IPC-对象的类型的宏" class="headerlink" title="确定 IPC 对象的类型的宏"></a>确定 IPC 对象的类型的宏</h3><ol>
+<h3 id="确定-ipc-对象的类型的宏"><a href="#确定-IPC-对象的类型的宏" class="headerlink" title="确定 IPC 对象的类型的宏"></a>确定 IPC 对象的类型的宏</h3><ol>
 <li>消息队列 S_TYPEISMQ</li>
 <li>信号量 S_TYPEISSEM</li>
 <li>共享存储对象 S_TYPEISSHM</li>
 </ol>
-<h3 id="用户ID和组ID"><a href="#用户ID和组ID" class="headerlink" title="用户ID和组ID"></a>用户ID和组ID</h3><ul>
+<h3 id="用户id和组id"><a href="#用户ID和组ID" class="headerlink" title="用户ID和组ID"></a>用户ID和组ID</h3><ul>
 <li>实际用户ID和组ID<ul>
 <li>标识我们究竟是谁</li>
 </ul>
@@ -1270,7 +1320,7 @@
 <li>拥有此目录</li>
 <li>是超级用户</li>
 </ul>
-<h3 id="link、unlink、remove-和-rename"><a href="#link、unlink、remove-和-rename" class="headerlink" title="link、unlink、remove 和 rename"></a>link、unlink、remove 和 rename</h3><p>unlink 常被用来确保即使程序崩溃，它所创建的临时文件也不会留下来</p>
+<h3 id="link-unlink-remove-和-rename"><a href="#link、unlink、remove-和-rename" class="headerlink" title="link、unlink、remove 和 rename"></a>link、unlink、remove 和 rename</h3><p>unlink 常被用来确保即使程序崩溃，它所创建的临时文件也不会留下来</p>
 <h3 id="symlink-和-readlink"><a href="#symlink-和-readlink" class="headerlink" title="symlink 和 readlink"></a>symlink 和 readlink</h3><p>symlink 创建一个符号链接<br>readlink 打开链接本身（相反，open 跟随符号链接）  </p>
 <h3 id="utime"><a href="#utime" class="headerlink" title="utime"></a>utime</h3><p>utime 修改文件的<strong>访问</strong>和<strong>修改</strong>时间</p>
 ]]></content>
@@ -1283,62 +1333,6 @@
 &lt;li&gt;文件表（状态标记+当前偏移量+v节点指针）&lt;/li&gt;
 &lt;li&gt;v节点表（v节点信息+i节点信息+文件长度）&lt;/li&gt;
 &lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>2017-04-18</title>
-    <link href="http://blog.sin5th.com/2017/04/18/2017-04-18/"/>
-    <id>http://blog.sin5th.com/2017/04/18/2017-04-18/</id>
-    <published>2017-04-18T06:53:13.000Z</published>
-    <updated>2017-04-18T15:38:15.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="阅读-APUE"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h2><p>一般用整型常量代表错误原因，如 EACCES 为权限不足。<br>strerror(int) 将整型常量转化为错误字符串。<br>perror(const char *) 打印 <code>自定义字串: 错误字符串</code>。</p>
-<h2 id="用户-组"><a href="#用户-组" class="headerlink" title="用户/组"></a>用户/组</h2><p>unix 中用户和组都是用32位整型表示的。<br>相比字符串，整型节省空间、检索高效。<br>getuid，getpid 分别返回<code>用户id</code>和<code>组id</code>。</p>
-<h2 id="信号"><a href="#信号" class="headerlink" title="信号"></a>信号</h2><p>三种处理方式：忽略、系统默认、自定义。<br>signal 函数可以为信号注册处理函数。</p>
-<a id="more"></a>
-<h2 id="时间"><a href="#时间" class="headerlink" title="时间"></a>时间</h2><p>unix 使用<code>日历时间</code>和<code>进程时间</code>两种时间值。</p>
-<ul>
-<li>日历时间：UTC</li>
-<li>进程时间：CPU<ul>
-<li>时钟时间</li>
-<li>用户cpu时间</li>
-<li>系统cpu时间</li>
-</ul>
-</li>
-</ul>
-<h2 id="系统调用和库函数"><a href="#系统调用和库函数" class="headerlink" title="系统调用和库函数"></a>系统调用和库函数</h2><p>对实现者而言，系统调用与库函数区别很大。<br>对使用者而言，没有太多差别。</p>
-<h1 id="调整博客"><a href="#调整博客" class="headerlink" title="调整博客"></a>调整博客</h1><h2 id="给博客加个favicon"><a href="#给博客加个favicon" class="headerlink" title="给博客加个favicon"></a>给博客加个favicon</h2><p>用在线工具制作一个图标。<br>放到 source/favicon.png。<br>修改 themes/next/_config.yml，设置 <code>favicon: /favicon.png</code>。</p>
-<h1 id="面试题"><a href="#面试题" class="headerlink" title="面试题"></a>面试题</h1><h2 id="数组中的逆序对"><a href="#数组中的逆序对" class="headerlink" title="数组中的逆序对"></a>数组中的逆序对</h2><p>在数组中的两个数字如果前面一个数字大于后面的数字，则这两个数字组成一个逆序对。输入一个数组，求出这个数组中逆序对的总数。  </p>
-<blockquote>
-<p>归并排序，在归并过程中进行计数。</p>
-</blockquote>
-<h2 id="丑数"><a href="#丑数" class="headerlink" title="丑数"></a>丑数</h2><p>我们把只包含因子2，3和5的数称作丑数。求按从小到大的顺序的第1500个丑数。</p>
-<blockquote>
-<p>用三个 index 分别表示2/3/5对应的丑数位置，保证:  </p>
-<ol>
-<li><code>2*i2&lt;x&lt;2*i2+2</code>;  </li>
-<li><code>3*i3&lt;x&lt;3*i3+3</code>;  </li>
-<li><code>5*i5&lt;x&lt;5*i5+5</code>;  </li>
-</ol>
-<p>其中x为当前的丑数，则下一个丑数一定出现在上述三个式子的右侧。</p>
-</blockquote>
-<h2 id="把数组排成最小的数"><a href="#把数组排成最小的数" class="headerlink" title="把数组排成最小的数"></a>把数组排成最小的数</h2><p>输入一个正整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。</p>
-<blockquote>
-<p>设 a、b、c 三个字符串。若<code>ab&gt;ba</code>，则<code>a&gt;b</code>；<br>将所有数字按照字母序递增，拼接后即是最小的数。</p>
-</blockquote>
-<h2 id="从1到n整数中1出现的次数"><a href="#从1到n整数中1出现的次数" class="headerlink" title="从1到n整数中1出现的次数"></a>从1到n整数中1出现的次数</h2><h2 id="连续子数组的最大和"><a href="#连续子数组的最大和" class="headerlink" title="连续子数组的最大和"></a>连续子数组的最大和</h2><h2 id="最小的K个数"><a href="#最小的K个数" class="headerlink" title="最小的K个数"></a>最小的K个数</h2><h2 id="数组中出现次数超过一半的数字"><a href="#数组中出现次数超过一半的数字" class="headerlink" title="数组中出现次数超过一半的数字"></a>数组中出现次数超过一半的数字</h2>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;阅读-APUE&quot;&gt;&lt;a href=&quot;#阅读-APUE&quot; class=&quot;headerlink&quot; title=&quot;阅读 APUE&quot;&gt;&lt;/a&gt;阅读 APUE&lt;/h1&gt;&lt;h2 id=&quot;错误处理&quot;&gt;&lt;a href=&quot;#错误处理&quot; class=&quot;headerlink&quot; title=&quot;错误处理&quot;&gt;&lt;/a&gt;错误处理&lt;/h2&gt;&lt;p&gt;一般用整型常量代表错误原因，如 EACCES 为权限不足。&lt;br&gt;strerror(int) 将整型常量转化为错误字符串。&lt;br&gt;perror(const char *) 打印 &lt;code&gt;自定义字串: 错误字符串&lt;/code&gt;。&lt;/p&gt;
-&lt;h2 id=&quot;用户-组&quot;&gt;&lt;a href=&quot;#用户-组&quot; class=&quot;headerlink&quot; title=&quot;用户/组&quot;&gt;&lt;/a&gt;用户/组&lt;/h2&gt;&lt;p&gt;unix 中用户和组都是用32位整型表示的。&lt;br&gt;相比字符串，整型节省空间、检索高效。&lt;br&gt;getuid，getpid 分别返回&lt;code&gt;用户id&lt;/code&gt;和&lt;code&gt;组id&lt;/code&gt;。&lt;/p&gt;
-&lt;h2 id=&quot;信号&quot;&gt;&lt;a href=&quot;#信号&quot; class=&quot;headerlink&quot; title=&quot;信号&quot;&gt;&lt;/a&gt;信号&lt;/h2&gt;&lt;p&gt;三种处理方式：忽略、系统默认、自定义。&lt;br&gt;signal 函数可以为信号注册处理函数。&lt;/p&gt;
     
     </summary>
     
