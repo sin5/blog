@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-05-17T08:17:32.000Z</updated>
+  <updated>2017-05-18T08:59:59.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -14,6 +14,51 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2017-05-18</title>
+    <link href="http://blog.sin5th.com/2017/05/18/2017-05-18/"/>
+    <id>http://blog.sin5th.com/2017/05/18/2017-05-18/</id>
+    <published>2017-05-18T06:20:25.000Z</published>
+    <updated>2017-05-18T08:59:59.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class="hr-sect">Hack ╮(￣▽￣)╭ News</div>
+
+
+
+<div class="hr-sect">Tech (￣▽￣)~* Learning</div>
+
+
+
+<div class="hr-sect">Book ╰(￣▽￣)╭ Reading</div>
+
+<h1 id="很感谢你能来不遗憾你走开"><a href="#《很感谢你能来，不遗憾你走开》" class="headerlink" title="《很感谢你能来，不遗憾你走开》"></a>《很感谢你能来，不遗憾你走开》</h1><h2 id="当众不催婚人前不揭短"><a href="#当众不催婚，人前不揭短" class="headerlink" title="当众不催婚，人前不揭短"></a>当众不催婚，人前不揭短</h2><p>学时好友毕业后便分道扬镳，联系方式从短信变成了请柬。盛装出席，却被问缘何一人？当众不催婚，人前不揭短。</p>
+<h1 id="程序员必读之软件架构"><a href="#《程序员必读之软件架构》" class="headerlink" title="《程序员必读之软件架构》"></a>《程序员必读之软件架构》</h1><h2 id="抛弃uml拥抱草图"><a href="#抛弃UML，拥抱草图" class="headerlink" title="抛弃UML，拥抱草图"></a>抛弃UML，拥抱草图</h2><p>我们不愿意被复杂而全面的UML拖慢进度，但也需要一个交流想法的手段。草图是个很好的选择。</p>
+<p>注意，草图不是艺术品，要大家都能看懂；草图也不是创建模型，不必面面俱到。</p>
+<h1 id="一炮走红的国家"><a href="#《一炮走红的国家》" class="headerlink" title="《一炮走红的国家》"></a>《一炮走红的国家》</h1><h2 id="4000-美元大关"><a href="#4000-美元大关" class="headerlink" title="4000 美元大关"></a>4000 美元大关</h2><p>人均 4000 美元是评判中等收入国家的标准。超过这个标准后，经济增长的难度就上升了一个台阶。</p>
+<p>发达国家 2~3% 的经济增长所需要创造的价值，就相当于发展中国家 8% 以上的经济增长所需要创造的价值。因此对于人均收入 5000 元的中国来说，7% 以下的经济增长所意味的，实际是倒退。</p>
+<h2 id="美国的机遇"><a href="#美国的机遇" class="headerlink" title="美国的机遇"></a>美国的机遇</h2><p>发展中国家的发展引人入胜，但这并不是可持续、可复制的。美国的经济复苏，又拥有社交网络、人工智能这两个新兴科技，因此仍在世界经济中发挥着主导作用。</p>
+<h1 id="刻意练习"><a href="#《刻意练习》" class="headerlink" title="《刻意练习》"></a>《刻意练习》</h1><h2 id="技能复杂度"><a href="#技能复杂度" class="headerlink" title="技能复杂度"></a>技能复杂度</h2><h2 id="隐形知识"><a href="#隐形知识" class="headerlink" title="隐形知识"></a>隐形知识</h2><div class="hr-sect">Idea (～￣▽￣)～ Spreading</div>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;hr-sect&quot;&gt;Hack ╮(￣▽￣)╭ News&lt;/div&gt;
+
+
+
+&lt;div class=&quot;hr-sect&quot;&gt;Tech (￣▽￣)~* Learning&lt;/div&gt;
+
+
+
+&lt;div class=&quot;hr-sect&quot;&gt;Book ╰(￣▽￣)╭ Readin
+    
+    </summary>
+    
+      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>成长感悟</title>
@@ -954,63 +999,6 @@
 &lt;li&gt;分解任务提高吞吐量&lt;/li&gt;
 &lt;li&gt;改善交互程序的响应时间&lt;/li&gt;
 &lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>2017-04-24</title>
-    <link href="http://blog.sin5th.com/2017/04/24/2017-04-24/"/>
-    <id>http://blog.sin5th.com/2017/04/24/2017-04-24/</id>
-    <published>2017-04-24T13:51:27.000Z</published>
-    <updated>2017-04-24T09:23:03.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="阅读-apue"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="进程控制"><a href="#进程控制" class="headerlink" title="进程控制"></a>进程控制</h2><p>本章介绍 UNIX 的进程控制，包括创建新进程、执行进程和进程终止</p>
-<h3 id="进程标识符"><a href="#进程标识符" class="headerlink" title="进程标识符"></a>进程标识符</h3><p>每个进程都有一个非负数型表示的唯一进程ID</p>
-<p>ID为 0 的进程通常是调度进程，常被称为交换进程（swapper）<br>ID为 1 的进程通常是init进程，负责在自举内核后启动一个UNIX系统  </p>
-<a id="more"></a>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;unistd.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="keyword">pid_t</span> getpid(<span class="keyword">void</span>);  <span class="comment">// 进程PID</span></div><div class="line"><span class="keyword">pid_t</span> getppid(<span class="keyword">void</span>); <span class="comment">// 父进程PID</span></div><div class="line"></div><div class="line"><span class="keyword">uid_t</span> getuid(<span class="keyword">void</span>);  <span class="comment">// 实际用户ID</span></div><div class="line"><span class="keyword">uid_t</span> geteuid(<span class="keyword">void</span>); <span class="comment">// 有效用户ID</span></div><div class="line"></div><div class="line"><span class="keyword">gid_t</span> getgid(<span class="keyword">void</span>);  <span class="comment">// 实际组ID</span></div><div class="line"><span class="keyword">gid_t</span> getegid(<span class="keyword">void</span>); <span class="comment">// 有效组ID</span></div></pre></td></tr></table></figure>
-<h3 id="fork-函数"><a href="#fork-函数" class="headerlink" title="fork 函数"></a>fork 函数</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;unistd.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="keyword">pid_t</span> fork(<span class="keyword">void</span>);</div></pre></td></tr></table></figure>
-<p>父、子进程只共享正文段。</p>
-<blockquote>
-<p>由于在 fork 之后经常跟随着 exec，所以现在的很多实现并不执行一个父进程数据段、栈和堆的完全复制。而是使用写时拷贝技术。</p>
-</blockquote>
-<p>fork 失败的两个主要原因：</p>
-<ul>
-<li>系统有了太多的进程</li>
-<li>用户的进程总数超过了系统限制</li>
-</ul>
-<p>fork 有下面两种用法：</p>
-<ul>
-<li>父进程希望复制自己，使父、子进程同时执行不同的代码段</li>
-<li>执行一个不同的程序</li>
-</ul>
-<h3 id="wait-和-waitpid-函数"><a href="#wait-和-waitpid-函数" class="headerlink" title="wait 和 waitpid 函数"></a>wait 和 waitpid 函数</h3><p>调用 wait 或 waitpid 的进程：</p>
-<ul>
-<li>如果所有子进程都还在运行，则阻塞</li>
-<li>如果一个子进程已终止，正等待父进程获取终止状态，则取得该子进程的终止状态立即返回</li>
-<li>如果它没有任何子进程，则立即出错返回</li>
-</ul>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/wait.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="keyword">pid_t</span> wait(<span class="keyword">int</span> *statloc);</div><div class="line"><span class="keyword">pid_t</span> waitpid(<span class="keyword">pid_t</span> pid, <span class="keyword">int</span> *statloc, <span class="keyword">int</span> options);</div></pre></td></tr></table></figure>
-<p>statloc 是存放进程退出状态的整型指针，用下面4个宏判断：</p>
-<ul>
-<li>WIFEXITED(status)</li>
-<li>WIFSIGNALED(status)</li>
-<li>WIFSTOPPED(status)</li>
-<li>WIFCONTINUED(status)</li>
-</ul>
-<h3 id="exec-函数"><a href="#exec-函数" class="headerlink" title="exec 函数"></a>exec 函数</h3><p>execlp<br>execvp<br>execl<br>execv<br>execle<br>execvp</p>
-<h2 id="进程关系"><a href="#进程关系" class="headerlink" title="进程关系"></a>进程关系</h2>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;阅读-APUE&quot;&gt;&lt;a href=&quot;#阅读-APUE&quot; class=&quot;headerlink&quot; title=&quot;阅读 APUE&quot;&gt;&lt;/a&gt;阅读 APUE&lt;/h1&gt;&lt;h2 id=&quot;进程控制&quot;&gt;&lt;a href=&quot;#进程控制&quot; class=&quot;headerlink&quot; title=&quot;进程控制&quot;&gt;&lt;/a&gt;进程控制&lt;/h2&gt;&lt;p&gt;本章介绍 UNIX 的进程控制，包括创建新进程、执行进程和进程终止&lt;/p&gt;
-&lt;h3 id=&quot;进程标识符&quot;&gt;&lt;a href=&quot;#进程标识符&quot; class=&quot;headerlink&quot; title=&quot;进程标识符&quot;&gt;&lt;/a&gt;进程标识符&lt;/h3&gt;&lt;p&gt;每个进程都有一个非负数型表示的唯一进程ID&lt;/p&gt;
-&lt;p&gt;ID为 0 的进程通常是调度进程，常被称为交换进程（swapper）&lt;br&gt;ID为 1 的进程通常是init进程，负责在自举内核后启动一个UNIX系统  &lt;/p&gt;
     
     </summary>
     
