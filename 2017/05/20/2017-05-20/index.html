@@ -93,17 +93,17 @@
 
 
 
-<meta name="description" content="阅读 APUE进程环境 main 函数是如何被调用 命令行参数如何传送给执行程序 典型的存储器布局是什么样式 如何分配另外的存储空间 如何使用环境变量 不同的进程终止方式  main函数int main(int argc, char *argv[]) 调用main前先调用一个特殊的启动例程。启动例程先从内核取得命令行参数和环境变量值，为调用main函数做好准备。">
+<meta name="description" content="Hack ╮(￣▽￣)╭ News    Tech (￣▽￣)~* Learning    Book ╰(￣▽￣)╭ Reading  《很感谢你能来，不遗憾你走开》为了合群同道中人，合而不群《程序员必读之软件架构》草图要表意完整草图要表意简洁草图要表达的有意义《一炮走红的国家》中国更担心社会动荡让一部分人先富起来的政策方针将中国经济推上了快速发展的轨道，但贫富差距的不断增大让社会仇富心理日益壮大">
 <meta name="keywords">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2017-04-21">
-<meta property="og:url" content="http://blog.sin5th.com/2017/04/21/2017-04-21/index.html">
+<meta property="og:title" content="2017-05-20">
+<meta property="og:url" content="http://blog.sin5th.com/2017/05/20/2017-05-20/index.html">
 <meta property="og:site_name" content="Sin5's Blog">
-<meta property="og:description" content="阅读 APUE进程环境 main 函数是如何被调用 命令行参数如何传送给执行程序 典型的存储器布局是什么样式 如何分配另外的存储空间 如何使用环境变量 不同的进程终止方式  main函数int main(int argc, char *argv[]) 调用main前先调用一个特殊的启动例程。启动例程先从内核取得命令行参数和环境变量值，为调用main函数做好准备。">
-<meta property="og:updated_time" content="2017-04-23T13:48:19.000Z">
+<meta property="og:description" content="Hack ╮(￣▽￣)╭ News    Tech (￣▽￣)~* Learning    Book ╰(￣▽￣)╭ Reading  《很感谢你能来，不遗憾你走开》为了合群同道中人，合而不群《程序员必读之软件架构》草图要表意完整草图要表意简洁草图要表达的有意义《一炮走红的国家》中国更担心社会动荡让一部分人先富起来的政策方针将中国经济推上了快速发展的轨道，但贫富差距的不断增大让社会仇富心理日益壮大">
+<meta property="og:updated_time" content="2017-05-20T15:33:49.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2017-04-21">
-<meta name="twitter:description" content="阅读 APUE进程环境 main 函数是如何被调用 命令行参数如何传送给执行程序 典型的存储器布局是什么样式 如何分配另外的存储空间 如何使用环境变量 不同的进程终止方式  main函数int main(int argc, char *argv[]) 调用main前先调用一个特殊的启动例程。启动例程先从内核取得命令行参数和环境变量值，为调用main函数做好准备。">
+<meta name="twitter:title" content="2017-05-20">
+<meta name="twitter:description" content="Hack ╮(￣▽￣)╭ News    Tech (￣▽￣)~* Learning    Book ╰(￣▽￣)╭ Reading  《很感谢你能来，不遗憾你走开》为了合群同道中人，合而不群《程序员必读之软件架构》草图要表意完整草图要表意简洁草图要表达的有意义《一炮走红的国家》中国更担心社会动荡让一部分人先富起来的政策方针将中国经济推上了快速发展的轨道，但贫富差距的不断增大让社会仇富心理日益壮大">
 
 
 
@@ -131,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.sin5th.com/2017/04/21/2017-04-21/"/>
+  <link rel="canonical" href="http://blog.sin5th.com/2017/05/20/2017-05-20/"/>
 
 
 
 
 
-  <title> 2017-04-21 | Sin5's Blog </title>
+  <title> 2017-05-20 | Sin5's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -296,7 +296,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://blog.sin5th.com/2017/04/21/2017-04-21/">
+    <link itemprop="mainEntityOfPage" href="http://blog.sin5th.com/2017/05/20/2017-05-20/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="武鑫">
@@ -317,7 +317,7 @@
             
             
               
-                2017-04-21
+                2017-05-20
               
             
           </h2>
@@ -330,8 +330,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-21T15:40:18+08:00">
-                2017-04-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-20T22:28:29+08:00">
+                2017-05-20
               </time>
             
 
@@ -369,9 +369,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/04/21/2017-04-21/#comments" itemprop="discussionUrl">
+                <a href="/2017/05/20/2017-05-20/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/04/21/2017-04-21/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/05/20/2017-05-20/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -390,7 +390,7 @@
                 </span>
                 
                 <span title="字数统计">
-                  841
+                  751
                 </span>
               
 
@@ -423,60 +423,25 @@
       
 
       
-        <h1 id="阅读-apue"><a href="#阅读-APUE" class="headerlink" title="阅读 APUE"></a>阅读 APUE</h1><h2 id="进程环境"><a href="#进程环境" class="headerlink" title="进程环境"></a>进程环境</h2><ul>
-<li>main 函数是如何被调用</li>
-<li>命令行参数如何传送给执行程序</li>
-<li>典型的存储器布局是什么样式</li>
-<li>如何分配另外的存储空间</li>
-<li>如何使用环境变量</li>
-<li>不同的进程终止方式</li>
-</ul>
-<h3 id="main函数"><a href="#main函数" class="headerlink" title="main函数"></a>main函数</h3><p><code>int main(int argc, char *argv[])</code></p>
-<p>调用main前先调用一个特殊的启动例程。启动例程先从内核取得命令行参数和环境变量值，为调用main函数做好准备。</p>
-<a id="more"></a>
-<h3 id="进程终止"><a href="#进程终止" class="headerlink" title="进程终止"></a>进程终止</h3><p>有8种方式使进程终止，其中5种为正常终止：</p>
-<ol>
-<li>从 main 返回</li>
-<li>调用 exit</li>
-<li>调用 _exit 或 _Exit</li>
-<li>最后一个线程从其启动例程返回</li>
-<li>最后一个线程调用 pthread_exit</li>
-<li>调用 abort</li>
-<li>接到一个信号并终止</li>
-<li>最后一个线程对取消请求做出响应</li>
-</ol>
-<p>exit 函数<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">exit</span><span class="params">(<span class="keyword">int</span> status)</span></span>;</div><div class="line"><span class="keyword">void</span> _Exit(<span class="keyword">int</span> status);</div><div class="line"></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;unistd.h&gt;</span></span></div><div class="line"><span class="keyword">void</span> _exit(<span class="keyword">int</span> status);</div></pre></td></tr></table></figure></p>
-<p>atexit 函数<br>登记 exit 的回调函数。同一函数被登记多次，也会被调用多次。</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#include &lt;stdlib.h&gt;</div><div class="line"></div><div class="line">int atexit(void (*func)(void));</div></pre></td></tr></table></figure>
-<h3 id="环境表"><a href="#环境表" class="headerlink" title="环境表"></a>环境表</h3><p>extern char **environ;</p>
-<h3 id="c程序的存储空间布局"><a href="#C程序的存储空间布局" class="headerlink" title="C程序的存储空间布局"></a>C程序的存储空间布局</h3><p>C程序一直由下面几部分组成：</p>
-<ul>
-<li>正文段。由 CPU 执行的机器指令部分</li>
-<li>初始化数据段。包含了程序中需明确地赋初值的变量</li>
-<li>非初始化数据段。通常称bss段（block started by symbol）</li>
-<li>栈。自动变量以及每次函数调用时所需保存的信息</li>
-<li>堆。动态存储的分配</li>
-</ul>
-<h3 id="共享库"><a href="#共享库" class="headerlink" title="共享库"></a>共享库</h3><p>共享库使得可执行文件中不再需要包含公用的库例程，而只需在所有进程都可引用的存储区中维护这种库例程的一个副本<br>减少了每个可执行文件的长度，但增加了一些运行时间开销。这种时间开销发生在该程序第一次被执行时，或者每个共享库函数第一次被调用时</p>
-<h3 id="存储器分配"><a href="#存储器分配" class="headerlink" title="存储器分配"></a>存储器分配</h3><ol>
-<li>malloc 分配指定字节数的存储区。存储区中的初始值不确定</li>
-<li>calloc 为指定数量具有指定长度的对象分配存储空间。存储区中的每一位都初始化为0</li>
-<li>realloc 更改以前分配区的长度（增加或减少）。新增区域的初始值不确定</li>
-</ol>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> *<span class="title">malloc</span><span class="params">(<span class="keyword">size_t</span> size)</span></span>;</div><div class="line"><span class="function"><span class="keyword">void</span> *<span class="title">calloc</span><span class="params">(<span class="keyword">size_t</span> nobj, <span class="keyword">size_t</span> size)</span></span>;</div><div class="line"><span class="function"><span class="keyword">void</span> *<span class="title">realloc</span><span class="params">(<span class="keyword">void</span> *ptr, <span class="keyword">size_t</span> newsize)</span></span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">free</span><span class="params">(<span class="keyword">void</span> *ptr)</span></span>;</div></pre></td></tr></table></figure>
-<p>这三个分配函数所返回的指针一定是适当对齐的，使其可用于任何数据对象</p>
-<h3 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">char</span> *<span class="title">getenv</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *name)</span></span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">putenv</span><span class="params">(<span class="keyword">char</span> *str)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">setenv</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *name, <span class="keyword">const</span> <span class="keyword">char</span> *value, <span class="keyword">int</span> rewrite)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">unsetenv</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *name)</span></span>;</div></pre></td></tr></table></figure>
-<blockquote>
-<p>putenv 会直接将参数传入环境表。如果这个参数是栈中的字符串，就会发生错误</p>
-</blockquote>
-<h3 id="setjump-和-longjump"><a href="#setjump-和-longjump" class="headerlink" title="setjump 和 longjump"></a>setjump 和 longjump</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;setjmp.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">setjmp</span><span class="params">(jmp_buf env)</span></span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">longjump</span><span class="params">(jmp_buf env,<span class="keyword">int</span> val)</span></span>;</div></pre></td></tr></table></figure>
-<h3 id="getrlimit-和-setrlimit"><a href="#getrlimit-和-setrlimit" class="headerlink" title="getrlimit 和 setrlimit"></a>getrlimit 和 setrlimit</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/resource.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">getrlimit</span><span class="params">(<span class="keyword">int</span> resource, <span class="keyword">struct</span> rlimit *rlptr)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">setrlimit</span><span class="params">(<span class="keyword">int</span> resource, <span class="keyword">const</span> <span class="keyword">struct</span> rlimit *rlptr)</span></span>;</div></pre></td></tr></table></figure>
-<p>更改资源限制，遵循下列三条规则：</p>
-<ul>
-<li>任何一个进程都可以将其软限制值更改为小于或等于其硬限制值</li>
-<li>任何一个进程都可降低其硬件限制值，但它必须大于或等于其软限制值</li>
-<li>只有超级客户可以提高硬限制值</li>
-</ul>
+        <div class="hr-sect">Hack ╮(￣▽￣)╭ News</div>
+
+
+
+<div class="hr-sect">Tech (￣▽￣)~* Learning</div>
+
+
+
+<div class="hr-sect">Book ╰(￣▽￣)╭ Reading</div>
+
+<h1 id="很感谢你能来不遗憾你走开"><a href="#《很感谢你能来，不遗憾你走开》" class="headerlink" title="《很感谢你能来，不遗憾你走开》"></a>《很感谢你能来，不遗憾你走开》</h1><h2 id="为了合群"><a href="#为了合群" class="headerlink" title="为了合群"></a>为了合群</h2><h2 id="同道中人合而不群"><a href="#同道中人，合而不群" class="headerlink" title="同道中人，合而不群"></a>同道中人，合而不群</h2><h1 id="程序员必读之软件架构"><a href="#《程序员必读之软件架构》" class="headerlink" title="《程序员必读之软件架构》"></a>《程序员必读之软件架构》</h1><h2 id="草图要表意完整"><a href="#草图要表意完整" class="headerlink" title="草图要表意完整"></a>草图要表意完整</h2><h2 id="草图要表意简洁"><a href="#草图要表意简洁" class="headerlink" title="草图要表意简洁"></a>草图要表意简洁</h2><h2 id="草图要表达的有意义"><a href="#草图要表达的有意义" class="headerlink" title="草图要表达的有意义"></a>草图要表达的有意义</h2><h1 id="一炮走红的国家"><a href="#《一炮走红的国家》" class="headerlink" title="《一炮走红的国家》"></a>《一炮走红的国家》</h1><h2 id="中国更担心社会动荡"><a href="#中国更担心社会动荡" class="headerlink" title="中国更担心社会动荡"></a>中国更担心社会动荡</h2><p>让一部分人先富起来的政策方针将中国经济推上了快速发展的轨道，但贫富差距的不断增大让社会仇富心理日益壮大。继续维持高速发展所带来的社会不稳定，并不是执政党愿意看到的结果。</p>
+<h2 id="中国的经济形式没那么好"><a href="#中国的经济形式，没那么好" class="headerlink" title="中国的经济形式，没那么好"></a>中国的经济形式，没那么好</h2><p>中国的政府债务约合国内生产总值的30%，表面上看起来十分健康。但如果算上“影子银行业”，负债占比可能达到200%，这对于发展中国家来说太高了。</p>
+<p>另外，从上海股市的反应，2011年与2006年基本处于同一水平。这代表了国内投资人对未来的信心。</p>
+<h2 id="放权图发展的邓小平时代结束"><a href="#放权图发展的邓小平时代，结束" class="headerlink" title="放权图发展的邓小平时代，结束"></a>放权图发展的邓小平时代，结束</h2><p>邓小平及其继任者江泽民、再后继者胡锦涛，代表了一个经济发展（几乎）高于一切的时代。空间平衡（发展内地）和收入均衡（最低收入保障）逐渐取代了经济发展的地位。让生活更容易，而不是让经济更具有竞争力，成为了新的目标。</p>
+<h2 id="经济发展与社会体制无关"><a href="#经济发展与社会体制无关" class="headerlink" title="经济发展与社会体制无关"></a>经济发展与社会体制无关</h2><p>有人觉得自由、民主是为经济发展带来好处的社会属性。但回顾过去30年世界上经济增速超过5%的国家，你就发现它们的体制五花八门，有民主制，有集权制，也有在两者间摇摆不定的，并且它们的数量并没有明显差别。</p>
+<h1 id="刻意练习"><a href="#《刻意练习》" class="headerlink" title="《刻意练习》"></a>《刻意练习》</h1><h2 id="有目的练习突破短时记忆的极限"><a href="#有目的练习，突破短时记忆的极限" class="headerlink" title="有目的练习，突破短时记忆的极限"></a>有目的练习，突破短时记忆的极限</h2><p>斯蒂夫是卡耐基梅龙大学的一名普通学生，受邀参加我们的短时记忆实验。人的短时记忆一般在 7 到 8 之间，当我们以每秒1个的速度将英文字母念给斯蒂夫的时候，他大概能记住连续的7个，偶尔能达到8个。</p>
+<p>在我们反复训练多次（4次）后，斯蒂夫笃信8个就是他的记忆极限。事实上，当时的心理学研究也支持这个结论。但随着我们实验的继续，当训练次数达到10次的时候，斯蒂夫奇迹般地取得突破，他有时能记住9个了。</p>
+<p>训练的次数最终达到100次，史蒂夫的战绩达到了82。这是令人难以相信的结果，有人将字母1秒1个地读给你，读到第82个的时候，你还能完整地复述出听到的所有字母。但这是真实的成就，一个通过反复训练达到的成就。</p>
+<div class="hr-sect">Idea (～￣▽￣)～ Spreading</div>
 
       
     </div>
@@ -513,18 +478,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/04/24/2017-04-24/" rel="next" title="2017-04-24">
-                <i class="fa fa-chevron-left"></i> 2017-04-24
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/04/20/2017-04-20/" rel="prev" title="2017-04-20">
-                2017-04-20 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/05/19/2017-05-19/" rel="prev" title="2017-05-19">
+                2017-05-19 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -711,7 +672,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#阅读-apue"><span class="nav-number">1.</span> <span class="nav-text">阅读 APUE</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#进程环境"><span class="nav-number">1.1.</span> <span class="nav-text">进程环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#main函数"><span class="nav-number">1.1.1.</span> <span class="nav-text">main函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进程终止"><span class="nav-number">1.1.2.</span> <span class="nav-text">进程终止</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#环境表"><span class="nav-number">1.1.3.</span> <span class="nav-text">环境表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c程序的存储空间布局"><span class="nav-number">1.1.4.</span> <span class="nav-text">C程序的存储空间布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#共享库"><span class="nav-number">1.1.5.</span> <span class="nav-text">共享库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#存储器分配"><span class="nav-number">1.1.6.</span> <span class="nav-text">存储器分配</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#环境变量"><span class="nav-number">1.1.7.</span> <span class="nav-text">环境变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#setjump-和-longjump"><span class="nav-number">1.1.8.</span> <span class="nav-text">setjump 和 longjump</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#getrlimit-和-setrlimit"><span class="nav-number">1.1.9.</span> <span class="nav-text">getrlimit 和 setrlimit</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#很感谢你能来不遗憾你走开"><span class="nav-number">1.</span> <span class="nav-text">《很感谢你能来，不遗憾你走开》</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#为了合群"><span class="nav-number">1.1.</span> <span class="nav-text">为了合群</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#同道中人合而不群"><span class="nav-number">1.2.</span> <span class="nav-text">同道中人，合而不群</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#程序员必读之软件架构"><span class="nav-number">2.</span> <span class="nav-text">《程序员必读之软件架构》</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#草图要表意完整"><span class="nav-number">2.1.</span> <span class="nav-text">草图要表意完整</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#草图要表意简洁"><span class="nav-number">2.2.</span> <span class="nav-text">草图要表意简洁</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#草图要表达的有意义"><span class="nav-number">2.3.</span> <span class="nav-text">草图要表达的有意义</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一炮走红的国家"><span class="nav-number">3.</span> <span class="nav-text">《一炮走红的国家》</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#中国更担心社会动荡"><span class="nav-number">3.1.</span> <span class="nav-text">中国更担心社会动荡</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中国的经济形式没那么好"><span class="nav-number">3.2.</span> <span class="nav-text">中国的经济形式，没那么好</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#放权图发展的邓小平时代结束"><span class="nav-number">3.3.</span> <span class="nav-text">放权图发展的邓小平时代，结束</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#经济发展与社会体制无关"><span class="nav-number">3.4.</span> <span class="nav-text">经济发展与社会体制无关</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#刻意练习"><span class="nav-number">4.</span> <span class="nav-text">《刻意练习》</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#有目的练习突破短时记忆的极限"><span class="nav-number">4.1.</span> <span class="nav-text">有目的练习，突破短时记忆的极限</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -851,9 +812,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://blog.sin5th.com/2017/04/21/2017-04-21/';
-          this.page.identifier = '2017/04/21/2017-04-21/';
-          this.page.title = '2017-04-21';
+          this.page.url = 'http://blog.sin5th.com/2017/05/20/2017-05-20/';
+          this.page.identifier = '2017/05/20/2017-05-20/';
+          this.page.title = '2017-05-20';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://blog-sin5th-com.disqus.com/embed.js';
