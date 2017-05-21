@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-05-21T14:47:24.000Z</updated>
+  <updated>2017-05-21T15:13:59.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://blog.sin5th.com/2017/05/21/2017-05-21/"/>
     <id>http://blog.sin5th.com/2017/05/21/2017-05-21/</id>
     <published>2017-05-21T14:37:52.000Z</published>
-    <updated>2017-05-21T14:47:24.000Z</updated>
+    <updated>2017-05-21T15:13:59.000Z</updated>
     
     <content type="html"><![CDATA[<div class="hr-sect">Hack ╮(￣▽￣)╭ News</div>
 
@@ -32,7 +32,14 @@
 
 <div class="hr-sect">Book ╰(￣▽￣)╭ Reading</div>
 
-<h1 id="很感谢你能来不遗憾你走开"><a href="#《很感谢你能来，不遗憾你走开》" class="headerlink" title="《很感谢你能来，不遗憾你走开》"></a>《很感谢你能来，不遗憾你走开》</h1><h2 id="真爱从不是偶尔想起"><a href="#真爱从不是偶尔想起" class="headerlink" title="真爱从不是偶尔想起"></a>真爱从不是偶尔想起</h2><h2 id="最深的伤害不是突然摊牌的分手"><a href="#最深的伤害，不是突然摊牌的分手" class="headerlink" title="最深的伤害，不是突然摊牌的分手"></a>最深的伤害，不是突然摊牌的分手</h2><h2 id="分开后的重新振作强过莫名其妙的冷漠"><a href="#分开后的重新振作，强过莫名其妙的冷漠" class="headerlink" title="分开后的重新振作，强过莫名其妙的冷漠"></a>分开后的重新振作，强过莫名其妙的冷漠</h2><h1 id="程序员必读之软件架构"><a href="#《程序员必读之软件架构》" class="headerlink" title="《程序员必读之软件架构》"></a>《程序员必读之软件架构》</h1><h2 id="草图要有层次"><a href="#草图要有层次" class="headerlink" title="草图要有层次"></a>草图要有层次</h2><h2 id="常见的层次"><a href="#常见的层次" class="headerlink" title="常见的层次"></a>常见的层次</h2><h2 id="c4"><a href="#C4" class="headerlink" title="C4"></a>C4</h2><h1 id="一炮走红的国家"><a href="#《一炮走红的国家》" class="headerlink" title="《一炮走红的国家》"></a>《一炮走红的国家》</h1><h2 id="中国的经济很难再告诉发展"><a href="#中国的经济很难再告诉发展" class="headerlink" title="中国的经济很难再告诉发展"></a>中国的经济很难再告诉发展</h2><h2 id="中国的经济也不会立即停滞"><a href="#中国的经济也不会立即停滞" class="headerlink" title="中国的经济也不会立即停滞"></a>中国的经济也不会立即停滞</h2><h1 id="刻意练习"><a href="#《刻意练习》" class="headerlink" title="《刻意练习》"></a>《刻意练习》</h1><h2 id="人类在不停进步过去的辉煌纪录放到今天只是平平"><a href="#人类在不停进步，过去的辉煌纪录放到今天，只是平平" class="headerlink" title="人类在不停进步，过去的辉煌纪录放到今天，只是平平"></a>人类在不停进步，过去的辉煌纪录放到今天，只是平平</h2><div class="hr-sect">Idea (～￣▽￣)～ Spreading</div>
+<h1 id="很感谢你能来不遗憾你走开"><a href="#《很感谢你能来，不遗憾你走开》" class="headerlink" title="《很感谢你能来，不遗憾你走开》"></a>《很感谢你能来，不遗憾你走开》</h1><h2 id="真爱从不是偶尔想起"><a href="#真爱从不是偶尔想起" class="headerlink" title="真爱从不是偶尔想起"></a>真爱从不是偶尔想起</h2><p>倒追来的男神，相处一月后分开，内心不死、死缠不休。四年后，男神的主动联系是否能够算作爱。</p>
+<h2 id="最深的伤害不是突然摊牌的分手"><a href="#最深的伤害，不是突然摊牌的分手" class="headerlink" title="最深的伤害，不是突然摊牌的分手"></a>最深的伤害，不是突然摊牌的分手</h2><p>一起实习的朋友，每天与电话中的男友如胶似漆，好不快活。而后认识了男医师，便移花别种，男友的电话能躲则躲，躲不过就找个理由敷衍。</p>
+<p>我问她，为什么不分手呢？她说，在一起五年了，找不到理由。</p>
+<p>或许，最深的伤害，不是突然摊牌，而是我在这心心念念地规划未来，你在那犹犹豫豫地谋划分开。</p>
+<h1 id="程序员必读之软件架构"><a href="#《程序员必读之软件架构》" class="headerlink" title="《程序员必读之软件架构》"></a>《程序员必读之软件架构》</h1><h2 id="草图要有层次"><a href="#草图要有层次" class="headerlink" title="草图要有层次"></a>草图要有层次</h2><p>一张复杂而全面的草图，不如多张各有侧重点的草图更容易被接受。使用面向对象技术的软件，常见的抽象层次包括：类，组件，容器，系统。</p>
+<p>类是软件的最小组成单位；<br>组件由一到多个类组成，实现某种特定的功能；<br>容器包括多个互相协作的组件，来提供某种单一的服务；<br>系统是多个容器的协作结果，对应某种业务应用。</p>
+<h2 id="c4"><a href="#C4" class="headerlink" title="C4"></a>C4</h2><p>C4是我（书作者）描述架构时常用的抽象层次：Class、Component、Container、Context。</p>
+<h1 id="一炮走红的国家"><a href="#《一炮走红的国家》" class="headerlink" title="《一炮走红的国家》"></a>《一炮走红的国家》</h1><h2 id="中国的经济很难再告诉发展"><a href="#中国的经济很难再告诉发展" class="headerlink" title="中国的经济很难再告诉发展"></a>中国的经济很难再告诉发展</h2><h2 id="中国的经济也不会立即停滞"><a href="#中国的经济也不会立即停滞" class="headerlink" title="中国的经济也不会立即停滞"></a>中国的经济也不会立即停滞</h2><h1 id="刻意练习"><a href="#《刻意练习》" class="headerlink" title="《刻意练习》"></a>《刻意练习》</h1><h2 id="人类在不停进步过去的辉煌纪录放到今天只是平平"><a href="#人类在不停进步，过去的辉煌纪录放到今天，只是平平" class="headerlink" title="人类在不停进步，过去的辉煌纪录放到今天，只是平平"></a>人类在不停进步，过去的辉煌纪录放到今天，只是平平</h2><div class="hr-sect">Idea (～￣▽￣)～ Spreading</div>
 ]]></content>
     
     <summary type="html">
