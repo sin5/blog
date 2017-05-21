@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-05-20T15:55:02.000Z</updated>
+  <updated>2017-05-21T14:47:24.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -14,6 +14,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2017-05-21</title>
+    <link href="http://blog.sin5th.com/2017/05/21/2017-05-21/"/>
+    <id>http://blog.sin5th.com/2017/05/21/2017-05-21/</id>
+    <published>2017-05-21T14:37:52.000Z</published>
+    <updated>2017-05-21T14:47:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class="hr-sect">Hack ╮(￣▽￣)╭ News</div>
+
+
+
+<div class="hr-sect">Tech (￣▽￣)~* Learning</div>
+
+
+
+<div class="hr-sect">Book ╰(￣▽￣)╭ Reading</div>
+
+<h1 id="很感谢你能来不遗憾你走开"><a href="#《很感谢你能来，不遗憾你走开》" class="headerlink" title="《很感谢你能来，不遗憾你走开》"></a>《很感谢你能来，不遗憾你走开》</h1><h2 id="真爱从不是偶尔想起"><a href="#真爱从不是偶尔想起" class="headerlink" title="真爱从不是偶尔想起"></a>真爱从不是偶尔想起</h2><h2 id="最深的伤害不是突然摊牌的分手"><a href="#最深的伤害，不是突然摊牌的分手" class="headerlink" title="最深的伤害，不是突然摊牌的分手"></a>最深的伤害，不是突然摊牌的分手</h2><h2 id="分开后的重新振作强过莫名其妙的冷漠"><a href="#分开后的重新振作，强过莫名其妙的冷漠" class="headerlink" title="分开后的重新振作，强过莫名其妙的冷漠"></a>分开后的重新振作，强过莫名其妙的冷漠</h2><h1 id="程序员必读之软件架构"><a href="#《程序员必读之软件架构》" class="headerlink" title="《程序员必读之软件架构》"></a>《程序员必读之软件架构》</h1><h2 id="草图要有层次"><a href="#草图要有层次" class="headerlink" title="草图要有层次"></a>草图要有层次</h2><h2 id="常见的层次"><a href="#常见的层次" class="headerlink" title="常见的层次"></a>常见的层次</h2><h2 id="c4"><a href="#C4" class="headerlink" title="C4"></a>C4</h2><h1 id="一炮走红的国家"><a href="#《一炮走红的国家》" class="headerlink" title="《一炮走红的国家》"></a>《一炮走红的国家》</h1><h2 id="中国的经济很难再告诉发展"><a href="#中国的经济很难再告诉发展" class="headerlink" title="中国的经济很难再告诉发展"></a>中国的经济很难再告诉发展</h2><h2 id="中国的经济也不会立即停滞"><a href="#中国的经济也不会立即停滞" class="headerlink" title="中国的经济也不会立即停滞"></a>中国的经济也不会立即停滞</h2><h1 id="刻意练习"><a href="#《刻意练习》" class="headerlink" title="《刻意练习》"></a>《刻意练习》</h1><h2 id="人类在不停进步过去的辉煌纪录放到今天只是平平"><a href="#人类在不停进步，过去的辉煌纪录放到今天，只是平平" class="headerlink" title="人类在不停进步，过去的辉煌纪录放到今天，只是平平"></a>人类在不停进步，过去的辉煌纪录放到今天，只是平平</h2><div class="hr-sect">Idea (～￣▽￣)～ Spreading</div>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;hr-sect&quot;&gt;Hack ╮(￣▽￣)╭ News&lt;/div&gt;
+
+
+
+&lt;div class=&quot;hr-sect&quot;&gt;Tech (￣▽￣)~* Learning&lt;/div&gt;
+
+
+
+&lt;div class=&quot;hr-sect&quot;&gt;Book ╰(￣▽￣)╭ Readin
+    
+    </summary>
+    
+      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>2017-05-20</title>
@@ -993,50 +1032,6 @@
 &lt;li&gt;判断优劣&lt;/li&gt;
 &lt;li&gt;按优劣分放&lt;/li&gt;
 &lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>2017-05-02</title>
-    <link href="http://blog.sin5th.com/2017/05/02/2017-05-02/"/>
-    <id>http://blog.sin5th.com/2017/05/02/2017-05-02/</id>
-    <published>2017-05-02T01:52:18.000Z</published>
-    <updated>2017-05-03T02:05:42.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="hack-news"><a href="#hack-news" class="headerlink" title="hack news"></a>hack news</h1><h2 id="headless-chrome"><a href="#headless-chrome" class="headerlink" title="headless chrome"></a><a href="https://developers.google.com/web/updates/2017/04/headless-chrome" target="_blank">headless chrome</a></h2><p>headless chrome 允许在不启动浏览器窗口的情况下, 测试浏览器的网页加载, 这对自动化测试提供了方便.</p>
-<p>成文时, 稳定版的 chrome 刚刚48版本, 还不支持 headless, 需要安装 chrome canary.<br>mac os 可以使用 <code>brew install Caskroom/versions/google-chrome-canary</code> 安装,</p>
-<a id="more"></a>
-<h1 id="book-reading"><a href="#book-reading" class="headerlink" title="book reading"></a>book reading</h1><h2 id="apue-守护进程"><a href="#apue-守护进程" class="headerlink" title="apue 守护进程"></a>apue 守护进程</h2><h3 id="守护进程的特征"><a href="#守护进程的特征" class="headerlink" title="守护进程的特征"></a>守护进程的特征</h3><p>守护进程没有控制终端, 终端前台进程组ID为 -1</p>
-<h3 id="编程规则"><a href="#编程规则" class="headerlink" title="编程规则"></a>编程规则</h3><ol>
-<li>umask 重置文件模式创建屏蔽字</li>
-<li>fork 使父进程退出</li>
-<li>setsid 开启新会话</li>
-<li>更改当前工作目录, 避免文件系统不能被拆卸</li>
-<li>关闭不再需要的文件描述符</li>
-<li>重定向标准输入/输出/出错</li>
-</ol>
-<h3 id="单实例守护进程"><a href="#单实例守护进程" class="headerlink" title="单实例守护进程"></a>单实例守护进程</h3><p>可以使用文件和记录锁, 保证同一时间只有一个进程运行</p>
-<h3 id="守护进程惯例"><a href="#守护进程惯例" class="headerlink" title="守护进程惯例"></a>守护进程惯例</h3><ul>
-<li>文件锁一般使用 /var/run/name.pid</li>
-<li>配置选项一般使用 /etc/name.conf</li>
-<li>初始化脚本一般使用 /etc/init.d/<em> 或 /etc/rc</em></li>
-<li>一般通过捕捉 SIGHUP 进行配置重载</li>
-</ul>
-<h1 id="tech-learning"><a href="#tech-learning" class="headerlink" title="tech learning"></a>tech learning</h1><h2 id="golang-reflect"><a href="#golang-reflect" class="headerlink" title="golang reflect"></a>golang reflect</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 类型断言</span></div><div class="line"><span class="keyword">if</span> v, ok := varI.(T); ok &#123;</div><div class="line">    Process(v)</div><div class="line">    <span class="keyword">return</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 类型判断</span></div><div class="line"><span class="keyword">switch</span> t := areaIntf.(<span class="keyword">type</span>) &#123;</div><div class="line"><span class="keyword">case</span> *Square:</div><div class="line">	fmt.Printf(<span class="string">"Type Square %T with value %v\n"</span>, t, t)</div><div class="line"><span class="keyword">case</span> *Circle:</div><div class="line">	fmt.Printf(<span class="string">"Type Circle %T with value %v\n"</span>, t, t)</div><div class="line"><span class="keyword">case</span> <span class="literal">nil</span>:</div><div class="line">	fmt.Printf(<span class="string">"nil value: nothing to check?\n"</span>)</div><div class="line"><span class="keyword">default</span>:</div><div class="line">	fmt.Printf(<span class="string">"Unexpected type %T\n"</span>, t)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="advanced-bash-scripting-guide"><a href="#advanced-bash-scripting-guide" class="headerlink" title="advanced-bash-scripting-guide"></a>advanced-bash-scripting-guide</h2><p>引用变量</p>
-<p>单引号代表全引用, 所有的值都用字面意思解释.<br>因此, 试图在单引号中转义单引号是错误的.<br>错误: <code>echo &#39;i\&#39;m something&#39;</code><br>但是可以通过其它的方式解决这个问题.<br>正确: <code>echo &#39;i&#39;\&#39;&#39;m something&#39;</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;hack-news&quot;&gt;&lt;a href=&quot;#hack-news&quot; class=&quot;headerlink&quot; title=&quot;hack news&quot;&gt;&lt;/a&gt;hack news&lt;/h1&gt;&lt;h2 id=&quot;headless-chrome&quot;&gt;&lt;a href=&quot;#headless-chrome&quot; class=&quot;headerlink&quot; title=&quot;headless chrome&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://developers.google.com/web/updates/2017/04/headless-chrome&quot; target=&quot;_blank&quot;&gt;headless chrome&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;headless chrome 允许在不启动浏览器窗口的情况下, 测试浏览器的网页加载, 这对自动化测试提供了方便.&lt;/p&gt;
-&lt;p&gt;成文时, 稳定版的 chrome 刚刚48版本, 还不支持 headless, 需要安装 chrome canary.&lt;br&gt;mac os 可以使用 &lt;code&gt;brew install Caskroom/versions/google-chrome-canary&lt;/code&gt; 安装,&lt;/p&gt;
     
     </summary>
     
