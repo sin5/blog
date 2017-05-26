@@ -93,20 +93,15 @@
 
 
 
-<meta name="description" content="Hack ╮(￣▽￣)╭ News  正确理解 CPU 利用率链接地址 Brendan Gregg 发布博文，指出常见的 CPU 利用率计算方式有误导性，是仅仅通过追踪 idle 进程占用 CPU 时间的比例得出的结果。 而实际程序瓶颈是否在 CPU，不能仅仅根据这个指标来判定，因为 stalled 状态的进程也被算在其中，在内存访问很多时，这种进程并没有真正地利用 CPU 去进行运算，而是将时间">
-<meta name="keywords">
-<meta property="og:type" content="article">
-<meta property="og:title" content="2017-05-13">
-<meta property="og:url" content="http://blog.sin5th.com/2017/05/13/2017-05-13/index.html">
+<meta name="description" content="武鑫的博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sin5's Blog">
+<meta property="og:url" content="http://blog.sin5th.com/page/4/index.html">
 <meta property="og:site_name" content="Sin5's Blog">
-<meta property="og:description" content="Hack ╮(￣▽￣)╭ News  正确理解 CPU 利用率链接地址 Brendan Gregg 发布博文，指出常见的 CPU 利用率计算方式有误导性，是仅仅通过追踪 idle 进程占用 CPU 时间的比例得出的结果。 而实际程序瓶颈是否在 CPU，不能仅仅根据这个指标来判定，因为 stalled 状态的进程也被算在其中，在内存访问很多时，这种进程并没有真正地利用 CPU 去进行运算，而是将时间">
-<meta property="og:image" content="http://blog.sin5th.com/images/www.brendangregg.com/cpubusyidle.png">
-<meta property="og:image" content="http://blog.sin5th.com/images/www.brendangregg.com/cpubusystalledidle.png">
-<meta property="og:updated_time" content="2017-05-16T10:41:03.000Z">
+<meta property="og:description" content="武鑫的博客">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2017-05-13">
-<meta name="twitter:description" content="Hack ╮(￣▽￣)╭ News  正确理解 CPU 利用率链接地址 Brendan Gregg 发布博文，指出常见的 CPU 利用率计算方式有误导性，是仅仅通过追踪 idle 进程占用 CPU 时间的比例得出的结果。 而实际程序瓶颈是否在 CPU，不能仅仅根据这个指标来判定，因为 stalled 状态的进程也被算在其中，在内存访问很多时，这种进程并没有真正地利用 CPU 去进行运算，而是将时间">
-<meta name="twitter:image" content="http://blog.sin5th.com/images/www.brendangregg.com/cpubusyidle.png">
+<meta name="twitter:title" content="Sin5's Blog">
+<meta name="twitter:description" content="武鑫的博客">
 
 
 
@@ -134,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.sin5th.com/2017/05/13/2017-05-13/"/>
+  <link rel="canonical" href="http://blog.sin5th.com/page/4/"/>
 
 
 
 
 
-  <title> 2017-05-13 | Sin5's Blog </title>
+  <title> Sin5's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -165,7 +160,9 @@
     
   
 
-  <div class="container sidebar-position-right page-post-detail ">
+  <div class="container sidebar-position-right 
+   page-home 
+ ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -288,9 +285,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-
-  <div id="posts" class="posts-expand">
+  <section id="posts" class="posts-expand">
     
+      
 
   
 
@@ -299,7 +296,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://blog.sin5th.com/2017/05/13/2017-05-13/">
+    <link itemprop="mainEntityOfPage" href="http://blog.sin5th.com/2017/04/17/2017-04-17/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="武鑫">
@@ -320,7 +317,10 @@
             
             
               
-                2017-05-13
+                
+                <a class="post-title-link" href="/2017/04/17/2017-04-17/" itemprop="url">
+                  2017-04-17
+                </a>
               
             
           </h2>
@@ -333,8 +333,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-13T20:51:17+08:00">
-                2017-05-13
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-17T17:27:21+08:00">
+                2017-04-17
               </time>
             
 
@@ -372,9 +372,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/05/13/2017-05-13/#comments" itemprop="discussionUrl">
+                <a href="/2017/04/17/2017-04-17/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/05/13/2017-05-13/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/04/17/2017-04-17/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -393,7 +393,176 @@
                 </span>
                 
                 <span title="字数统计">
-                  463
+                  719
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                <span title="阅读时长">
+                  3
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="一些异地灾备的文章"><a href="#一些异地灾备的文章" class="headerlink" title="一些异地灾备的文章:"></a>一些异地灾备的文章:</h2><ul>
+<li><a href="http://tencentresearch.com/Article/lists/id/4115.html">http://tencentresearch.com/Article/lists/id/4115.html</a></li>
+<li><a href="http://coolnull.com/4381.html">http://coolnull.com/4381.html</a></li>
+</ul>
+<h2 id="一些关于-raft-的文章"><a href="#一些关于-raft-的文章" class="headerlink" title="一些关于 raft 的文章:"></a>一些关于 raft 的文章:</h2><ul>
+<li><a href="https://github.com/maemual/raft-zh_cn/blob/master/raft-zh_cn.md">https://github.com/maemual/raft-zh_cn/blob/master/raft-zh_cn.md</a></li>
+</ul>
+<h2 id="一些关于-mysql-的文章"><a href="#一些关于-mysql-的文章" class="headerlink" title="一些关于 mysql 的文章:"></a>一些关于 mysql 的文章:</h2><ul>
+<li><a href="http://www.jianshu.com/p/d877cbe9f0f0">http://www.jianshu.com/p/d877cbe9f0f0</a></li>
+<li><a href="http://www.cnblogs.com/ivictor/p/5735580.html">http://www.cnblogs.com/ivictor/p/5735580.html</a></li>
+</ul>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/04/17/2017-04-17/" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.sin5th.com/2017/04/16/gdb-的初次使用/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="武鑫">
+      <meta itemprop="description" content="人行中正，剑走偏锋；<br/>目游长远，足履飞星。">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/7314785">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sin5's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/04/16/gdb-的初次使用/" itemprop="url">
+                  gdb 的初次使用
+                </a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-16T21:57:05+08:00">
+                2017-04-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/04/16/gdb-的初次使用/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/04/16/gdb-的初次使用/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                <span title="字数统计">
+                  375
                 </span>
               
 
@@ -426,62 +595,28 @@
       
 
       
-        <div class="hr-sect">Hack ╮(￣▽￣)╭ News</div>
-
-<h1 id="正确理解-cpu-利用率"><a href="#正确理解-CPU-利用率" class="headerlink" title="正确理解 CPU 利用率"></a>正确理解 CPU 利用率</h1><p><a href="http://www.brendangregg.com/blog/2017-05-09/cpu-utilization-is-wrong.html" target="_blank" rel="external">链接地址</a></p>
-<p>Brendan Gregg 发布博文，指出<strong>常见的 CPU 利用率计算方式</strong>有误导性，是仅仅通过追踪 idle 进程占用 CPU 时间的比例得出的结果。</p>
-<p>而实际程序瓶颈是否在 CPU，不能仅仅根据这个指标来判定，因为 stalled 状态的进程也被算在其中，在内存访问很多时，这种进程并没有真正地利用 CPU 去进行运算，而是将时间都耗费在等待内存上。</p>
-<blockquote>
-<p>我们以为的 90% CPU 都在工作<br><img src="/images/www.brendangregg.com/cpubusyidle.png" alt="busy"><br>实际上它们都卡住了<br><img src="/images/www.brendangregg.com/cpubusystalledidle.png" alt="stalled"></p>
-</blockquote>
-<p>因此，评价 CPU 究竟使用了多少，应该参考 IPC（instructions per cycle）这个指标，它描述 cpu 真正执行指令的时间占比。</p>
-<p>网友对此观点有赞许，也有质疑。质疑声集中在对<strong>利用率</strong>一词的理解。</p>
-<div class="hr-sect">Tech (￣▽￣)~* Learning</div>
-
-
-
-<div class="hr-sect">Book ╰(￣▽￣)╭ Reading</div>
-
-
-
-<div class="hr-sect">Idea (～￣▽￣)～ Spreading</div>
-
-<h1 id="找到自己钟爱的工作"><a href="#找到自己钟爱的工作" class="headerlink" title="找到自己钟爱的工作"></a>找到自己钟爱的工作</h1><p><a href="http://open.163.com/movie/2017/2/H/M/MC9GRQOVM_MC9GSHHHM.html" target="_blank" rel="external">视频地址</a></p>
-<p>你如何选择工作？是追求简历的华丽，还是渴望愉悦的生活。演讲人告诫我们，“喝醉烈的酒，恋最美的人”，与有理想、有抱负的人一起工作。</p>
-<p>另外，演讲人还说，想做到成功，请参考以下 3 点：</p>
-<ol>
-<li>特长</li>
-<li>价值</li>
-<li>经验</li>
-</ol>
-<p>个人想法</p>
-<blockquote>
-<p>虽然主讲人讲的绘声绘色，告诉我们成功需要哪些要素。但他忽略了一点（其实他意识到了那个东西），就是目标。</p>
-<p>许多人不是没有目标，而是目标太低了。只想普普通通地过生活，这对他们而言，就已经是成功了。</p>
-</blockquote>
-<p>另外，我越发相信 <strong>1分天才，9分努力，90分运气</strong>。因为你是否愿意去努力，很大程度上取决于你（从出生到现在）接触过的人与事。</p>
-
+        
+          <h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>阅读 apue, 默写<1.1-简单ls实现>, 运行报段错误, 错误代码如下：<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"apue.h"</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;dirent.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span></div><div class="line"><span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> *argv[])</span></div><div class="line"></span>&#123;</div><div class="line">  DIR *dp;</div><div class="line">  <span class="keyword">struct</span> dirent *dir;</div><div class="line"></div><div class="line">  <span class="keyword">if</span> (argc != <span class="number">2</span>) &#123;</div><div class="line">    err_quit(<span class="string">"usage: ls directory_name"</span>);</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  <span class="keyword">if</span> ((dp = opendir(argv[<span class="number">1</span>]) == <span class="literal">NULL</span>)) &#123;</div><div class="line">    err_quit(<span class="string">"can't open directory %s"</span>, argv[<span class="number">1</span>]);</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  <span class="keyword">while</span> ((dir = readdir(dp) != <span class="literal">NULL</span>)) &#123;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"%s\n"</span>, dir-&gt;d_name);</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/04/16/gdb-的初次使用/" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
       
     </div>
 
     <div>
       
-        
-
-      
     </div>
 
     <div>
       
-        
-
-      
     </div>
 
     <div>
-      
-        
-
       
     </div>
 
@@ -489,68 +624,24 @@
       
 
       
-        
+
       
 
       
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2017/05/14/2017-05-14/" rel="next" title="2017-05-14">
-                <i class="fa fa-chevron-left"></i> 2017-05-14
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/05/12/2017-05-12/" rel="prev" title="2017-05-12">
-                2017-05-12 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
       
-
-      
+        <div class="post-eof"></div>
       
     </footer>
   </article>
 
+    
+  </section>
 
-    <div class="post-spread">
-      
-        
-  <script>
-    window._bd_share_config = {
-      "common": {
-        "bdText": "",
-        "bdMini": "1",
-        "bdMiniList": false,
-        "bdPic": ""
-      },
-      "image": {
-        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
-        "viewText": "分享到：",
-        "viewSize": "16"
-      },
-      "slide": {
-        "bdImg": "5",
-        "bdPos": "left",
-        "bdTop": "100"
-      }
-    }
-  </script>
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span>
+  </nav>
 
-<script>
-  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
-</script>
-
-      
-    </div>
-  </div>
 
 
           </div>
@@ -558,17 +649,6 @@
 
 
           
-  <div class="comments" id="comments">
-    
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
-    
-  </div>
-
 
         </div>
         
@@ -588,17 +668,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="https://avatars1.githubusercontent.com/u/7314785"
@@ -684,22 +755,6 @@
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#正确理解-cpu-利用率"><span class="nav-number">1.</span> <span class="nav-text">正确理解 CPU 利用率</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#找到自己钟爱的工作"><span class="nav-number">2.</span> <span class="nav-text">找到自己钟爱的工作</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -810,10 +865,6 @@
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
-
-
 
   
 
@@ -831,18 +882,6 @@
       <script id="dsq-count-scr" src="https://blog-sin5th-com.disqus.com/count.js" async></script>
     
 
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'http://blog.sin5th.com/2017/05/13/2017-05-13/';
-          this.page.identifier = '2017/05/13/2017-05-13/';
-          this.page.title = '2017-05-13';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://blog-sin5th-com.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
     
 
   
