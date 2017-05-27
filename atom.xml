@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-05-26T14:12:22.000Z</updated>
+  <updated>2017-05-27T14:34:56.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -14,6 +14,61 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2017-05-27</title>
+    <link href="http://blog.sin5th.com/2017/05/27/2017-05-27/"/>
+    <id>http://blog.sin5th.com/2017/05/27/2017-05-27/</id>
+    <published>2017-05-27T13:31:11.000Z</published>
+    <updated>2017-05-27T14:34:56.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class="hr-sect">Hack ╮(￣▽￣)╭ News</div>
+
+
+
+<div class="hr-sect">Tech (￣▽￣)~* Learning</div>
+
+
+
+<div class="hr-sect">Book ╰(￣▽￣)╭ Reading</div>
+
+<h1 id="一炮走红的国家"><a href="#《一炮走红的国家》" class="headerlink" title="《一炮走红的国家》"></a>《一炮走红的国家》</h1><h2 id="印度的南北差异"><a href="#印度的南北差异" class="headerlink" title="印度的南北差异"></a>印度的南北差异</h2><p>在发展的早期，南方的增速远超北方，一部分邦达到了12%。但在最近几年中，北方的发展势头开始逐渐追赶并超越了南方，这主要是因为南方的发展放缓，而北方的个别邦迎来了优秀的领导人。</p>
+<h2 id="印度的新消费时尚"><a href="#印度的新消费时尚" class="headerlink" title="印度的新消费时尚"></a>印度的新消费时尚</h2><p>中产阶级的消费需求是普遍事实，但印度的消费时尚并不局限在中产阶级，低收入人群保持了与中产阶级类似的消费项目。</p>
+<p>另外，印度的邦与邦之间区别很大，地方性商品盛行。</p>
+<h1 id="很感谢你能来不遗憾你走开"><a href="#《很感谢你能来，不遗憾你走开》" class="headerlink" title="《很感谢你能来，不遗憾你走开》"></a>《很感谢你能来，不遗憾你走开》</h1><h2 id="我生本无乡心安是归处"><a href="#我生本无乡，心安是归处" class="headerlink" title="我生本无乡，心安是归处"></a>我生本无乡，心安是归处</h2><p>一位读者向我寻求一个有关至亲的故事，之后告诉我，“什么故事也比不过身在其中的悲伤”。这才知道他原是失去最后一位至亲，悲痛欲绝。</p>
+<p>悲伤之余，或也该想想，亲人固然重要，但人终是为自己而活。</p>
+<h2 id="初心向好便本无错-如有遗憾不必苛责"><a href="#初心向好，便本无错。如有遗憾，不必苛责" class="headerlink" title="初心向好，便本无错。如有遗憾，不必苛责"></a>初心向好，便本无错。如有遗憾，不必苛责</h2><p>“子欲养，而亲不待。”</p>
+<p>失去时才发觉，那些面向未来的努力，何曾比得上平日的陪伴。</p>
+<p>但转念而思，若身陷贫困，陪伴也不过是一起受苦。</p>
+<h2 id="心似双丝网内有千千结"><a href="#心似双丝网，内有千千结" class="headerlink" title="心似双丝网，内有千千结"></a>心似双丝网，内有千千结</h2><p>重要的不在于，为什么而活、如何活，而在于如何看待这个过程。</p>
+<h1 id="刻意练习"><a href="#《刻意练习》" class="headerlink" title="《刻意练习》"></a>《刻意练习》</h1><h2 id="有目的练习尚不足够"><a href="#有目的练习尚不足够" class="headerlink" title="有目的练习尚不足够"></a>有目的练习尚不足够</h2><p>作为史蒂夫的记数字实验的后继，我们又找了两个人，分别让他们使用原创方法和史蒂夫记数法。遗憾的是，两个人都没能走得更远，使用原创方法的人选择了退出，而使用史蒂夫记数法的人则改用了自己的方法（当然，他在这种情况下，超越了史蒂夫）。</p>
+<p>通过这两次对比实验，我们认为，仅仅是有目的练习仍然不够，只有通过刻意练习才能取得超人的成绩。</p>
+<h1 id="开发者必读之软件架构"><a href="#《开发者必读之软件架构》" class="headerlink" title="《开发者必读之软件架构》"></a>《开发者必读之软件架构》</h1><h2 id="容器图的意图-结构-容器-交互-动机"><a href="#容器图的意图、结构、容器、交互、动机" class="headerlink" title="容器图的意图、结构、容器、交互、动机"></a>容器图的意图、结构、容器、交互、动机</h2><p>容器图用来描述软件系统的内部组成，明确高层次的技术选择，划分容器职责，确定容器间的通信。</p>
+<p>容器图一般用框框表示容器，并在容器间用线连接代表交互。有时也会画上周边系统与用户角色，作为辅助。</p>
+<p>容器通常指一个可执行文件或进程主体，它最大的特点是可以单独部署。因此，容器可能是一个web服务器、应用服务器、数据库或文件系统。一般用名称、技术、职责来描述容器。</p>
+<p>容器的交互通常要确定交互的目的（读/写数据，发送报告）、通信方法（web、REST、rpc 等）、通信方式（同步、异步、批量、两阶段提交等）、协议和端口号。</p>
+<p>画容器图可以帮助我们完成高层次的技术选择，展示容器间的关联，让简单的语境图和复杂的组件图之间有一个过渡。</p>
+<div class="hr-sect">Idea (～￣▽￣)～ Spreading</div>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;hr-sect&quot;&gt;Hack ╮(￣▽￣)╭ News&lt;/div&gt;
+
+
+
+&lt;div class=&quot;hr-sect&quot;&gt;Tech (￣▽￣)~* Learning&lt;/div&gt;
+
+
+
+&lt;div class=&quot;hr-sect&quot;&gt;Book ╰(￣▽￣)╭ Readin
+    
+    </summary>
+    
+      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>2017-05-26</title>
@@ -1002,48 +1057,6 @@
 &lt;li&gt;程序员的银行账户&lt;/li&gt;
 &lt;li&gt;js 预处理&lt;/li&gt;
 &lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>2017-05-05</title>
-    <link href="http://blog.sin5th.com/2017/05/05/2017-05-05/"/>
-    <id>http://blog.sin5th.com/2017/05/05/2017-05-05/</id>
-    <published>2017-05-04T16:02:41.000Z</published>
-    <updated>2017-05-16T10:41:03.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="hack-news"><a href="#hack-news" class="headerlink" title="hack news"></a>hack news</h1><h2 id="土耳其封锁维基百科"><a href="#土耳其封锁维基百科" class="headerlink" title="土耳其封锁维基百科"></a>土耳其封锁维基百科</h2><p><a href="https://turkeyblocks.org/2017/04/29/wikipedia-blocked-turkey/" target="_blank" rel="external">链接地址</a></p>
-<p>当地时间4月29日, The Turkey Blocks 确认了对维基百科在线的封锁. 其声称根据行政管理指令, 维基百科在线被限制了所有语言版本的访问. 不久后升级为永久指令.</p>
-<a id="more"></a>
-<p>评论摘选<br><a href="https://news.ycombinator.com/user?id=RcouF1uZ4gsC" target="_blank" rel="external">RcouF1uZ4gsC</a></p>
-<blockquote>
-<p>2016年将是全球互联网的巅峰. 中国对互联网政治控制的成功, 与埃及/突尼斯被开放互联网推翻政权的失败形成对比, 一个开放/自由的互联网并不符合某些人的利益. 如果你觉着西方的民主自由幸免于此, 看看”虚假新闻”和”No Platform”. 我们正在从自由/开放的共享与讨论, 走向思想镇压(目前看来是个坏主意, 但未来就不一定了).</p>
-<p>大量的网络内容控制在少数公司手中(如果 Google 和 Facebook 限制你的站点, 那你几乎不会有什么曝光度). 此外我们正在从用户控制的通用计算机, 向安全/移动监控设备方向发展. 政府可以通过对一些公司施压, 控制哪些信息可以流向民众.</p>
-<p>为政府服务的&lt;第一修正案&gt;始终使用”危险”这个托词. 言论自由和法律同等重要. 如果我们被强大的非政府组织利用, 去镇压我们不喜欢的言论, 事实上就离被政府控制相距不远了.</p>
-</blockquote>
-<hr>
-<h1 id="book-reading"><a href="#book-reading" class="headerlink" title="book reading"></a>book reading</h1><hr>
-<h1 id="tech-learning"><a href="#tech-learning" class="headerlink" title="tech learning"></a>tech learning</h1><h2 id="go-的最佳实践"><a href="#go-的最佳实践" class="headerlink" title="go 的最佳实践"></a>go 的最佳实践</h2><p><a href="https://blog.rubylearning.com/best-practices-for-a-new-go-developer-8660384302fc" target="_blank" rel="external">链接地址</a><br>本人的技能入门套路是: quick start -&gt; tutorial -&gt; best practice<br>阅读最佳实践是必要的过程, 避免自学的弯路.</p>
-<ol>
-<li>面向对象 != 类与继承. golang 可以算是面向对象的语言, 但它表达的方式与 java/ruby/… 并不相同, 它仅提供 interface 特性满足开发者封装对象的需要.</li>
-<li>组合 vs 继承. 这是一场语言无关的, 亘古持久的战争. 但不论是 <code>组合</code>, 还是 <code>继承</code>, 目的都是将 <code>代码</code> 转化成 <code>关系</code>, 减少代码量(常说的复用). 但从另一个角度讲, 组合是一种更加松散的关系, 很容易想到它的反义词–分离, 与分离之后依然健全的独立功能. 但继承的反义词–(并没有找到合适的词), 总让人有一种丧失根基的感觉.</li>
-<li>Go Way. 每种语言都有它自己脾气. go 不是 java, 不是 ruby, 也不是 python, 所以 go 有它自己的写法. 不要试图去将过去的编程体验强行带入 go 中, 而是应该从 go 的角度出发, 理解为什么没有泛型/继承, 为什么有闭包/反射.</li>
-<li>reading/writing/testing. 阅读标准库是学习语言的好途径, 如果是从其他语言转过来的, 找一个熟悉的模块能很快体会到 go 的玩法. 试着去解决遇到的问题, 动手写代码的同时, 写好文档和测试. go 语言提供了很好的测试支持.</li>
-<li>标准库. go 的标准库比较完备, 初学者应该尽量使用, 不要过多地以来第三方库或者框架.</li>
-</ol>
-<hr>
-<h1 id="ted"><a href="#ted" class="headerlink" title="ted"></a>ted</h1><h2 id="爱情应有的样子"><a href="#爱情应有的样子" class="headerlink" title="爱情应有的样子"></a>爱情应有的样子</h2><p><a href="http://open.163.com/movie/2017/2/D/7/MC9FQL66A_MCA50R4D7.html" target="_blank" rel="external">视频地址</a><br>爱常常让我们感到痛苦, 我们也习惯于用痛苦的多少, 衡量爱的深浅. 但爱本来是两个人合作经营的丰硕果实, 应当是愉快的. 让爱情回到它应有的样子, 让我们说 <code>世间最美好的事, 莫过于此</code> 或者 <code>爱情比我想象的短, 但还是很美好的</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;hack-news&quot;&gt;&lt;a href=&quot;#hack-news&quot; class=&quot;headerlink&quot; title=&quot;hack news&quot;&gt;&lt;/a&gt;hack news&lt;/h1&gt;&lt;h2 id=&quot;土耳其封锁维基百科&quot;&gt;&lt;a href=&quot;#土耳其封锁维基百科&quot; class=&quot;headerlink&quot; title=&quot;土耳其封锁维基百科&quot;&gt;&lt;/a&gt;土耳其封锁维基百科&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://turkeyblocks.org/2017/04/29/wikipedia-blocked-turkey/&quot;&gt;链接地址&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;当地时间4月29日, The Turkey Blocks 确认了对维基百科在线的封锁. 其声称根据行政管理指令, 维基百科在线被限制了所有语言版本的访问. 不久后升级为永久指令.&lt;/p&gt;
     
     </summary>
     
