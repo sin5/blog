@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-05-30T13:33:23.000Z</updated>
+  <updated>2017-06-01T15:02:59.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -14,6 +14,60 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>心里表征</title>
+    <link href="http://blog.sin5th.com/2017/06/01/2017-06-01/"/>
+    <id>http://blog.sin5th.com/2017/06/01/2017-06-01/</id>
+    <published>2017-06-01T13:53:45.000Z</published>
+    <updated>2017-06-01T15:02:59.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class="hr-sect">Hack ╮(￣▽￣)╭ News</div>
+
+
+
+<div class="hr-sect">Tech (￣▽￣)~* Learning</div>
+
+
+
+<div class="hr-sect">Book ╰(￣▽￣)╭ Reading</div>
+
+<h1 id="一炮走红的国家"><a href="#《一炮走红的国家》" class="headerlink" title="《一炮走红的国家》"></a>《一炮走红的国家》</h1><h2 id="墨西哥的股市与经济"><a href="#墨西哥的股市与经济" class="headerlink" title="墨西哥的股市与经济"></a>墨西哥的股市与经济</h2><p>拥有1.05亿人口的墨西哥曾是拉丁美洲最富裕的国家，但1994年的经济危机之后，墨西哥的经济基本停滞。</p>
+<p>不过，墨西哥的股市增长强劲，如果以美元计价，过去十年间股市上涨了200%。</p>
+<p>造成这种现象的原因有两个。第一个是寡头垄断，暴利吸引了资金，却没有带来相称的投资与创新；第二个是许多影响经济的企业没有上市，股市走高不足以代表经济增长。</p>
+<h2 id="墨西哥的寡头问题"><a href="#墨西哥的寡头问题" class="headerlink" title="墨西哥的寡头问题"></a>墨西哥的寡头问题</h2><p>寡头文化的根源在于政治，执政党本身就是垄断的，所以墨西哥人民也习惯了中央集权。寡头通过金钱作用于代表选举，代表通过投票为寡头提供优势，因此这种状态得以保持稳定。人民反对私有化，政府也试图改变，但这个国家却丝毫没有停止垄断的迹象。</p>
+<p>最令人啼笑皆非的是，寡头文化并没有使任何人收益，包括寡头自己。强烈的仇富情绪使富豪们不得不乘坐装甲车、雇佣保镖，任何不经意的闪失都可能让他们断送性命。</p>
+<h1 id="开发者必读之软件架构"><a href="#《开发者必读之软件架构》" class="headerlink" title="《开发者必读之软件架构》"></a>《开发者必读之软件架构》</h1><h2 id="uml工具"><a href="#UML工具" class="headerlink" title="UML工具"></a>UML工具</h2><p>首先来讲，UML 绝不是必须的，并且在很多情况下，我们还应该避免使用它们，而是采取一些更轻量级的做法，比如：草图。</p>
+<p>选择 UML 工具是一件令人困扰的事，因为它的种类很多，实现更是五花八门。从使用方法上大体可以分为四种：第一种是简单的画图工具，它允许你快速地构造一个 UML 图，没有复杂的描述，也和代码无关；第二种是逆向工程，它能根据代码自动生成图，不过可想而知，这种图通常融合了各个层次的细节；第三种是往返工程，它会把代码的改变反映到图上，也会把图上的操作映射回代码；最后一种是模型驱动，它允许你使用 UML 同时完成程序的设计与编写，但这种工具往往会限制住你的开发过程。</p>
+<p>总之，UML 不总是最好的选择。看到黑板上贴着的 TODO，你总会习惯性地看一眼；但画在屏幕上的 UML 图，只会让你躲得越远越好。</p>
+<h2 id="uml用途"><a href="#UML用途" class="headerlink" title="UML用途"></a>UML用途</h2><p>话虽如此，UML 倒也不全是缺点，确有其发挥作用的地方。C4 方法可以很好地描述静态架构，但是面对动态图就显得不够了。UML 是很好的补充，比如：流程图、时序图、协作图、状态图、部署图。</p>
+<p>当然，一切的好坏都不是绝对的，你只有在明白如何进行软件的架构和设计后，才能真正体会到那些工具是怎样服务于你的工作的。</p>
+<h1 id="刻意练习"><a href="#《刻意练习》" class="headerlink" title="《刻意练习》"></a>《刻意练习》</h1><h2 id="盲棋大师"><a href="#盲棋大师" class="headerlink" title="盲棋大师"></a>盲棋大师</h2><p>同时与众多棋手下盲棋是一件极其不可思议的事，因为要记住每个棋盘上每个棋子的摆放位置，并且思考对局的走法。</p>
+<p>有一位很伟大的国际象棋大师，同时也是首屈一指的盲棋大师。从时间上看，他并没有在盲棋上付出很多，却仍然成为了大师，这不禁让人感到困惑。仔细观察会发现，虽然他没有专门为盲棋做训练，但过往的经历和他对象棋的追求促成了在盲棋上卓越的条件——他经常记忆对局信息，并模拟真实的下棋。</p>
+<h2 id="大师比新手强在何处"><a href="#大师比新手强在何处" class="headerlink" title="大师比新手强在何处"></a>大师比新手强在何处</h2><p>对比大师、中等选手、初级选手和普通人对棋局的记忆能力，实验结果显示：大师和中等选手对于对弈棋局的记忆较为完整，初级选手和普通人则只能记住6到7颗棋子的位置；而对于随意摆放的棋局，所有人的记忆水平没有明显差别。</p>
+<p>事实上，大师之所以是大师，在于他对棋局的理解更加深刻，能瞬间看清局势，并因此记下一个模糊的全局情况，之后，在回忆的过程中，能逐渐推理出细节。因此，大师之所以表现的更为优秀，是他们将棋局压缩成了更有意义的事，而不仅仅是棋子和它们的摆放位置。</p>
+<h2 id="心里表征"><a href="#心里表征" class="headerlink" title="心里表征"></a>心里表征</h2><p>心里表征是指我们思考一件事物时，大脑中与之对应的结构。</p>
+<div class="hr-sect">Idea (～￣▽￣)～ Spreading</div>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;hr-sect&quot;&gt;Hack ╮(￣▽￣)╭ News&lt;/div&gt;
+
+
+
+&lt;div class=&quot;hr-sect&quot;&gt;Tech (￣▽￣)~* Learning&lt;/div&gt;
+
+
+
+&lt;div class=&quot;hr-sect&quot;&gt;Book ╰(￣▽￣)╭ Readin
+    
+    </summary>
+    
+      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>2017-05-30</title>
@@ -977,61 +1031,6 @@
 &lt;li&gt;进程间通信：消息队列、信号量、共享内存&lt;/li&gt;
 &lt;li&gt;git clone –depth&lt;/li&gt;
 &lt;li&gt;更好的方式迎接死亡&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>2017-05-09</title>
-    <link href="http://blog.sin5th.com/2017/05/09/2017-05-09/"/>
-    <id>http://blog.sin5th.com/2017/05/09/2017-05-09/</id>
-    <published>2017-05-09T08:30:52.000Z</published>
-    <updated>2017-05-16T10:41:03.000Z</updated>
-    
-    <content type="html"><![CDATA[<ul>
-<li>Uber 涉嫌使用软件躲避审查，受到法律调查</li>
-<li>如何掌控你的自由时间</li>
-<li>go 中的继承</li>
-</ul>
-<a id="more"></a>
-<div class="hr-sect">Hack News</div>
-
-<h1 id="uber-受到法律调查"><a href="#Uber-受到法律调查" class="headerlink" title="Uber 受到法律调查"></a>Uber 受到法律调查</h1><p><a href="http://www.reuters.com/article/us-uber-tech-crime-exclusive-idUSKBN1802U1" target="_blank" rel="external">链接地址</a><br>Uber 涉嫌利用 Greyball 软件，协助司机躲避监管，受到司法部的调查。</p>
-<p>称其通过挖掘信用卡、地理位置等信息，辨识用户身份，并进一步阻碍监管人员“钓鱼执法”。</p>
-<p>最近，Uber 商业及法律问题不断，引起众多社会舆论。</p>
-<p>该调查不代表任何违法事件的发生。</p>
-<div class="hr-sect">Tech Learning</div>
-
-<h1 id="inherition-in-go"><a href="#inherition-in-go" class="headerlink" title="inherition in go"></a>inherition in go</h1><p>首先，golang 不支持类与继承。</p>
-<p>但我们总会遇到这样的场景，有一种对象 A，它包含许多属性与方法的定义。现在需要一种对象 B，它和 A 几乎相同，只在一个方法上略有不同。</p>
-<p>如果是 c++/java 出身，会自然地写出类似下面的定义：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">class A &#123;</div><div class="line">  attr_a;</div><div class="line">  attr_b;</div><div class="line">  method_a;</div><div class="line">  method_b;</div><div class="line">&#125;</div><div class="line"></div><div class="line">class B(A) &#123;</div><div class="line">  method_b; // another implementation</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>如果是 js/lua 出身，会自然地写出类似下面的定义：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">ProtoTypeA = &#123;</div><div class="line">  method_a;</div><div class="line">  method_b;</div><div class="line">&#125;</div><div class="line"></div><div class="line">function A(attr_a, attr_b)&#123;</div><div class="line">  o = new object;</div><div class="line">  o.attr_a = attr_a;</div><div class="line">  o.attr_b = attr_b;</div><div class="line">  set_prototype(o, ProtoTypeA);</div><div class="line">&#125;</div><div class="line"></div><div class="line">ProtoTypeB = &#123;</div><div class="line">  method_b; // another implementation</div><div class="line">&#125;</div><div class="line"></div><div class="line">set_prototype(ProtoTypeB, ProtoTypeA)</div><div class="line"></div><div class="line">function B(attr_a, attr_b)&#123;</div><div class="line">  o = A(attr_a, attr_b);</div><div class="line">  set_prototype(o, ProtoTypeB)</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>相比js/lua(基于原型)的继承，c++/java 这种(基于类)看起来更直观。但 go 与这两者都不同，它是基于组合的。</p>
-<p>由于嵌入类的使用特性，go 允许出现类似 c++/java 中的定义方式，但实际效果差别极大。<br>在下述定义中，b.in_A_B() 是合法的调用，但这仅仅是个语法糖，是 b.A.in_A_B() 的缩写。因此它会返回 “A” 而不是 “B”。<br><figure class="highlight go"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">type</span> A <span class="keyword">struct</span> &#123;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="params">(a *A)</span><span class="title">in_A_B</span><span class="params">()</span> <span class="title">string</span></span> &#123;</div><div class="line">	<span class="keyword">return</span> a.in_What()</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="params">(a *A)</span><span class="title">in_What</span><span class="params">()</span> <span class="title">string</span></span> &#123;</div><div class="line">  <span class="keyword">return</span> <span class="string">"A"</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">type</span> B <span class="keyword">struct</span> &#123;</div><div class="line">	A</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="params">(b *B)</span><span class="title">in_What</span><span class="params">()</span> <span class="title">string</span></span>  &#123;</div><div class="line">  <span class="keyword">return</span> <span class="string">"B"</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> b = B&#123;&#125;</div><div class="line">b.in_A_B()</div></pre></td></tr></table></figure></p>
-<blockquote>
-<p>如果想达到类似的效果，可以声明一个代理函数，然后在实例初始化过程中（当然，这个过程是自己规划出来的）对代理函数进行赋值（这一步有点像 js/lua），不过还是比较受限且麻烦的。<br>*先到这里，没来得及思考、查阅更好的方法。或许 golang 根本不鼓励这种玩法也说不定。</p>
-</blockquote>
-<div class="hr-sect">Book Reading</div>
-
-
-
-<p><div class="hr-sect">Ideas Spreading</div></p>
-<h1 id="如何掌控你的自由时间"><a href="#如何掌控你的自由时间" class="headerlink" title="如何掌控你的自由时间"></a>如何掌控你的自由时间</h1><p><a href="http://open.163.com/movie/2016/12/I/B/MC82BCQAN_MC8U8L3IB.html" target="_blank" rel="external">视频地址</a><br>我们总说把握好时间，就能过上想要的生活。事实是，先有想要怎样的生活，才会去安排时间。</p>
-<p>与其说“没有时间”，不如说“我不想把时间花费在这件事上”，所以，时间就是选择。</p>
-<p>就如同那句老话：<em>时间就是海绵里的水，挤挤总是有的。</em></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;Uber 涉嫌使用软件躲避审查，受到法律调查&lt;/li&gt;
-&lt;li&gt;如何掌控你的自由时间&lt;/li&gt;
-&lt;li&gt;go 中的继承&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
