@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-06-01T15:02:59.000Z</updated>
+  <updated>2017-06-02T15:18:03.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -14,6 +14,55 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2017-06-02</title>
+    <link href="http://blog.sin5th.com/2017/06/02/2017-06-02/"/>
+    <id>http://blog.sin5th.com/2017/06/02/2017-06-02/</id>
+    <published>2017-06-02T14:26:07.000Z</published>
+    <updated>2017-06-02T15:18:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class="hr-sect">Hack ╮(￣▽￣)╭ News</div>
+
+
+
+<div class="hr-sect">Tech (￣▽￣)~* Learning</div>
+
+
+
+<div class="hr-sect">Book ╰(￣▽￣)╭ Reading</div>
+
+<h1 id="一炮走红的国家"><a href="#《一炮走红的国家》" class="headerlink" title="《一炮走红的国家》"></a>《一炮走红的国家》</h1><h2 id="墨西哥制造业渐露优势"><a href="#墨西哥制造业渐露优势" class="headerlink" title="墨西哥制造业渐露优势"></a>墨西哥制造业渐露优势</h2><p>比起拉丁美洲的邻居，亚洲的国家和墨西哥更像。墨西哥于中国的竞争关系由来已久，都是通过制造业和出口拉动经济增长。虽然在过去的十年的早期，墨西哥完全不是中国的对手，但随着中国的人力和运输成本上升，墨西哥渐渐看到了转机。</p>
+<h2 id="墨西哥身处低谷触底反弹"><a href="#墨西哥身处低谷，触底反弹" class="headerlink" title="墨西哥身处低谷，触底反弹"></a>墨西哥身处低谷，触底反弹</h2><p>墨西哥经济的持续低迷给人触底反弹的希望，毕竟机会与优势在不断地积累，也许哪一天这个国家幡然醒悟，就能借着这些优势一飞冲天。</p>
+<h1 id="开发者必读之软件架构"><a href="#《开发者必读之软件架构》" class="headerlink" title="《开发者必读之软件架构》"></a>《开发者必读之软件架构》</h1><h2 id="草图的劣势不一致性"><a href="#草图的劣势：不一致性" class="headerlink" title="草图的劣势：不一致性"></a>草图的劣势：不一致性</h2><p>虽然随手而作的草图便利、高效，但也带来了一些坏处，比如：不一致。如果将来要将这些草图转化成专业的 UML 图进行文档化，那么遵循一些约定是有必要的。</p>
+<h2 id="值得约定的习惯"><a href="#值得约定的习惯" class="headerlink" title="值得约定的习惯"></a>值得约定的习惯</h2><p>1.每张图都最好有一个言简意赅的<em>标题</em>；2.用<em>标签</em>展示更多有意义的信息；3.如果图形的<em>形状</em>有特殊含义，那么保持一致性并附上图例；4.用简短的文字标记<em>职责</em>；5.利用<em>线条和箭头</em>清晰地表达关系；6.善用<em>颜色</em>使图更加清晰；7.注意<em>布局</em>，避免不断修改带来的麻烦；8.软件层次的绘制<em>方向</em>可能决定读者的关注点（比如，数据库到业务是从上到下，还是从下到上）；9.合理地使用不同<em>边框</em>来区分系统状态（已有的，或者待做的）。</p>
+<h2 id="有效草图的评价标准"><a href="#有效草图的评价标准" class="headerlink" title="有效草图的评价标准"></a>有效草图的评价标准</h2><p>评价一个草图是否达到效果，可以问自己几个问题：能不能说明系统是用来做什么的？用户是谁？所处的IT环境是怎样的？数据的流向是怎样的？组件是不是都有家？等等。。</p>
+<h1 id="刻意练习"><a href="#《刻意练习》" class="headerlink" title="《刻意练习》"></a>《刻意练习》</h1><h2 id="刻意练习包括创建心里表征"><a href="#刻意练习包括创建心里表征" class="headerlink" title="刻意练习包括创建心里表征"></a>刻意练习包括创建心里表征</h2><p>史蒂夫记数出色是因为他发明了独特的记忆方法，压缩了这些信息；伦敦的出租司机堪比GPS是他们在大脑中建立了心里地图。这些就是心里表征，是刻意练习的一部分。</p>
+<h2 id="心里表征的领域特定性"><a href="#心里表征的领域特定性" class="headerlink" title="心里表征的领域特定性"></a>心里表征的领域特定性</h2><p>史蒂夫并没有在一般的记忆能力上获得非凡的能力，只是在记数这件事上表现突出；伦敦的出租司机的常规记忆能力与常人无异，只是对伦敦周边的路线导航尤其精通。这是因为心里表征有它的领域特定性，不同的事情需要的心里表征并不相同。</p>
+<h2 id="心理表征铸就杰出表现"><a href="#心理表征铸就杰出表现" class="headerlink" title="心理表征铸就杰出表现"></a>心理表征铸就杰出表现</h2><p>棒球击球手是一个很关键的角色，需要在瞬间判断出球的走向，并以合适的角度挥出棒。没有人能从一个高速飞翔的球上看出端倪，击球手的判断都是出自对投球手的观察，从他们的动作、出手角度、出手位置猜测结果，这是对投球建立的心里表征。</p>
+<h2 id="心里表征有助于找出规律-预测未来"><a href="#心里表征有助于找出规律、预测未来" class="headerlink" title="心里表征有助于找出规律、预测未来"></a>心里表征有助于找出规律、预测未来</h2><p>对于大多数人来说，足球是一件极其杂乱无章的事情，仿佛就是 11 个人在追着球乱跑，但在懂球人的眼里，这其中蕴藏着规律。运动员和懂球的人在过往的经历中形成了心里表征，他们理解足球的方式和普通人不一样，可以在现状中看到过去的影子。</p>
+<p>一旦找到规律，他们很容易预测将要发生的事，对手会怎样运球，或者同伴会怎样配合。</p>
+<div class="hr-sect">Idea (～￣▽￣)～ Spreading</div>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;hr-sect&quot;&gt;Hack ╮(￣▽￣)╭ News&lt;/div&gt;
+
+
+
+&lt;div class=&quot;hr-sect&quot;&gt;Tech (￣▽￣)~* Learning&lt;/div&gt;
+
+
+
+&lt;div class=&quot;hr-sect&quot;&gt;Book ╰(￣▽￣)╭ Readin
+    
+    </summary>
+    
+      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>心里表征</title>
@@ -968,69 +1017,6 @@
       &lt;ul&gt;
 &lt;li&gt;mozilla 发起活动，拯救网络自由&lt;/li&gt;
 &lt;li&gt;如何成为更好的交谈者&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>2017-05-10</title>
-    <link href="http://blog.sin5th.com/2017/05/10/2017-05-10/"/>
-    <id>http://blog.sin5th.com/2017/05/10/2017-05-10/</id>
-    <published>2017-05-10T02:10:39.000Z</published>
-    <updated>2017-05-19T06:02:44.000Z</updated>
-    
-    <content type="html"><![CDATA[<ul>
-<li>开始自己的音乐制作</li>
-<li>进程间通信：消息队列、信号量、共享内存</li>
-<li>git clone –depth</li>
-<li>更好的方式迎接死亡</li>
-</ul>
-<a id="more"></a>
-<div class="hr-sect">Hack News</div>
-
-<h1 id="音乐制作"><a href="#音乐制作" class="headerlink" title="音乐制作"></a>音乐制作</h1><p><a href="https://learningmusic.ableton.com/index.html" target="_blank" rel="external">链接地址</a></p>
-<p>很多音乐都是通过混合乐器声制作而成的，了解一些基本的知识，你也可以制作出动人的音乐。</p>
-<p>常见的发声器有：</p>
-<ul>
-<li>hihat（足履钹）</li>
-<li>snare（小鼓）</li>
-<li>clap（击掌）</li>
-<li>kick（大鼓）</li>
-</ul>
-<div class="hr-sect">Tech Learning</div>
-
-<h1 id="git-shallow-clone"><a href="#git-shallow-clone" class="headerlink" title="git shallow clone"></a>git shallow clone</h1><p><a href="https://www.perforce.com/blog/141218/git-beyond-basics-using-shallow-clones" target="_blank" rel="external">链接地址</a></p>
-<p>因为 git clone 不仅下载文件，还会下载每一个版本变更。在持续集成（CI）、持续交付（CD）中，自动化的下载容易引起 git 服务器负载问题。。</p>
-<p><code>git clone --depth 1</code> 能简单地避免该问题。</p>
-<p><em>Git 1.9 版本之前，shallow clone 的代码库不支持 pull/push。</em></p>
-<div class="hr-sect">Book Reading</div>
-
-<h1 id="apue-xsi-ipc"><a href="#APUE-XSI-IPC" class="headerlink" title="APUE XSI IPC"></a>APUE XSI IPC</h1><p>除了管道、命名管道之外，另外三种 IPC：</p>
-<ul>
-<li>消息队列</li>
-<li>信号量</li>
-<li>共享存储</li>
-</ul>
-<div class="hr-sect">Ideas Spreading</div>
-
-<h1 id="更好的方式"><a href="#更好的方式" class="headerlink" title="更好的方式"></a>更好的方式</h1><p><a href="http://open.163.com/movie/2015/7/4/7/MAUJNN86J_MAUJO1D47.html" target="_blank" rel="external">视频地址</a></p>
-<p>死亡，一个绝大多数人不想谈论的词，但也是所有人都将面临的事。</p>
-<p>我们抵触它、避讳它，但却没能给我们带来什么真实的意义。医院是压抑的，疗养院是单调的…</p>
-<p>火葬最初被99.8%的人所抵触，但最终还是为大多数人接受。所以，何不换一种方式看待死亡。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;开始自己的音乐制作&lt;/li&gt;
-&lt;li&gt;进程间通信：消息队列、信号量、共享内存&lt;/li&gt;
-&lt;li&gt;git clone –depth&lt;/li&gt;
-&lt;li&gt;更好的方式迎接死亡&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
