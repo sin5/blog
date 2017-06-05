@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-06-03T15:39:26.000Z</updated>
+  <updated>2017-06-05T14:15:22.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -14,6 +14,52 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2017-06-05</title>
+    <link href="http://blog.sin5th.com/2017/06/05/2017-06-05/"/>
+    <id>http://blog.sin5th.com/2017/06/05/2017-06-05/</id>
+    <published>2017-06-05T13:50:07.000Z</published>
+    <updated>2017-06-05T14:15:22.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class="hr-sect">Hack ╮(￣▽￣)╭ News</div>
+
+
+
+<div class="hr-sect">Tech (￣▽￣)~* Learning</div>
+
+
+
+<div class="hr-sect">Book ╰(￣▽￣)╭ Reading</div>
+
+<h1 id="开发者必读之软件架构"><a href="#《开发者必读之软件架构》" class="headerlink" title="《开发者必读之软件架构》"></a>《开发者必读之软件架构》</h1><h2 id="文档的必要性"><a href="#文档的必要性" class="headerlink" title="文档的必要性"></a>文档的必要性</h2><p>虽然说好的代码自注释，但仅凭代码并不能解释一切。首先，稍具规模的工程都有一个框架，从入口函数一点点看效率奇低，是十分愚蠢的。因此，快速了解项目有一个隐含的条件，就是对所用技术已有了解；另外，代码也无法说明系统是如何融入周边系统的。所以，文档往往是必要的，一方面引导说明项目的实现，一方面解释系统的地位。</p>
+<h1 id="刻意练习"><a href="#《刻意练习》" class="headerlink" title="《刻意练习》"></a>《刻意练习》</h1><h2 id="心里表征有助于理解信息"><a href="#心里表征有助于理解信息" class="headerlink" title="心里表征有助于理解信息"></a>心里表征有助于理解信息</h2><p>对于一个普通人，不论足球、象棋，都很难一下子就明白状况，因为他们没有建立对应的心里表征，看到的都是独立的树，看不到森林。</p>
+<h2 id="心里表征有助于组织信息"><a href="#心里表征有助于组织信息" class="headerlink" title="心里表征有助于组织信息"></a>心里表征有助于组织信息</h2><p>充分理解信息才能在需要的时候有效地组织起来发挥作用。很多病都可以造成眼睛看不清或者耳痛，是同一种病，还是许多病同时发生？有经验的医生能根据自身阅历猜测、询问，最终确定病因，是因为他们知道这些症状意味着什么。把各种看似无关的信息拼凑在一起，这就是根据已有的心里表征组织信息。</p>
+<h1 id="一炮走红的国家"><a href="#《一炮走红的国家》" class="headerlink" title="《一炮走红的国家》"></a>《一炮走红的国家》</h1><h2 id="东欧双子星波兰-捷克"><a href="#东欧双子星————波兰、捷克" class="headerlink" title="东欧双子星————波兰、捷克"></a>东欧双子星————波兰、捷克</h2><p>波兰与捷克是东欧经济形势最好的两个国家，原因正是因为他们稳定而务实的国民心态。作为苏联解体后，最先摆脱卫星国梦魇的波兰快速整理好了国内的银行业，为吸引投资打下基础；捷克也是如此，物价平稳，劳动力便宜。</p>
+<p>另外，由于加入欧盟的时间较晚，波兰与捷克都是受惠国，能借此继续保持高增速的经济。</p>
+<h2 id="反面教材匈牙利"><a href="#反面教材————匈牙利" class="headerlink" title="反面教材————匈牙利"></a>反面教材————匈牙利</h2><p>匈牙利在十年发展的前期是经济复苏的佼佼者，吸引了大量投资。</p>
+<p>但政党间为了拉去选票肆意挥霍金钱，政策摇摆，错失了良机。</p>
+<div class="hr-sect">Idea (～￣▽￣)～ Spreading</div>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;hr-sect&quot;&gt;Hack ╮(￣▽￣)╭ News&lt;/div&gt;
+
+
+
+&lt;div class=&quot;hr-sect&quot;&gt;Tech (￣▽￣)~* Learning&lt;/div&gt;
+
+
+
+&lt;div class=&quot;hr-sect&quot;&gt;Book ╰(￣▽￣)╭ Readin
+    
+    </summary>
+    
+      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>无意识的决策</title>
@@ -952,48 +998,6 @@
       &lt;div class=&quot;hr-sect&quot;&gt;Hack ╮(￣▽￣)╭ News&lt;/div&gt;
 
 &lt;h1 id=&quot;正确理解-cpu-利用率&quot;&gt;&lt;a href=&quot;#正确理解-CPU-利用率&quot; class=&quot;headerlink&quot; title=&quot;正确理解 CPU 利用率&quot;&gt;&lt;/a&gt;正确理解
-    
-    </summary>
-    
-      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>2017-05-12</title>
-    <link href="http://blog.sin5th.com/2017/05/12/2017-05-12/"/>
-    <id>http://blog.sin5th.com/2017/05/12/2017-05-12/</id>
-    <published>2017-05-12T06:05:30.000Z</published>
-    <updated>2017-05-16T10:41:03.000Z</updated>
-    
-    <content type="html"><![CDATA[<div class="hr-sect">Hack ╮(￣▽￣)╭ News</div>
-
-<h1 id="solar-roof-太阳能屋顶"><a href="#Solar-Roof-太阳能屋顶" class="headerlink" title="Solar Roof 太阳能屋顶"></a>Solar Roof 太阳能屋顶</h1><p><a href="https://www.tesla.com/blog/solar-roof" target="_blank" rel="external">链接地址</a></p>
-<p>特斯拉发表博文，宣传其太阳能屋顶。卖点如下：</p>
-<ul>
-<li>不贵，算上省下的电钱，甚至比普通砖便宜</li>
-<li>好看，提供了许多（4种）样式</li>
-<li>耐用，钢化玻璃做的，比沥青和混凝土好</li>
-<li>好买，官网订就行了</li>
-</ul>
-<p>但网友似乎对此并不买账，均表示“哪里不贵？”。据核算，特斯拉太阳能屋顶所节约的费用，至少累积30年才抵得上多花的费用，考虑通货膨胀大概在40年左右；另一个角度是，置办一套太阳能发电都花不了这么多钱 (￣.￣)</p>
-<div class="hr-sect">Tech (￣▽￣)~* Learning</div>
-
-
-
-<div class="hr-sect">Book ╰(￣▽￣)╭ Reading</div>
-
-
-
-<div class="hr-sect">Idea (～￣▽￣)～ Spreading</div>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;div class=&quot;hr-sect&quot;&gt;Hack ╮(￣▽￣)╭ News&lt;/div&gt;
-
-&lt;h1 id=&quot;solar-roof-太阳能屋顶&quot;&gt;&lt;a href=&quot;#Solar-Roof-太阳能屋顶&quot; class=&quot;headerlink&quot; title=&quot;Solar Roof 太阳能
     
     </summary>
     
