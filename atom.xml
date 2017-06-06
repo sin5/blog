@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-06-05T14:15:22.000Z</updated>
+  <updated>2017-06-06T15:04:20.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -14,6 +14,51 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>软件文档即指南</title>
+    <link href="http://blog.sin5th.com/2017/06/06/2017-06-06/"/>
+    <id>http://blog.sin5th.com/2017/06/06/2017-06-06/</id>
+    <published>2017-06-06T14:13:21.000Z</published>
+    <updated>2017-06-06T15:04:20.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class="hr-sect">Hack ╮(￣▽￣)╭ News</div>
+
+
+
+<div class="hr-sect">Tech (￣▽￣)~* Learning</div>
+
+
+
+<div class="hr-sect">Book ╰(￣▽￣)╭ Reading</div>
+
+<h1 id="开发者必读之软件架构"><a href="#《开发者必读之软件架构》" class="headerlink" title="《开发者必读之软件架构》"></a>《开发者必读之软件架构》</h1><h2 id="软件文档即指南"><a href="#软件文档即指南" class="headerlink" title="软件文档即指南"></a>软件文档即指南</h2><p>文档是带领我们理解软件的指南。有时是一张地图，适当的分辨率让我们了解处境；有时是一处风景，让我们在乏味的旅途稍事休息；有时是历史与文化，断壁残垣告诉我们曾经发生的故事；有时是实用信息，给我们提供指引。</p>
+<h1 id="刻意练习"><a href="#《刻意练习》" class="headerlink" title="《刻意练习》"></a>《刻意练习》</h1><h2 id="心里表征有助于制定计划"><a href="#心里表征有助于制定计划" class="headerlink" title="心里表征有助于制定计划"></a>心里表征有助于制定计划</h2><p>有经验的攀岩者能挑选出最佳路径；有经验的外科医师能在手术开始前想好可能面对的情况；出色的写作者能在成文前构思好文章。</p>
+<p>建立心里表征后，有助于我们理解问题、预测未来、使用知识，进而制定好计划解决问题。</p>
+<h1 id="一炮走红的国家"><a href="#《一炮走红的国家》" class="headerlink" title="《一炮走红的国家》"></a>《一炮走红的国家》</h1><h2 id="土耳其的优异表现"><a href="#土耳其的优异表现" class="headerlink" title="土耳其的优异表现"></a>土耳其的优异表现</h2><p>地处中东的土耳其中绝大部分人是伊斯兰教，但由于西方世界的影响，这些人在经济上被一定程度的压制着。释放对伊斯兰的压制，是使土耳其经济增长的一个方法。</p>
+<p>过去的土耳其政治不稳定，执政党平均九年一个，时而亲伊斯兰，时而亲西方世界；经济也是绝境，高利率、高通胀、低增长。失望的人民放弃了那些泾渭分明的政党，而是选择了一个向往欧洲但是对伊斯兰同样温和的党派。</p>
+<p>新领导人上台后，重视经济发展，很快扭转局势，如今的土耳其人均收入1万美元，已经成为中东经济发展最快的国家。</p>
+<div class="hr-sect">Idea (～￣▽￣)～ Spreading</div>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;hr-sect&quot;&gt;Hack ╮(￣▽￣)╭ News&lt;/div&gt;
+
+
+
+&lt;div class=&quot;hr-sect&quot;&gt;Tech (￣▽￣)~* Learning&lt;/div&gt;
+
+
+
+&lt;div class=&quot;hr-sect&quot;&gt;Book ╰(￣▽￣)╭ Readin
+    
+    </summary>
+    
+      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>2017-06-05</title>
@@ -942,62 +987,6 @@
       &lt;div class=&quot;hr-sect&quot;&gt;Hack ╮(￣▽￣)╭ News&lt;/div&gt;
 
 &lt;h1 id=&quot;无意间制止-wannacrypt-的始末&quot;&gt;&lt;a href=&quot;#无意间制止-WannaCrypt-的始末&quot; class=&quot;headerlink&quot; title=&quot;无意间制止 
-    
-    </summary>
-    
-      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>2017-05-13</title>
-    <link href="http://blog.sin5th.com/2017/05/13/2017-05-13/"/>
-    <id>http://blog.sin5th.com/2017/05/13/2017-05-13/</id>
-    <published>2017-05-13T12:51:17.000Z</published>
-    <updated>2017-05-16T10:41:03.000Z</updated>
-    
-    <content type="html"><![CDATA[<div class="hr-sect">Hack ╮(￣▽￣)╭ News</div>
-
-<h1 id="正确理解-cpu-利用率"><a href="#正确理解-CPU-利用率" class="headerlink" title="正确理解 CPU 利用率"></a>正确理解 CPU 利用率</h1><p><a href="http://www.brendangregg.com/blog/2017-05-09/cpu-utilization-is-wrong.html" target="_blank" rel="external">链接地址</a></p>
-<p>Brendan Gregg 发布博文，指出<strong>常见的 CPU 利用率计算方式</strong>有误导性，是仅仅通过追踪 idle 进程占用 CPU 时间的比例得出的结果。</p>
-<p>而实际程序瓶颈是否在 CPU，不能仅仅根据这个指标来判定，因为 stalled 状态的进程也被算在其中，在内存访问很多时，这种进程并没有真正地利用 CPU 去进行运算，而是将时间都耗费在等待内存上。</p>
-<blockquote>
-<p>我们以为的 90% CPU 都在工作<br><img src="/images/www.brendangregg.com/cpubusyidle.png" alt="busy"><br>实际上它们都卡住了<br><img src="/images/www.brendangregg.com/cpubusystalledidle.png" alt="stalled"></p>
-</blockquote>
-<p>因此，评价 CPU 究竟使用了多少，应该参考 IPC（instructions per cycle）这个指标，它描述 cpu 真正执行指令的时间占比。</p>
-<p>网友对此观点有赞许，也有质疑。质疑声集中在对<strong>利用率</strong>一词的理解。</p>
-<div class="hr-sect">Tech (￣▽￣)~* Learning</div>
-
-
-
-<div class="hr-sect">Book ╰(￣▽￣)╭ Reading</div>
-
-
-
-<div class="hr-sect">Idea (～￣▽￣)～ Spreading</div>
-
-<h1 id="找到自己钟爱的工作"><a href="#找到自己钟爱的工作" class="headerlink" title="找到自己钟爱的工作"></a>找到自己钟爱的工作</h1><p><a href="http://open.163.com/movie/2017/2/H/M/MC9GRQOVM_MC9GSHHHM.html" target="_blank" rel="external">视频地址</a></p>
-<p>你如何选择工作？是追求简历的华丽，还是渴望愉悦的生活。演讲人告诫我们，“喝醉烈的酒，恋最美的人”，与有理想、有抱负的人一起工作。</p>
-<p>另外，演讲人还说，想做到成功，请参考以下 3 点：</p>
-<ol>
-<li>特长</li>
-<li>价值</li>
-<li>经验</li>
-</ol>
-<p>个人想法</p>
-<blockquote>
-<p>虽然主讲人讲的绘声绘色，告诉我们成功需要哪些要素。但他忽略了一点（其实他意识到了那个东西），就是目标。</p>
-<p>许多人不是没有目标，而是目标太低了。只想普普通通地过生活，这对他们而言，就已经是成功了。</p>
-</blockquote>
-<p>另外，我越发相信 <strong>1分天才，9分努力，90分运气</strong>。因为你是否愿意去努力，很大程度上取决于你（从出生到现在）接触过的人与事。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;div class=&quot;hr-sect&quot;&gt;Hack ╮(￣▽￣)╭ News&lt;/div&gt;
-
-&lt;h1 id=&quot;正确理解-cpu-利用率&quot;&gt;&lt;a href=&quot;#正确理解-CPU-利用率&quot; class=&quot;headerlink&quot; title=&quot;正确理解 CPU 利用率&quot;&gt;&lt;/a&gt;正确理解
     
     </summary>
     
