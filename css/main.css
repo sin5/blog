@@ -1692,7 +1692,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f4738c;
+  background: #e3ffd1;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2880,4 +2880,16 @@ pre .javascript .function {
   font-size: 0px;
   line-height: 0px;
   margin: 0px 16px;
+}
+*[hide] {
+  position: absolute;
+  visibility: hidden;
+  background-color: #e6e6fa;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+:hover > *[hide] {
+  visibility: visible;
+  opacity: 1;
 }
