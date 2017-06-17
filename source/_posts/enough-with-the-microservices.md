@@ -25,23 +25,30 @@ If you can’t build a well-structured monolith, what makes you think microservi
 ## Intro <div hide>简介</div>
 
 <div>
-Much has been written on the pros and cons of microservices, but unfortunately I’m still seeing them as something being pursued in a cargo cult fashion in the growth-stage startup world. At the risk of rewriting Martin Fowler’s Microservice Premium article, I thought it would be good to write up some thoughts so that I can send them to clients when the topic arises, and hopefully help people avoid some of the mistakes I’ve seen. The mistake of choosing a path towards a given architecture or technology on the basis of so-called best practices articles found online is a costly one, and if I can help a single company avoid it then writing this will have been worth it.<div hide></div>
+Much has been written on the pros and cons of microservices, but unfortunately I’m still seeing them as something being pursued in a cargo cult fashion in the growth-stage startup world. At the risk of rewriting Martin Fowler’s Microservice Premium article, I thought it would be good to write up some thoughts so that I can send them to clients when the topic arises, and hopefully help people avoid some of the mistakes I’ve seen. The mistake of choosing a path towards a given architecture or technology on the basis of so-called best practices articles found online is a costly one, and if I can help a single company avoid it then writing this will have been worth it.<div hide>很多文章讲述了微服务的利弊，但微服务还是在创业启动期的公司中受到盲目的追捧。冒着把 Martin Fowler 的 Microservice Premium 文章再写一遍的风险，我认为最好还是写一写自己的想法，以便聊起这个话题时能把这些想法传递给大家，同时也希望我的所见所闻能解除人们对微服务的误用。网上有许多最佳实践文章，选错架构或技术损失巨大，倘若我的观点能帮助哪怕一个公司避免这种错误，那就很有意义了。</div>
 </div>
 
 ## Context <div hide>语境</div>
+<div>
+Microservices are still (unfortunately) currently a big thing and a tech buzzword du jour. The approach has been around forever (Service-Oriented architecture anyone?) but for most of the companies I encounter, microservices aren’t simply a waste of time or a distraction. They actually make things worse.<div hide>（十分不幸）微服务迄今为止依然是个时髦的事物。这种方式其实早就出现了（不就是面向服务架构？），但就我所遇到的大多数公司而言，微服务不单单费时费力，更是让事情更糟糕。</div>
+</div>
+<div>
+This might seem strange, because most of the articles on microservices are extolling their countless virtues like decoupling tech systems, better horizontal scalability, removing dependencies between development teams, and so on. If you’re the size of Uber, Airbnb, Facebook, or Twitter, then that is all probably true. I’ve helped larger organizations with their microservices transitions, including helping them set up messaging systems and other technologies which allow for amazing scalability properties. However, for growth-stage startups, all of that technology, and those microservices, are rarely needed.<div hide>这说起来是件很奇怪的事，因为绝大多数的文章都是在强调微服务的好处，解耦系统、容易横向扩展、并行开发，等等。如果你有 Uber、Airbnb、Facebook 或者 Twitter 那样的规模，或许这好处是存在的。我曾帮助更大的企业完成他们的微服务转化，包括搭建消息系统和其他拥有惊人的扩展性的技术组件。但是对于初创公司，那些技术、服务，根本不需要。</div>
+</div>
 
-Microservices are still (unfortunately) currently a big thing and a tech buzzword du jour. The approach has been around forever (Service-Oriented architecture anyone?) but for most of the companies I encounter, microservices aren’t simply a waste of time or a distraction. They actually make things worse.
+<br>
+> You are not Netflix, stop trying to be them!  
+——Russ Miles<div hide>你不是 Netflix，别再模仿他们了！</div>
 
-This might seem strange, because most of the articles on microservices are extolling their countless virtues like decoupling tech systems, better horizontal scalability, removing dependencies between development teams, and so on. If you’re the size of Uber, Airbnb, Facebook, or Twitter, then that is all probably true. I’ve helped larger organizations with their microservices transitions, including helping them set up messaging systems and other technologies which allow for amazing scalability properties. However, for growth-stage startups, all of that technology, and those microservices, are rarely needed.
+<div>
+Russ Miles makes this his first point in his post on 8 ways to lose at microservices adoption, and it’s something I see all the time. Growth-stage startups often want to emulate the best practices they see at those companies, often to their own detriment. Best practices are context dependent. What is a best practice for a company like Facebook, may or may not be a best practice for a startup with a total engineering team size of 100 or less.<div hide>Russ Miles 描述了 8 种在微服务化中迷失的情况，这是第一条，也是我深以为然的事。初创公司总爱模仿其他公司的最佳实践，但这些实践并不一定符合他们的情况。最佳实践是有赖于语境的。Facebook 的最佳实践，可能是也可能不是一个初创公司（工程师队伍不足100人）的最佳实践。</div>
+</div>
 
-You are not Netflix, stop trying to be them!
+<div>
+Even if you are smaller than the tech giants, you still might, on the balance, get some benefit from moving towards a microservices architecture. However, a growth-stage startup doing a wholesale migration to microservices should be a firing-level offense for the tech people involved.<div hide>即便你比巨头小一些，可能权衡利弊后还是会从微服务架构中获得好处。但是，初创公司向微服务做全量迁移大概是对技术人员的一次考验。</div>
+</div>
 
-–Russ Miles
-Russ Miles makes this his first point in his post on 8 ways to lose at microservices adoption, and it’s something I see all the time. Growth-stage startups often want to emulate the best practices they see at those companies, often to their own detriment. Best practices are context dependent. What is a best practice for a company like Facebook, may or may not be a best practice for a startup with a total engineering team size of 100 or less.
-
-Even if you are smaller than the tech giants, you still might, on the balance, get some benefit from moving towards a microservices architecture. However, a growth-stage startup doing a wholesale migration to microservices should be a firing-level offense for the tech people involved.
-
-Why microservices?
+## Why microservices <div hide>微服务有什么意义</div>
 
 Usually, in growth-stage startups, the main motivation for moving to microservices is that hope that doing so will remove dependencies between development teams and/or improve the ability of the system to handle larger traffic loads (i.e., scalability). Common complaints and symptoms are things like merge conflicts, bugs in deployment due to parts of the application not being ready to use partially implemented features, and horizontal scalability. Let’s break these down individually.
 
