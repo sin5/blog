@@ -87,17 +87,17 @@
 
 
 
-<meta name="description" content="Hack ╮(￣▽￣)╭ News    Tech (￣▽￣)~* Learning    Book ╰(￣▽￣)╭ Reading  《一炮走红的国家》印度的南北差异在发展的早期，南方的增速远超北方，一部分邦达到了12%。但在最近几年中，北方的发展势头开始逐渐追赶并超越了南方，这主要是因为南方的发展放缓，而北方的个别邦迎来了优秀的领导人。 印度的新消费时尚中产阶级的消费需求是普遍事实，但印度的消">
+<meta name="description" content="原文出自 这里  Go is a simple and fun language, but, like any other language, it has a few gotchas… Many of those gotchas are not entirely Go’s fault. Some of these mistakes are natural traps if you are co">
 <meta name="keywords">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2017-05-27">
-<meta property="og:url" content="http://blog.sin5th.com/2017/05/27/2017-05-27/index.html">
+<meta property="og:title" content="Go 语言的 50 个陷阱">
+<meta property="og:url" content="http://blog.sin5th.com/2017/06/27/50-shades-of-go/index.html">
 <meta property="og:site_name" content="Sin5's Blog">
-<meta property="og:description" content="Hack ╮(￣▽￣)╭ News    Tech (￣▽￣)~* Learning    Book ╰(￣▽￣)╭ Reading  《一炮走红的国家》印度的南北差异在发展的早期，南方的增速远超北方，一部分邦达到了12%。但在最近几年中，北方的发展势头开始逐渐追赶并超越了南方，这主要是因为南方的发展放缓，而北方的个别邦迎来了优秀的领导人。 印度的新消费时尚中产阶级的消费需求是普遍事实，但印度的消">
-<meta property="og:updated_time" content="2017-05-27T14:34:56.000Z">
+<meta property="og:description" content="原文出自 这里  Go is a simple and fun language, but, like any other language, it has a few gotchas… Many of those gotchas are not entirely Go’s fault. Some of these mistakes are natural traps if you are co">
+<meta property="og:updated_time" content="2017-06-27T15:41:43.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2017-05-27">
-<meta name="twitter:description" content="Hack ╮(￣▽￣)╭ News    Tech (￣▽￣)~* Learning    Book ╰(￣▽￣)╭ Reading  《一炮走红的国家》印度的南北差异在发展的早期，南方的增速远超北方，一部分邦达到了12%。但在最近几年中，北方的发展势头开始逐渐追赶并超越了南方，这主要是因为南方的发展放缓，而北方的个别邦迎来了优秀的领导人。 印度的新消费时尚中产阶级的消费需求是普遍事实，但印度的消">
+<meta name="twitter:title" content="Go 语言的 50 个陷阱">
+<meta name="twitter:description" content="原文出自 这里  Go is a simple and fun language, but, like any other language, it has a few gotchas… Many of those gotchas are not entirely Go’s fault. Some of these mistakes are natural traps if you are co">
 
 
 
@@ -125,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.sin5th.com/2017/05/27/2017-05-27/"/>
+  <link rel="canonical" href="http://blog.sin5th.com/2017/06/27/50-shades-of-go/"/>
 
 
 
 
 
-  <title> 2017-05-27 | Sin5's Blog </title>
+  <title> Go 语言的 50 个陷阱 | Sin5's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -290,7 +290,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://blog.sin5th.com/2017/05/27/2017-05-27/">
+    <link itemprop="mainEntityOfPage" href="http://blog.sin5th.com/2017/06/27/50-shades-of-go/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="武鑫">
@@ -311,7 +311,7 @@
             
             
               
-                2017-05-27
+                Go 语言的 50 个陷阱
               
             
           </h2>
@@ -324,8 +324,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-27T21:31:11+08:00">
-                2017-05-27
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-27T23:19:42+08:00">
+                2017-06-27
               </time>
             
 
@@ -345,8 +345,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/日志/" itemprop="url" rel="index">
-                    <span itemprop="name">日志</span>
+                  <a href="/categories/翻译/" itemprop="url" rel="index">
+                    <span itemprop="name">翻译</span>
                   </a>
                 </span>
 
@@ -363,9 +363,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/05/27/2017-05-27/#comments" itemprop="discussionUrl">
+                <a href="/2017/06/27/50-shades-of-go/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/05/27/2017-05-27/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/06/27/50-shades-of-go/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -384,7 +384,7 @@
                 </span>
                 
                 <span title="字数统计">
-                  820
+                  201
                 </span>
               
 
@@ -398,7 +398,7 @@
                 </span>
                 
                 <span title="阅读时长">
-                  3
+                  1
                 </span>
               
             </div>
@@ -417,33 +417,12 @@
       
 
       
-        <div class="hr-sect">Hack ╮(￣▽￣)╭ News</div>
-
-
-
-<div class="hr-sect">Tech (￣▽￣)~* Learning</div>
-
-
-
-<div class="hr-sect">Book ╰(￣▽￣)╭ Reading</div>
-
-<h1 id="一炮走红的国家"><a href="#《一炮走红的国家》" class="headerlink" title="《一炮走红的国家》"></a>《一炮走红的国家》</h1><h2 id="印度的南北差异"><a href="#印度的南北差异" class="headerlink" title="印度的南北差异"></a>印度的南北差异</h2><p>在发展的早期，南方的增速远超北方，一部分邦达到了12%。但在最近几年中，北方的发展势头开始逐渐追赶并超越了南方，这主要是因为南方的发展放缓，而北方的个别邦迎来了优秀的领导人。</p>
-<h2 id="印度的新消费时尚"><a href="#印度的新消费时尚" class="headerlink" title="印度的新消费时尚"></a>印度的新消费时尚</h2><p>中产阶级的消费需求是普遍事实，但印度的消费时尚并不局限在中产阶级，低收入人群保持了与中产阶级类似的消费项目。</p>
-<p>另外，印度的邦与邦之间区别很大，地方性商品盛行。</p>
-<h1 id="很感谢你能来不遗憾你走开"><a href="#《很感谢你能来，不遗憾你走开》" class="headerlink" title="《很感谢你能来，不遗憾你走开》"></a>《很感谢你能来，不遗憾你走开》</h1><h2 id="我生本无乡心安是归处"><a href="#我生本无乡，心安是归处" class="headerlink" title="我生本无乡，心安是归处"></a>我生本无乡，心安是归处</h2><p>一位读者向我寻求一个有关至亲的故事，之后告诉我，“什么故事也比不过身在其中的悲伤”。这才知道他原是失去最后一位至亲，悲痛欲绝。</p>
-<p>悲伤之余，或也该想想，亲人固然重要，但人终是为自己而活。</p>
-<h2 id="初心向好便本无错-如有遗憾不必苛责"><a href="#初心向好，便本无错。如有遗憾，不必苛责" class="headerlink" title="初心向好，便本无错。如有遗憾，不必苛责"></a>初心向好，便本无错。如有遗憾，不必苛责</h2><p>“子欲养，而亲不待。”</p>
-<p>失去时才发觉，那些面向未来的努力，何曾比得上平日的陪伴。</p>
-<p>但转念而思，若身陷贫困，陪伴也不过是一起受苦。</p>
-<h2 id="心似双丝网内有千千结"><a href="#心似双丝网，内有千千结" class="headerlink" title="心似双丝网，内有千千结"></a>心似双丝网，内有千千结</h2><p>重要的不在于，为什么而活、如何活，而在于如何看待这个过程。</p>
-<h1 id="刻意练习"><a href="#《刻意练习》" class="headerlink" title="《刻意练习》"></a>《刻意练习》</h1><h2 id="有目的练习尚不足够"><a href="#有目的练习尚不足够" class="headerlink" title="有目的练习尚不足够"></a>有目的练习尚不足够</h2><p>作为史蒂夫的记数字实验的后继，我们又找了两个人，分别让他们使用原创方法和史蒂夫记数法。遗憾的是，两个人都没能走得更远，使用原创方法的人选择了退出，而使用史蒂夫记数法的人则改用了自己的方法（当然，他在这种情况下，超越了史蒂夫）。</p>
-<p>通过这两次对比实验，我们认为，仅仅是有目的练习仍然不够，只有通过刻意练习才能取得超人的成绩。</p>
-<h1 id="开发者必读之软件架构"><a href="#《开发者必读之软件架构》" class="headerlink" title="《开发者必读之软件架构》"></a>《开发者必读之软件架构》</h1><h2 id="容器图的意图-结构-容器-交互-动机"><a href="#容器图的意图、结构、容器、交互、动机" class="headerlink" title="容器图的意图、结构、容器、交互、动机"></a>容器图的意图、结构、容器、交互、动机</h2><p>容器图用来描述软件系统的内部组成，明确高层次的技术选择，划分容器职责，确定容器间的通信。</p>
-<p>容器图一般用框框表示容器，并在容器间用线连接代表交互。有时也会画上周边系统与用户角色，作为辅助。</p>
-<p>容器通常指一个可执行文件或进程主体，它最大的特点是可以单独部署。因此，容器可能是一个web服务器、应用服务器、数据库或文件系统。一般用名称、技术、职责来描述容器。</p>
-<p>容器的交互通常要确定交互的目的（读/写数据，发送报告）、通信方法（web、REST、rpc 等）、通信方式（同步、异步、批量、两阶段提交等）、协议和端口号。</p>
-<p>画容器图可以帮助我们完成高层次的技术选择，展示容器间的关联，让简单的语境图和复杂的组件图之间有一个过渡。</p>
-<div class="hr-sect">Idea (～￣▽￣)～ Spreading</div>
+        <blockquote>
+<p>原文出自 <a href="http://devs.cloudimmunity.com/gotchas-and-common-mistakes-in-go-golang/index.html" target="_blank" rel="external">这里</a></p>
+</blockquote>
+<p>Go is a simple and fun language, but, like any other language, it has a few gotchas… Many of those gotchas are not entirely Go’s fault. Some of these mistakes are natural traps if you are coming from another language. Others are due to faulty assumptions and missing details.<br><code hide="">Go 是一门简单而有趣的语言，但是，像其他语言一样，它有一些陷阱。。许多错误不是 Go 的问题，这其中一部分来自于其他语言对你的误导，而另一部分则是错误的猜想和遗漏的细节。</code></p>
+<p>A lot of these gotchas may seem obvious if you took the time to learn the language reading the official spec, wiki, mailing list discussions, many great posts and presentations by Rob Pike, and the source code. Not everybody starts the same way though and that’s OK. If you are new to Go the information here will save you hours debugging your code.<br><code hide=""></code></p>
+<p>This post covers Go 1.5 and below.</p>
 
       
     </div>
@@ -480,18 +459,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/05/28/2017-05-28/" rel="next" title="2017-05-28">
-                <i class="fa fa-chevron-left"></i> 2017-05-28
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/05/26/2017-05-26/" rel="prev" title="2017-05-26">
-                2017-05-26 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/06/14/enough-with-the-microservices/" rel="prev" title="Enough with the microservices">
+                Enough with the microservices <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -572,17 +547,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="https://avatars1.githubusercontent.com/u/7314785"
@@ -668,22 +634,6 @@
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一炮走红的国家"><span class="nav-number">1.</span> <span class="nav-text">《一炮走红的国家》</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#印度的南北差异"><span class="nav-number">1.1.</span> <span class="nav-text">印度的南北差异</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#印度的新消费时尚"><span class="nav-number">1.2.</span> <span class="nav-text">印度的新消费时尚</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#很感谢你能来不遗憾你走开"><span class="nav-number">2.</span> <span class="nav-text">《很感谢你能来，不遗憾你走开》</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#我生本无乡心安是归处"><span class="nav-number">2.1.</span> <span class="nav-text">我生本无乡，心安是归处</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初心向好便本无错-如有遗憾不必苛责"><span class="nav-number">2.2.</span> <span class="nav-text">初心向好，便本无错。如有遗憾，不必苛责</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#心似双丝网内有千千结"><span class="nav-number">2.3.</span> <span class="nav-text">心似双丝网，内有千千结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#刻意练习"><span class="nav-number">3.</span> <span class="nav-text">《刻意练习》</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#有目的练习尚不足够"><span class="nav-number">3.1.</span> <span class="nav-text">有目的练习尚不足够</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#开发者必读之软件架构"><span class="nav-number">4.</span> <span class="nav-text">《开发者必读之软件架构》</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#容器图的意图-结构-容器-交互-动机"><span class="nav-number">4.1.</span> <span class="nav-text">容器图的意图、结构、容器、交互、动机</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -808,9 +758,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://blog.sin5th.com/2017/05/27/2017-05-27/';
-          this.page.identifier = '2017/05/27/2017-05-27/';
-          this.page.title = '2017-05-27';
+          this.page.url = 'http://blog.sin5th.com/2017/06/27/50-shades-of-go/';
+          this.page.identifier = '2017/06/27/50-shades-of-go/';
+          this.page.title = 'Go 语言的 50 个陷阱';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://blog-sin5th-com.disqus.com/embed.js';

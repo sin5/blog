@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.sin5th.com/"/>
-  <updated>2017-06-17T15:19:18.000Z</updated>
+  <updated>2017-06-27T15:41:43.000Z</updated>
   <id>http://blog.sin5th.com/</id>
   
   <author>
@@ -14,6 +14,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Go 语言的 50 个陷阱</title>
+    <link href="http://blog.sin5th.com/2017/06/27/50-shades-of-go/"/>
+    <id>http://blog.sin5th.com/2017/06/27/50-shades-of-go/</id>
+    <published>2017-06-27T15:19:42.000Z</published>
+    <updated>2017-06-27T15:41:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>原文出自 <a href="http://devs.cloudimmunity.com/gotchas-and-common-mistakes-in-go-golang/index.html" target="_blank" rel="external">这里</a></p>
+</blockquote>
+<p>Go is a simple and fun language, but, like any other language, it has a few gotchas… Many of those gotchas are not entirely Go’s fault. Some of these mistakes are natural traps if you are coming from another language. Others are due to faulty assumptions and missing details.<br><code hide="">Go 是一门简单而有趣的语言，但是，像其他语言一样，它有一些陷阱。。许多错误不是 Go 的问题，这其中一部分来自于其他语言对你的误导，而另一部分则是错误的猜想和遗漏的细节。</code></p>
+<p>A lot of these gotchas may seem obvious if you took the time to learn the language reading the official spec, wiki, mailing list discussions, many great posts and presentations by Rob Pike, and the source code. Not everybody starts the same way though and that’s OK. If you are new to Go the information here will save you hours debugging your code.<br><code hide=""></code></p>
+<p>This post covers Go 1.5 and below.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;原文出自 &lt;a href=&quot;http://devs.cloudimmunity.com/gotchas-and-common-mistakes-in-go-golang/index.html&quot; target=&quot;_blank&quot; rel=&quot;extern
+    
+    </summary>
+    
+      <category term="翻译" scheme="http://blog.sin5th.com/categories/%E7%BF%BB%E8%AF%91/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Enough with the microservices</title>
@@ -977,47 +1004,6 @@
     </summary>
     
       <category term="成长感悟" scheme="http://blog.sin5th.com/categories/%E6%88%90%E9%95%BF%E6%84%9F%E6%82%9F/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>2017-05-17</title>
-    <link href="http://blog.sin5th.com/2017/05/17/2017-05-17/"/>
-    <id>http://blog.sin5th.com/2017/05/17/2017-05-17/</id>
-    <published>2017-05-17T02:13:48.000Z</published>
-    <updated>2017-05-17T06:22:41.000Z</updated>
-    
-    <content type="html"><![CDATA[<div class="hr-sect">Hack ╮(￣▽￣)╭ News</div>
-
-<h1 id="人工智能游戏手册"><a href="#人工智能游戏手册" class="headerlink" title="人工智能游戏手册"></a>人工智能游戏手册</h1><p><a href="http://aiplaybook.a16z.com/" target="_blank" rel="external">链接地址</a></p>
-<p>“地球人都在做AI，但是你完全不明白这东西除了下象棋还能干什么。我们懂你的困惑，所以我们特意提供了一个 Capture 0，带你了解人工智能的强大与功效，让你明白它的潜在用途，让你学会用AI赚钱。”</p>
-<p>广告打得虽好，但读者似乎并不买账。网友普遍表示，“标题党！”</p>
-<div class="hr-sect">Tech (￣▽￣)~* Learning</div>
-
-
-
-<div class="hr-sect">Book ╰(￣▽￣)╭ Reading</div>
-
-<h1 id="很感谢你能来不遗憾你走开"><a href="#《很感谢你能来，不遗憾你走开》" class="headerlink" title="《很感谢你能来，不遗憾你走开》"></a>《很感谢你能来，不遗憾你走开》</h1><h2 id="欲买梨花同载酒终不似少年游"><a href="#欲买梨花同载酒，终不似，少年游" class="headerlink" title="欲买梨花同载酒，终不似，少年游"></a>欲买梨花同载酒，终不似，少年游</h2><p>蓝颜知己，流言蜚语；久别重遇，薄情寡义。</p>
-<h2 id="只因人在风中聚散不由你我"><a href="#只因人在风中，聚散不由你我" class="headerlink" title="只因人在风中，聚散不由你我"></a>只因人在风中，聚散不由你我</h2><p>他离你远了，就离其他人近了。</p>
-<h1 id="程序员必读之软件架构"><a href="#《程序员必读之软件架构》" class="headerlink" title="《程序员必读之软件架构》"></a>《程序员必读之软件架构》</h1><h2 id="sharepoint-也需要架构"><a href="#SharePoint-也需要架构" class="headerlink" title="SharePoint 也需要架构"></a>SharePoint 也需要架构</h2><p>即使不用写代码，也需要考虑安全、性能、审计等非功能性需求。</p>
-<h1 id="一炮走红的国家"><a href="#《一炮走红的国家》" class="headerlink" title="《一炮走红的国家》"></a>《一炮走红的国家》</h1><h2 id="美国的经济增长与国债"><a href="#美国的经济增长与国债" class="headerlink" title="美国的经济增长与国债"></a>美国的经济增长与国债</h2><p>在过去，发行一美元国债可以带来一美元的经济增长；后来，一美元增长需要三美元国债；如今，需要五美元。</p>
-<p>为了在经济危机之后保持稳定的经济恢复，美国调低利率，刺激消费，让境外商品大批涌入国内市场。给发展中国家提供了机会。</p>
-<h2 id="发展中国家的债务反转"><a href="#发展中国家的债务反转" class="headerlink" title="发展中国家的债务反转"></a>发展中国家的债务反转</h2><p>在过去的十年间（2000~2010），发展中国家（俄罗斯、中国、印度等）经济的井喷式增长，使这些国家从债务国摇身一变成了债权国。而美国则从债权国变成了债务国。</p>
-<p>但这种增长是难以复制和维持的。发展中国家的崛起，对应着现有发达国的衰落，当发达国家的需求减少时，发展中国家也将失去许多出口生意。</p>
-<div class="hr-sect">Idea (～￣▽￣)～ Spreading</div>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;div class=&quot;hr-sect&quot;&gt;Hack ╮(￣▽￣)╭ News&lt;/div&gt;
-
-&lt;h1 id=&quot;人工智能游戏手册&quot;&gt;&lt;a href=&quot;#人工智能游戏手册&quot; class=&quot;headerlink&quot; title=&quot;人工智能游戏手册&quot;&gt;&lt;/a&gt;人工智能游戏手册&lt;/h1&gt;&lt;p&gt;
-    
-    </summary>
-    
-      <category term="日志" scheme="http://blog.sin5th.com/categories/%E6%97%A5%E5%BF%97/"/>
     
     
   </entry>
