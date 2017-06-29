@@ -8,18 +8,26 @@ tags:
 ---
 > 原文出自 [这里](http://devs.cloudimmunity.com/gotchas-and-common-mistakes-in-go-golang/index.html)
 
-Go is a simple and fun language, but, like any other language, it has a few gotchas... Many of those gotchas are not entirely Go's fault. Some of these mistakes are natural traps if you are coming from another language. Others are due to faulty assumptions and missing details.<code hide>Go 是一门简单而有趣的语言，但是，像其他语言一样，它有一些陷阱。。许多错误不是 Go 的问题，这其中一部分来自于其他语言对你的误导，而另一部分则是错误的猜想和遗漏的细节。</code>
+Go is a simple and fun language, but, like any other language, it has a few gotchas... Many of those gotchas are not entirely Go's fault. Some of these mistakes are natural traps if you are coming from another language. Others are due to faulty assumptions and missing details.
+<code hide>Go 是一门简单而有趣的语言，但是，像其他语言一样，它有一些陷阱。。许多错误不是 Go 的问题，这其中一部分来自于其他语言对你的误导，而另一部分则是错误的猜想和遗漏的细节。</code>
 
 
-A lot of these gotchas may seem obvious if you took the time to learn the language reading the official spec, wiki, mailing list discussions, many great posts and presentations by Rob Pike, and the source code. Not everybody starts the same way though and that's OK. If you are new to Go the information here will save you hours debugging your code.<code hide>在仔细阅读过官方说明、wiki、往来邮件、Rob Pike 的优秀博客与演示，还有源代码之后，许多陷阱实际上是非常容易识别的。当然不是每个人都这样学习，没关系。如果你刚刚接触 Go，那这篇文章的内容能让你避免许多浪费时间的调试。</hide>
+A lot of these gotchas may seem obvious if you took the time to learn the language reading the official spec, wiki, mailing list discussions, many great posts and presentations by Rob Pike, and the source code. Not everybody starts the same way though and that's OK. If you are new to Go the information here will save you hours debugging your code.
+<code hide>在仔细阅读过官方说明、wiki、往来邮件、Rob Pike 的优秀博客与演示，还有源代码之后，许多陷阱实际上是非常容易识别的。当然不是每个人都这样学习，没关系。如果你刚刚接触 Go，那这篇文章的内容能让你避免许多浪费时间的调试。</code>
 
-This post covers Go 1.5 and below.<code hide>本文对 Go 1.5 及以下有效。</code>
+This post covers Go 1.5 and below.
+<code hide>本文对 Go 1.5 及以下有效。</code>
 
-# Total Beginner<code hide>真正的初学者</code>
+# Total Beginner
+Total Beginner
+<code hide>真正的初学者</code>
 
-## Opening Brace Can't Be Placed on a Separate Line<code hide>左括号不能新启一行</code>
+## Opening Brace Can't Be Placed on a Separate Line
+Opening Brace Can't Be Placed on a Separate Line
+<code hide>左括号不能新启一行</code>
 
-In most other languages that use braces you get to choose where you place them. Go is different. You can thank automatic semicolon injection (without lookahead) for this behavior. Yes, Go does have semicolons :-)<code hide>在大多数语言里花括号放哪都行，但 Go 不是。<code>
+In most other languages that use braces you get to choose where you place them. Go is different. You can thank automatic semicolon injection (without lookahead) for this behavior. Yes, Go does have semicolons :-)
+<code hide>在大多数语言里花括号放哪都行，但 Go 不是。</code>
 
 > Fails:
 ```go
@@ -47,12 +55,16 @@ func main() {
 }
 ```
 
-## Unused Variables<code hide>未使用的变量 </code>
+## Unused Variables
+Unused Variables
+<code hide>未使用的变量 </code>
 
 
-If you have an unused variable your code will fail to compile. There's an exception though. You must use variables you declare inside functions, but it's OK if you have unused global variables. It's also OK to have unused function arguments.<code hide>代码里有未使用的变量会编译错误，不过也有例外。在函数里的变量必须使用，不过全局变量和函数参数可以不使用。</code>
+If you have an unused variable your code will fail to compile. There's an exception though. You must use variables you declare inside functions, but it's OK if you have unused global variables. It's also OK to have unused function arguments.
+<code hide>代码里有未使用的变量会编译错误，不过也有例外。在函数里的变量必须使用，不过全局变量和函数参数可以不使用。</code>
 
-If you assign a new value to the unused variable your code will still fail to compile. You need to use the variable value somehow to make the compiler happy.<code hide>赋值给未使用的变量同样报错，一定是正常使用，不然编译器不会过。</code>
+If you assign a new value to the unused variable your code will still fail to compile. You need to use the variable value somehow to make the compiler happy.
+<code hide>赋值给未使用的变量同样报错，一定是正常使用，不然编译器不会过。</code>
 
 > Fails:
 ```go
@@ -96,14 +108,19 @@ func main() {
     four = four
 }
 ```
-Another option is to comment out or remove the unused variables :-)<code hide>另一个方法是注释、或者删除不用的变量 </code>
+Another option is to comment out or remove the unused variables :-)
+<code hide>另一个方法是注释、或者删除不用的变量 </code>
 
-## Unused Imports<code hide>未使用的包引用</code>
+## Unused Imports
+Unused Imports
+<code hide>未使用的包引用</code>
 
 
-Your code will fail to compile if you import a package without using any of its exported functions, interfaces, structures, or variables.<code hide>要是导入了包，但没有用任何其中的方法、类型、变量，那一定会报错。 </code>
+Your code will fail to compile if you import a package without using any of its exported functions, interfaces, structures, or variables.
+<code hide>要是导入了包，但没有用任何其中的方法、类型、变量，那一定会报错。 </code>
 
-If you really need the imported package you can use the blank identifier, _, as its package name to avoid this compilation failure. The blank identifier is used to import packages for their side effects.<code hide>如果非要导入包，那么可以用空白标识符作为它的包名，这样就能避免编译失败。空白表示符用来导入包来发挥他们的副作用。</code>
+If you really need the imported package you can use the blank identifier, _, as its package name to avoid this compilation failure. The blank identifier is used to import packages for their side effects.
+<code hide>如果非要导入包，那么可以用空白标识符作为它的包名，这样就能避免编译失败。空白表示符用来导入包来发挥他们的副作用。</code>
 
 > Fails:
 ```go
@@ -119,8 +136,9 @@ func main() {
 }
 ```
 > Compile Errors:
+```
 /tmp/sandbox627475386/main.go:4: imported and not used: "fmt" /tmp/sandbox627475386/main.go:5: imported and not used: "log" /tmp/sandbox627475386/main.go:6: imported and not used: "time"
-
+```
 > Works:
 ```go
 package main
@@ -137,9 +155,12 @@ func main() {
     _ = time.Now
 }
 ```
-Another option is to remove or comment out the unused imports :-) The  goimports tool can help you with that.#cb删除或注释不用的包引用也是可以的#ce
+Another option is to remove or comment out the unused imports :-) The  goimports tool can help you with that.
+<code hide>删除或注释不用的包引用也是可以的</code>
 
-## Short Variable Declarations Can Be Used Only Inside Functions#cb短声明只能在函数中使用#ce
+## Short Variable Declarations Can Be Used Only Inside Functions
+Short Variable Declarations Can Be Used Only Inside Functions
+<code hide>短声明只能在函数中使用</code>
 
 
 > Fails:
@@ -152,7 +173,9 @@ func main() {
 }
 ```
 > Compile Error:
+```
 /tmp/sandbox265716165/main.go:3: non-declaration statement outside function body
+```
 > Works:
 ```go
 package main
@@ -162,12 +185,16 @@ var myvar = 1
 func main() {
 }
 ```
-## Redeclaring Variables Using Short Variable Declarations#cb使用短声明重复对变量赋值#ce
+## Redeclaring Variables Using Short Variable Declarations
+Redeclaring Variables Using Short Variable Declarations
+<code hide>使用短声明重复对变量赋值</code>
 
 
-You can't redeclare a variable in a standalone statement, but it is allowed in multi-variable declarations where at least one new variable is also declared.#cb不能重复声明变量，但是在多变量声明语句中，只要有一个变量是首次声明就可以。#ce
+You can't redeclare a variable in a standalone statement, but it is allowed in multi-variable declarations where at least one new variable is also declared.
+<code hide>不能重复声明变量。但在多变量声明语句中，有一个变量为首次声明也是可以的。</code>
 
 The redeclared variable has to be in the same block or you'll end up with a shadowed variable.
+<code hide>被重复生命的变量必须在同一个块中，否则就得以一个隐式变量结束。</code>
 
 > Fails:
 ```go
@@ -179,9 +206,9 @@ func main() {
 }
 ```
 > Compile Error:
-
+```
 /tmp/sandbox706333626/main.go:5: no new variables on left side of :=
-
+```
 > Works:
 ```go
 package main
@@ -193,8 +220,10 @@ func main() {
     one,two = two,one
 }
 ```
-Can't Use Short Variable Declarations to Set Field Values
 
+## Can't Use Short Variable Declarations to Set Field Values
+Can't Use Short Variable Declarations to Set Field Values
+<code hide>不能使用短声明来设置字段值</code>
 
 > Fails:
 ```go
@@ -207,7 +236,6 @@ import (
 type info struct {
   result int
 }
-```
 
 func work() (int,error) {
     return 13,nil
@@ -221,13 +249,13 @@ func main() {
 }
 ```
 > Compile Error:
-
+```
 prog.go:18: non-name data.result on left side of :=
 
 Even though there's a ticket to address this gotcha it's unlikely to change because Rob Pike likes it "as is" :-)
 
 Use temporary variables or predeclare all your variables and use the standard assignment operator.
-
+```
 > Works:
 ```go
 package main
@@ -239,7 +267,6 @@ import (
 type info struct {
   result int
 }
-```
 
 func work() (int,error) {
     return 13,nil
@@ -258,11 +285,12 @@ func main() {
   fmt.Printf("info: %+v\n",data) //prints: info: {result:13}
 }
 ```
+##Accidental Variable Shadowing
 Accidental Variable Shadowing
-
+<code hide>意外的变量覆盖</code>
 
 The short variable declaration syntax is so convenient (especially for those coming from a dynamic language) that it's easy to treat it like a regular assignment operation. If you make this mistake in a new code block there will be no compiler error, but your app will not do what you expect.
-
+<code hide>短赋值语法很方便（特别是对那些来自动态语言的人来说），以至于很容易把它当成一个常规的赋值操作符。在新的代码块中这么做可以正常编译，但运行效果非你所愿。</code>
 ```go
 package main
 
@@ -280,16 +308,18 @@ func main() {
 }
 ```
 This is a very common trap even for experienced Go developers. It's easy to make and it could be hard to spot.
-
+<code hide>Go 资深开发者也容易犯这个错。而且不仅容易犯，还难以排查。</code>
 You can use the vet command to find some of these problems. By default,  vet will not perform any shadowed variable checks. Make sure to use the  -shadow flag: go tool vet -shadow your_file.go
-
+<code hide>可以使用 vet 指令来找这类问题。vet 默认不会做变量覆盖的检查，所以要用 -shadow: go tool vet -shadow your_file.go</code>
 Note that the vet command will not report all shadowed variables. Use  go-nyet for more aggressive shadowed variable detection.
+<code hide>注意 vet 指令不会报出所有的变量覆盖，go-nyet 可以做更好的变量覆盖探测。</code> 
 
+## Can't Use "nil" to Initialize a Variable Without an Explicit Type
 Can't Use "nil" to Initialize a Variable Without an Explicit Type
-
+<code hide>不要用 "nil" 初始化非显式声明的变量。</code>
 
 The "nil" identifier can be used as the "zero value" for interfaces, functions, pointers, maps, slices, and channels. If you don't specify the variable type the compiler will fail to compile your code because it can't guess the type.
-
+<code hide>"nil" 能作为接口、函数、指针、哈希、分片、管道的"空值"表示。如果不指定变量类型，便一起会因为猜不出类型而报错。</code>
 > Fails:
 ```go
 package main
@@ -301,9 +331,9 @@ func main() {
 }
 ```
 > Compile Error:
-
+```
 /tmp/sandbox188239583/main.go:4: use of untyped nil
-
+```
 > Works:
 ```go
 package main
@@ -314,11 +344,13 @@ func main() {
     _ = x
 }
 ```
-Using "nil" Slices and Maps
 
+##Using "nil" Slices and Maps
+Using "nil" Slices and Maps
+<code hide>使用 "nil" 分片和哈希</code>
 
 It's OK to add items to a "nil" slice, but doing the same with a map will produce a runtime panic.
-
+<code hide>可以往 "nil" 分片中加入元素，但往对 map 这么干就会报错。</code>
 > Works:
 ```go
 package main
@@ -338,11 +370,14 @@ func main() {
 
 }
 ```
-Map Capacity
 
+
+##Map Capacity
+Map Capacity
+<code hide>map 的容量</code>
 
 You can specify the map capacity when it's created, but you can't use the cap() function on maps.
-
+#cb可以在创建时指定 map 的容量，但不能对它用 cap() 函数。
 > Fails:
 ```go
 package main
@@ -353,14 +388,16 @@ func main() {
 }
 ```
 > Compile Error:
-
+```
 /tmp/sandbox326543983/main.go:5: invalid argument m (type map[string]int) for cap
+```
 
+## Strings Can't Be "nil"
 Strings Can't Be "nil"
-
+<code hide>字符串不能为空</code>
 
 This is a gotcha for developers who are used to assigning "nil" identifiers to string variables.
-
+<code hide>对那些习惯将字符串设置为"nil"的开发者，很容出错</code>
 > Fails:
 ```go
 package main
@@ -374,9 +411,9 @@ func main() {
 }
 ```
 > Compile Errors:
-
+```
 /tmp/sandbox630560459/main.go:4: cannot use nil as type string in assignment /tmp/sandbox630560459/main.go:6: invalid operation: x == nil (mismatched types string and nil)
-
+```
 > Works:
 ```go
 package main
@@ -389,11 +426,14 @@ func main() {
     }
 }
 ```
-Array Function Arguments
 
+
+##Array Function Arguments
+Array Function Arguments
+<code hide>数组作为函数参宿</code>
 
 If you are a C or C++ developer arrays for you are pointers. When you pass arrays to functions the functions reference the same memory location, so they can update the original data. Arrays in Go are values, so when you pass arrays to functions the functions get a copy of the original array data. This can be a problem if you are trying to update the array data.
-
+<code hide>对 c 和 c++ 开发者来说，数组是指针。当传递数组到函数中时，函数使用同一块内存区域，所以可以更新原始数据。在 Go 中，数组是值，所以传递给函数的是一份拷贝。这在执行更新操作时候会出问题。</code>
 ```go
 package main
 
@@ -411,7 +451,7 @@ func main() {
 }
 ```
 If you need to update the original array data use array pointer types.
-
+<code hide>更新数组要使用指针类型</code>
 ```go
 package main
 
@@ -429,7 +469,7 @@ func main() {
 }
 ```
 Another option is to use slices. Even though your function gets a copy of the slice variable it still references the original data.
-
+#cb另一个方法是使用切片。尽管函数拿到了一个分片的复制，但它仍然指向原始数据。
 ```go
 package main
 
@@ -446,8 +486,11 @@ func main() {
     fmt.Println(x) //prints [7 2 3]
 }
 ```
-Unexpected Values in Slice and Array "range" Clauses
 
+
+##Unexpected Values in Slice and Array "range" Clauses
+Unexpected Values in Slice and Array "range" Clauses
+<code hide>对分片和数组的 range 中出现始料未及的值</code>
 
 This can happen if you are used to the "for-in" or "foreach" statements in other languages. The "range" clause in Go is different. It generates two values: the first value is the item index while the second value is the item data.
 
